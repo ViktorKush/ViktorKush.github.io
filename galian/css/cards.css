@@ -1,0 +1,373 @@
+/*
+///////////////////////////////////////////////////
+
+Project Name: Drag & Drop Cards by FREEHTML5.co
+Author: FREEHTML5.co
+Website: http://freehtml5.co
+URL: http://freehtml5.co/cards/drag-drop
+License: Creative Commons Attribution 3.0 License
+
+///////////////////////////////////////////////////
+*/
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 
+///////////////////////////////////////////////////
+9.0 FOOTERS
+///////////////////////////////////////////////////
+*/
+.fh5co-footer-style-1,
+.fh5co-footer-style-2,
+.fh5co-footer-style-3 {
+  padding: 20px 0;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-footer-style-1,
+  .fh5co-footer-style-2,
+  .fh5co-footer-style-3 {
+    padding: 3em 0;
+  }
+}
+
+.fh5co-footer-style-1 {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.fh5co-footer-style-1 .p-b {
+  padding-bottom: 20px;
+}
+.fh5co-footer-style-1 .fh5co-subscribe {
+  padding: 7em 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.fh5co-footer-style-1 .fh5co-subscribe > .fh5co-overlay {
+  position: absolute;
+  background: #000;
+  opacity: .45;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.fh5co-footer-style-1 .fh5co-subscribe .form {
+  position: relative;
+  z-index: 3;
+}
+.fh5co-footer-style-1 .fh5co-subscribe .form h2 {
+  color: #fff;
+}
+.fh5co-footer-style-1 .fh5co-subscribe .form p {
+  color: rgba(255, 255, 255, 0.8);
+}
+.fh5co-footer-style-1 .fh5co-subscribe .form p:last-child {
+  margin-bottom: 0;
+}
+.fh5co-footer-style-1 .fh5co-subscribe .form-group {
+  position: relative;
+}
+.fh5co-footer-style-1 .fh5co-subscribe .form-group i {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  margin-top: -10px;
+  color: #fff;
+}
+.fh5co-footer-style-1 .fh5co-subscribe .form-control {
+  padding-left: 45px;
+  padding-right: 30px;
+  box-shadow: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  height: 52px;
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.fh5co-footer-style-1 .fh5co-subscribe .form-control::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.fh5co-footer-style-1 .fh5co-subscribe .form-control:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.fh5co-footer-style-1 .fh5co-subscribe .form-control::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.fh5co-footer-style-1 .fh5co-subscribe .form-control:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.fh5co-footer-style-1 .fh5co-subscribe .form-control:focus, .fh5co-footer-style-1 .fh5co-subscribe .form-control:active {
+  background: rgba(255, 255, 255, 0.2);
+}
+.fh5co-footer-style-1 .fh5co-subscribe .btn {
+  margin-top: 3px;
+  height: 52px;
+}
+.fh5co-footer-style-1 .fh5co-footer-inner {
+  padding: 7em 0;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+.fh5co-footer-style-1 .fh5co-footer-inner .copyright {
+  margin-bottom: 20px !important;
+  line-height: 1.5;
+}
+.fh5co-footer-style-1 .fh5co-footer-inner .fh5co-logo {
+  margin-bottom: 20px;
+}
+.fh5co-footer-style-1 .fh5co-footer-inner .fh5co-logo a {
+  padding: 15px 15px;
+  background: rgba(0, 0, 0, 0.07);
+  font-size: 40px;
+  color: #4d4d4d;
+  font-weight: 700;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+.fh5co-footer-style-1 .fh5co-footer-inner .fh5co-logo a:hover, .fh5co-footer-style-1 .fh5co-footer-inner .fh5co-logo a:focus {
+  text-decoration: none;
+}
+.fh5co-footer-style-1 .fh5co-footer-inner h3 {
+  font-size: 19px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+.fh5co-footer-style-1 .fh5co-footer-inner p {
+  color: #b3b3b3;
+  font-size: 15px;
+  font-weight: 40;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+.fh5co-footer-style-1 .fh5co-footer-inner p:last-child {
+  margin-bottom: 0;
+}
+.fh5co-footer-style-1 .fh5co-footer-inner .links {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-size: 15px;
+}
+.fh5co-footer-style-1 .fh5co-footer-inner .links li {
+  list-style: none;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+.fh5co-footer-style-1 .fh5co-footer-inner .links li a {
+  font-size: 14px;
+  color: gray;
+}
+.fh5co-footer-style-1 .fh5co-footer-inner .links li a:hover {
+  text-decoration: none;
+  color: #1784fb;
+}
+.fh5co-footer-style-1 .fh5co-footer-inner .fh5co-social {
+  text-align: right;
+  margin-top: 0;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-footer-style-1 .fh5co-footer-inner .fh5co-social {
+    text-align: left;
+  }
+}
+.fh5co-footer-style-1 .fh5co-footer-inner .fh5co-social a {
+  margin-right: 15px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #333333;
+}
+.fh5co-footer-style-1 .fh5co-footer-inner .fh5co-social a:hover {
+  text-decoration: none;
+  color: #1784fb;
+}
+
+.fh5co-footer-style-2 {
+  background: #232939;
+}
+.fh5co-footer-style-2 .fh5co-logo {
+  color: #fff;
+  font-size: 24px;
+  font-family: "Montserrat", Arial, sans-serif;
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 480px) {
+  .fh5co-footer-style-2 .fh5co-logo {
+    text-align: center;
+  }
+}
+.fh5co-footer-style-2 .fh5co-logo > span {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.3);
+}
+@media screen and (max-width: 768px) {
+  .fh5co-footer-style-2 .fh5co-logo > span {
+    display: block;
+  }
+}
+.fh5co-footer-style-2 a {
+  color: rgba(255, 255, 255, 0.5);
+}
+.fh5co-footer-style-2 a:hover {
+  color: white;
+}
+.fh5co-footer-style-2 .footer-style-2-link {
+  text-align: right;
+}
+.fh5co-footer-style-2 .footer-style-2-link > a {
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  .fh5co-footer-style-2 .footer-style-2-link {
+    text-align: left;
+  }
+}
+.fh5co-footer-style-2 .footer-style-2-link ul {
+  padding: 0;
+  margin: 0;
+}
+@media screen and (max-width: 480px) {
+  .fh5co-footer-style-2 .footer-style-2-link ul {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fh5co-footer-style-2 .footer-style-2-link ul {
+    margin-bottom: 20px;
+  }
+}
+.fh5co-footer-style-2 .footer-style-2-link ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline;
+}
+@media screen and (max-width: 480px) {
+  .fh5co-footer-style-2 .footer-style-2-link ul li {
+    display: block;
+  }
+}
+.fh5co-footer-style-2 .footer-style-2-link ul li a {
+  margin-right: 10px;
+  color: rgba(255, 255, 255, 0.5);
+}
+@media screen and (max-width: 480px) {
+  .fh5co-footer-style-2 .footer-style-2-link ul li a {
+    padding: 4px 0;
+    display: block;
+  }
+}
+.fh5co-footer-style-2 .footer-style-2-link ul li a:hover {
+  color: white;
+}
+
+.fh5co-footer-style-3 {
+  background: #3d2515;
+  font-size: 15px;
+}
+.fh5co-footer-style-3 .fh5co-footer-widget {
+  /*margin-bottom: 30px;*/
+}
+.fh5co-footer-style-3 .fh5co-logo {
+  color: #fff;
+  font-size: 24px;
+  font-family: "Montserrat", Arial, sans-serif;
+  margin-bottom: 40px;
+}
+.fh5co-footer-style-3 .fh5co-logo .logo {
+  padding: 7px 15px;
+  background: rgba(255, 255, 255, 0.1);
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  border-radius: 7px;
+}
+.fh5co-footer-style-3 .fh5co-copyright {
+  font-size: 15px;
+}
+.fh5co-footer-style-3 h3 {
+  color: #fff;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-footer-style-3 h3 {
+    margin-bottom: 20px;
+  }
+}
+.fh5co-footer-style-3 p {
+  color: rgba(255, 255, 255, 0.5);
+}
+.fh5co-footer-style-3 a {
+  color: rgba(255, 255, 255, 0.3);
+}
+.fh5co-footer-style-3 a:hover {
+  color: white;
+}
+.fh5co-footer-style-3 .btn {
+  border-color: rgba(255, 255, 255, 0.1);
+  color: gray;
+}
+.fh5co-footer-style-3 .fh5co-links {
+  padding: 0;
+  margin: 0;
+}
+.fh5co-footer-style-3 .fh5co-links li {
+  padding: 0;
+  margin: 0 0 10px 0;
+  list-style: none;
+}
+.fh5co-footer-style-3 .fh5co-links.fh5co-social .icon {
+  font-size: 17px;
+  margin-right: 5px;
+  top: 2px;
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.fh5co-footer-style-3 .fh5co-made {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 4em;
+}
+.fh5co-footer-style-3 .fh5co-made p {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 24px;
+}
+.fh5co-footer-style-3 .fh5co-made p:last-child {
+  margin-bottom: 0;
+}
+.fh5co-footer-style-3 .fh5co-made p .heart {
+  color: #fb4f59;
+}
+

@@ -1,0 +1,2656 @@
+@charset "UTF-8";
+
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+
+#loadBar {
+	position: absolute;
+	margin: -11px 0px 0px 174px;
+	width: 200px;
+}
+
+#loadBar ul{
+	box-shadow: 0 3px 10px #ccc;
+}
+#loadBar p{
+	margin-bottom: 5px;
+}
+
+.sidebarForm label {
+		font: 12px Verdana;
+		color: #333;
+		padding: 10px;
+}
+
+.sidebarForm button {
+		border: 0px #ccc solid;
+		width: 165px;
+		height: 42px;
+		border-radius: 76px;
+		font-weight: inherit;
+		font-style: inherit;
+		font-size: 20px;
+		cursor: pointer;
+		font-family: inherit;
+		vertical-align: baseline;
+		color: #FFFFFF;
+		background-color: rgb(48, 115, 232);
+		padding-bottom: 2px;
+		margin: 54px 0 0px 0px;
+}
+
+.sidebarForm button:hover {
+		background-color: rgb(82, 127, 206);
+}
+
+.lp-positioned-content {
+    width: 100%;
+}
+.left-side, .right-side {
+    float: left;
+    width: 200px;
+}
+.left-side input {
+    width: 187px;
+}
+
+.right-side button {
+    float: right;
+}
+
+#fancybox-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+.left-side, .right-side {
+    width: 177px;
+}
+#clbc_banner_h1 {
+    font-size: 18px !important;
+    line-height: 20px;
+    margin-left: 10px;
+}
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+/* Get the bourbon mixin from http://bourbon.io */
+/* Reset */
+.flip-clock-wrapper * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-clock-wrapper a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #ccc; }
+
+.flip-clock-wrapper a:hover {
+  color: #fff; }
+
+.flip-clock-wrapper ul {
+  list-style: none; }
+
+.flip-clock-wrapper.clearfix:before,
+.flip-clock-wrapper.clearfix:after {
+  content: " ";
+  display: table; }
+
+.flip-clock-wrapper.clearfix:after {
+  clear: both; }
+
+.flip-clock-wrapper.clearfix {
+  *zoom: 1; }
+
+/* Main */
+.flip-clock-wrapper {
+  font: normal 11px "Helvetica Neue", Helvetica, sans-serif;
+  -webkit-user-select: none; }
+
+.flip-clock-meridium {
+  background: none !important;
+  box-shadow: 0 0 0 !important;
+  font-size: 36px !important; }
+
+.flip-clock-meridium a { color: #313333; }
+
+.flip-clock-wrapper {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin: 25px 0;
+}
+
+.flip-clock-wrapper:before,
+.flip-clock-wrapper:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.flip-clock-wrapper:after {
+    clear: both;
+}
+
+/* Skeleton */
+.flip-clock-wrapper ul {
+  position: relative;
+  float: left;
+  margin: 5px;
+  width: 60px;
+  height: 90px;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 87px;
+  border-radius: 6px;
+  background: #000;
+}
+
+.flip-clock-wrapper ul li {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 87px;
+  text-decoration: none !important;
+}
+
+.flip-clock-wrapper ul li:first-child {
+  z-index: 2; }
+
+.flip-clock-wrapper ul li a {
+  display: block;
+  height: 100%;
+  -webkit-perspective: 200px;
+  -moz-perspective: 200px;
+  perspective: 200px;
+  margin: 0 !important;
+  overflow: visible !important;
+  cursor: default !important; }
+
+.flip-clock-wrapper ul li a div {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  font-size: 80px;
+  overflow: hidden;
+  outline: 1px solid transparent; }
+
+.flip-clock-wrapper ul li a div .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2; }
+
+.flip-clock-wrapper ul li a div.up {
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  top: 0; }
+
+.flip-clock-wrapper ul li a div.up:after {
+  content: "";
+  position: absolute;
+  top: 44px;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.flip-clock-wrapper ul li a div.down {
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  bottom: 0;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.flip-clock-wrapper ul li a div div.inn {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 200%;
+  color: #ccc;
+  text-shadow: 0 1px 2px #000;
+  text-align: center;
+  background-color: #333;
+  border-radius: 6px;
+  font-size: 70px; }
+
+.flip-clock-wrapper ul li a div.up div.inn {
+  top: 0; }
+
+.flip-clock-wrapper ul li a div.down div.inn {
+  bottom: 0; }
+
+/* PLAY */
+.flip-clock-wrapper ul.play li.flip-clock-before {
+  z-index: 3; }
+
+.flip-clock-wrapper .flip {   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); }
+
+.flip-clock-wrapper ul.play li.flip-clock-active {
+  -webkit-animation: asd 0.5s 0.5s linear both;
+  -moz-animation: asd 0.5s 0.5s linear both;
+  animation: asd 0.5s 0.5s linear both;
+  z-index: 5; }
+
+.flip-clock-divider {
+  float: left;
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 100px; }
+
+.flip-clock-divider:first-child {
+  width: 0; }
+
+.flip-clock-dot {
+  display: block;
+  background: #323434;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  left: 5px; }
+
+.flip-clock-divider .flip-clock-label {
+  position: absolute;
+  top: -1.5em;
+  right: -86px;
+  color: black;
+  text-shadow: none; }
+
+.flip-clock-divider.minutes .flip-clock-label {
+  right: -88px; }
+
+.flip-clock-divider.seconds .flip-clock-label {
+  right: -91px; }
+
+.flip-clock-dot.top {
+  top: 30px; }
+
+.flip-clock-dot.bottom {
+  bottom: 30px; }
+
+@-webkit-keyframes asd {
+  0% {
+    z-index: 2; }
+
+  20% {
+    z-index: 4; }
+
+  100% {
+    z-index: 4; } }
+
+@-moz-keyframes asd {
+  0% {
+    z-index: 2; }
+
+  20% {
+    z-index: 4; }
+
+  100% {
+    z-index: 4; } }
+
+@-o-keyframes asd {
+  0% {
+    z-index: 2; }
+
+  20% {
+    z-index: 4; }
+
+  100% {
+    z-index: 4; } }
+
+@keyframes asd {
+  0% {
+    z-index: 2; }
+
+  20% {
+    z-index: 4; }
+
+  100% {
+    z-index: 4; } }
+
+.flip-clock-wrapper ul.play li.flip-clock-active .down {
+  z-index: 2;
+  -webkit-animation: turn 0.5s 0.5s linear both;
+  -moz-animation: turn 0.5s 0.5s linear both;
+  animation: turn 0.5s 0.5s linear both; }
+
+@-webkit-keyframes turn {
+  0% {
+    -webkit-transform: rotateX(90deg); }
+
+  100% {
+    -webkit-transform: rotateX(0deg); } }
+
+@-moz-keyframes turn {
+  0% {
+    -moz-transform: rotateX(90deg); }
+
+  100% {
+    -moz-transform: rotateX(0deg); } }
+
+@-o-keyframes turn {
+  0% {
+    -o-transform: rotateX(90deg); }
+
+  100% {
+    -o-transform: rotateX(0deg); } }
+
+@keyframes turn {
+  0% {
+    transform: rotateX(90deg); }
+
+  100% {
+    transform: rotateX(0deg); } }
+
+.flip-clock-wrapper ul.play li.flip-clock-before .up {
+  z-index: 2;
+  -webkit-animation: turn2 0.5s linear both;
+  -moz-animation: turn2 0.5s linear both;
+  animation: turn2 0.5s linear both; }
+
+@-webkit-keyframes turn2 {
+  0% {
+    -webkit-transform: rotateX(0deg); }
+
+  100% {
+    -webkit-transform: rotateX(-90deg); } }
+
+@-moz-keyframes turn2 {
+  0% {
+    -moz-transform: rotateX(0deg); }
+
+  100% {
+    -moz-transform: rotateX(-90deg); } }
+
+@-o-keyframes turn2 {
+  0% {
+    -o-transform: rotateX(0deg); }
+
+  100% {
+    -o-transform: rotateX(-90deg); } }
+
+@keyframes turn2 {
+  0% {
+    transform: rotateX(0deg); }
+
+  100% {
+    transform: rotateX(-90deg); } }
+
+.flip-clock-wrapper ul li.flip-clock-active {
+  z-index: 3; }
+
+/* SHADOW */
+.flip-clock-wrapper ul.play li.flip-clock-before .up .shadow {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, black));
+  background: linear, top, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: linear, to bottom, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  -webkit-animation: show 0.5s linear both;
+  -moz-animation: show 0.5s linear both;
+  animation: show 0.5s linear both; }
+
+.flip-clock-wrapper ul.play li.flip-clock-active .up .shadow {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, black));
+  background: linear, top, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: linear, to bottom, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  -webkit-animation: hide 0.5s 0.3s linear both;
+  -moz-animation: hide 0.5s 0.3s linear both;
+  animation: hide 0.5s 0.3s linear both; }
+
+/*DOWN*/
+.flip-clock-wrapper ul.play li.flip-clock-before .down .shadow {
+  background: -moz-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, rgba(0, 0, 0, 0.1)));
+  background: linear, top, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  background: -o-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -ms-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear, to bottom, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  -webkit-animation: show 0.5s linear both;
+  -moz-animation: show 0.5s linear both;
+  animation: show 0.5s linear both; }
+
+.flip-clock-wrapper ul.play li.flip-clock-active .down .shadow {
+  background: -moz-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, rgba(0, 0, 0, 0.1)));
+  background: linear, top, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  background: -o-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -ms-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear, to bottom, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  -webkit-animation: hide 0.5s 0.3s linear both;
+  -moz-animation: hide 0.5s 0.3s linear both;
+  animation: hide 0.5s 0.2s linear both; }
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes show {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes show {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes show {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes hide {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes hide {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@-o-keyframes hide {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@keyframes hide {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+@-webkit-keyframes cbc-circle-anim {
+    0% {
+    -webkit-transform: rotate(0) scale(.5) skew(1deg);
+    transform: rotate(0) scale(.5) skew(1deg);
+    opacity: .1;
+    }
+    30% {
+        -webkit-transform: rotate(0) scale(.7) skew(1deg);
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .5;
+    }
+    100% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        transform: rotate(0) scale(1) skew(1deg);
+        opacity: .1;
+    }
+    }
+@keyframes cbc-circle-anim {
+    0% {
+    -webkit-transform: rotate(0) scale(.5) skew(1deg);
+    transform: rotate(0) scale(.5) skew(1deg);
+    opacity: .1;
+    }
+    30% {
+        -webkit-transform: rotate(0) scale(.7) skew(1deg);
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .5;
+    }
+    100% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        transform: rotate(0) scale(1) skew(1deg);
+        opacity: .1;
+    }
+}
+@-webkit-keyframes cbc-circle-fill-anim {
+    0%, 100% {
+    -webkit-transform: rotate(0) scale(.7) skew(1deg);
+    transform: rotate(0) scale(.7) skew(1deg);
+    opacity: .2;
+    }
+    50% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        transform: rotate(0) scale(1) skew(1deg);
+        opacity: .2;
+    }
+    }@keyframes cbc-circle-fill-anim {
+        0%, 100% {
+        -webkit-transform: rotate(0) scale(.7) skew(1deg);
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .2;
+    }
+    50% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        transform: rotate(0) scale(1) skew(1deg);
+        opacity: .2;
+    }
+}
+@-webkit-keyframes cbc-circle-img-anim {
+    0%, 100%, 50% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+    transform: rotate(0) scale(1) skew(1deg);
+    }
+    10%, 30% {
+        -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+        transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    20%, 40% {
+        -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+        transform: rotate(25deg) scale(1) skew(1deg);
+    }
+}
+@keyframes cbc-circle-img-anim {
+    0%, 100%, 50% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+    transform: rotate(0) scale(1) skew(1deg);
+    }
+    10%, 30% {
+        -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+        transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    20%, 40% {
+        -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+        transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    }
+@-webkit-keyframes fadeOutRight {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+}
+@keyframes fadeOutRight {
+    0% {
+    opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+}
+.cbc-phone {
+    position: fixed;
+    visibility: hidden;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    z-index: 9999!important;
+    -webkit-transition: visibility .5s;
+    transition: visibility .5s;
+}
+.cbc-phone.cbc-show {
+    visibility: visible;
+}
+.fadeOutRight {
+    -webkit-animation-name: fadeOutRight;
+    animation-name: fadeOutRight;
+}
+.cbc-phone.cbc-static {
+    opacity: .6;
+}
+.cbc-phone.cbc-hover {
+    opacity: 1;
+}
+.cbc-ph-circle {
+    width: 160px;
+    height: 160px;
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    border-radius: 100%;
+    border: 2px solid rgba(30, 30, 30, .4);
+    opacity: .1;
+    -webkit-animation: cbc-circle-anim 1.2s infinite ease-in-out;
+    animation: cbc-circle-anim 1.2s infinite ease-in-out;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    transform-origin: 50% 50%}
+.cbc-phone.cbc-active .cbc-ph-circle {
+    -webkit-animation: cbc-circle-anim 1.1s infinite ease-in-out!important;
+    animation: cbc-circle-anim 1.1s infinite ease-in-out!important;
+}
+.cbc-phone.cbc-static .cbc-ph-circle {
+    -webkit-animation: cbc-circle-anim 2.2s infinite ease-in-out!important;
+    animation: cbc-circle-anim 2.2s infinite ease-in-out!important;
+}
+.cbc-phone.cbc-hover .cbc-ph-circle {
+    border-color: #4466BC;
+    opacity: .5;
+}
+.cbc-phone.cbc-green.cbc-hover .cbc-ph-circle {
+    border-color: #75eb50;
+    opacity: .5;
+}
+.cbc-phone.cbc-green .cbc-ph-circle {
+    border-color: #4466BC;
+    opacity: .5;
+}
+.cbc-phone.cbc-gray.cbc-hover .cbc-ph-circle {
+    border-color: #ccc;
+    opacity: .5;
+}
+.cbc-phone.cbc-gray .cbc-ph-circle {
+    border-color: #75eb50;
+    opacity: .5;
+}
+.cbc-ph-circle-fill {
+    width: 100px;
+    height: 100px;
+    top: 50px;
+    left: 50px;
+    position: absolute;
+    background-color: #000;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    opacity: .1;
+    -webkit-animation: cbc-circle-fill-anim 2.3s infinite ease-in-out;
+    animation: cbc-circle-fill-anim 2.3s infinite ease-in-out;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    transform-origin: 50% 50%}
+.cbc-phone.cbc-active .cbc-ph-circle-fill {
+    -webkit-animation: cbc-circle-fill-anim 1.7s infinite ease-in-out!important;
+    animation: cbc-circle-fill-anim 1.7s infinite ease-in-out!important;
+}
+.cbc-phone.cbc-static .cbc-ph-circle-fill {
+    -webkit-animation: cbc-circle-fill-anim 2.3s infinite ease-in-out!important;
+    animation: cbc-circle-fill-anim 2.3s infinite ease-in-out!important;
+    opacity: 0!important;
+}
+.cbc-phone.cbc-hover .cbc-ph-circle-fill {
+    background-color: rgba(0, 175, 242, .5);
+    opacity: .75!important;
+}
+.cbc-phone.cbc-green.cbc-hover .cbc-ph-circle-fill {
+    background-color: rgba(117, 235, 80, .5);
+    opacity: .75!important;
+}
+.cbc-phone.cbc-green .cbc-ph-circle-fill {
+    background-color: rgba(55, 103, 204, 0.5);
+    opacity: .75!important;
+}
+.cbc-phone.cbc-gray.cbc-hover .cbc-ph-circle-fill {
+    background-color: rgba(204, 204, 204, .5);
+    opacity: .75!important;
+}
+.cbc-phone.cbc-gray .cbc-ph-circle-fill {
+    background-color: rgba(117, 235, 80, .5);
+    opacity: .75!important;
+}
+.cbc-ph-img-circle {
+    width: 60px;
+    height: 60px;
+    top: 70px;
+    left: 70px;
+    position: absolute;
+    background: url(/wp-content/uploads/ico/phone.png) center center no-repeat rgba(30, 30, 30, .1);
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    opacity: .7;
+    -webkit-animation: cbc-circle-img-anim 1s infinite ease-in-out;
+    animation: cbc-circle-img-anim 1s infinite ease-in-out;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%}
+.cbc-phone.cbc-active .cbc-ph-img-circle {
+    -webkit-animation: cbc-circle-img-anim 1s infinite ease-in-out!important;
+    animation: cbc-circle-img-anim 1s infinite ease-in-out!important;
+}
+.cbc-phone.cbc-static .cbc-ph-img-circle {
+    -webkit-animation: cbc-circle-img-anim 0s infinite ease-in-out!important;
+    animation: cbc-circle-img-anim 0s infinite ease-in-out!important;
+}
+.cbc-phone.cbc-hover .cbc-ph-img-circle {
+    background-color: #4466BC;
+}
+.cbc-phone.cbc-green.cbc-hover .cbc-ph-img-circle {
+    background-color: #75eb50;
+}
+.cbc-phone.cbc-green .cbc-ph-img-circle {
+    background-color: #4466BC;
+}
+.cbc-phone.cbc-gray.cbc-hover .cbc-ph-img-circle {
+    background-color: #ccc;
+}
+.cbc-phone.cbc-gray .cbc-ph-img-circle {
+    background-color: #75eb50;
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+.clbc_banner-body .clbc_banner-h1, .clbc_banner-form-row-1, .clbc_banner-form-row-2, .clbc_banner-form-row-2 span, .clbc_banner-form-row-2.thx span {
+    text-align: left!important;
+    letter-spacing: normal!important;
+}
+.clbc_banner {
+    max-width: 524px!important;
+    height: 390px!important;
+    position: relative!important;
+    -webkit-border-radius: 16px!important;
+    border-radius: 16px!important;
+    top: 100px!important;
+    background-color: rgba(255, 255, 255, .85)!important;
+    overflow: hidden!important;
+    -webkit-transition: .6s ease-out!important;
+    transition: .6s ease-out!important;
+    margin: 0 auto!important;
+    z-index: 200001!important;
+}
+.clbc_banner * {
+    font-family: "Open Sans", sans-serif!important;
+    color: #333;
+    font-weight: 100!important;
+    letter-spacing: normal!important;
+}
+.clbc_banner-line-wrapper .clbc_banner-pr-line-left-wrapper {
+    left: 0!important;
+}
+.clbc_banner-line-wrapper .clbc_banner-pr-line-right-wrapper {
+    right: 0!important;
+}
+.clbc_banner-line-wrapper .clbc_banner-pr-line-left, .clbc_banner-line-wrapper .clbc_banner-pr-line-right {
+    height: 2px!important;
+    background-color: #4466BC!important;
+    bottom: 3px!important;
+    position: absolute!important;
+    visibility: visible!important;
+}
+.clbc_banner-line-wrapper .clbc_banner-pr-line-left {
+    right: 1%!important;
+    -webkit-transition: .5s ease-out!important;
+    transition: .5s ease-out!important;
+}
+.clbc_banner-line-wrapper .clbc_banner-pr-line-right {
+    left: 1%!important;
+    -webkit-transition: .5s ease-out!important;
+    transition: .5s ease-out!important;
+}
+.clbc_banner-arrow {
+    width: 37px!important;
+    height: 62px!important;
+    position: absolute!important;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAA+CAYAAACsj9JbAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNmlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjarY6xSsNQFEDPi6LiUCsEcXB4kygotupgxqQtRRCs1SHJ1qShSmkSXl7VfoSjWwcXd7/AyVFwUPwC/0Bx6uAQIYODCJ7p3MPlcsGo2HWnYZRhEGvVbjrS9Xw5+8QMUwDQCbPUbrUOAOIkjvjB5ysC4HnTrjsN/sZ8mCoNTIDtbpSFICpA/0KnGsQYMIN+qkHcAaY6addAPAClXu4vQCnI/Q0oKdfzQXwAZs/1fDDmADPIfQUwdXSpAWpJOlJnvVMtq5ZlSbubBJE8HmU6GmRyPw4TlSaqo6MukP8HwGK+2G46cq1qWXvr/DOu58vc3o8QgFh6LFpBOFTn3yqMnd/n4sZ4GQ5vYXpStN0ruNmAheuirVahvAX34y/Axk/96FpPYgAAACBjSFJNAAB6JQAAgIMAAPn/AACA6AAAUggAARVYAAA6lwAAF2/XWh+QAAAD50lEQVR42szaeYydUxjH8c+9ndZaqmQ0isYS1aDCqKYJEYJYGqQhYpkqaaolFVIR+x+WP9TyRy1tUWJKEFKxBKkSWxrhLYJGpbGVVGWkWtsos/jjPDe5mO3OvHfmfZKb++bc9z33e59zznOe83tuqampSY62FyZgKibjcEzCDjX0MaMhB5AxmIKzMBujov03bMIn+BV/9bO/jYOB2g2zcFF4BN7GO/gMn+NbbOmtkyzL/tc2UKgrMA8HhwduwWt4D+2DdX2tUEfhHhyLNlyNZ7Ahz4lZC9QcLEEJj+HamDO5W3+hFmE+Nsb7CnW0vqC2w3Kcg7dwMb5WZ+sNamQV0FOx0rYZAusN6o4AehLN6DBEVu6h/TJchZURh4YMqCeoJtyLnzAXfxtiK3cznA9Fe/NQTOr+QM3HEXgQrxomq4Yaj2vQiusMo1WvvvMwLry1eTihylU7/lz8jKcNs1WgjsMBuDOGb9ihGnBBpBwvK4CV0RhZ42p8WhSoieGtN9FZFKhpcV0IL1WgjsTv+LJIUJPwA74qEtSE2Hy3FglqpzgEKBKUGg6KQwpVLhpUJ7YvGlQrRhfJW+UIBY2hmBQGah32iNBQGKj3Q745qEhQq+N6SpGgvgnV5HTsXhSoX/A49q3KGAoRPJ+P9wuLBPUxVuFcSZ0rzN63KK6vLwoUvCJpUM04pihQ7bgJXbhP0qeGHYokNy+RJOjbigJVmVPrQlc4syhQW3B2pMeP4LAiQMFanI+xkmg/ucZ+GzEdh+QJJY7wl2DPWJUn1NDvWNwolUXmSdp7LlDwqKR5jsHrksDfny/YIBUAOvEAnq3F2/3JNltwGn7EUjwc+2R3VgoJ4A8sxikBNAPvxuLZOQ+oSmCdhhdjSNdEkB3Vzb0jqtrXYGY8s0mSwVfi+DygSKLsGTGEI8ODb+DSqoNHV7yqFcK2mAYn4674cauwsKcUvDTAyuj+UsGxoo2uD8AnImnsTXefjLtxolSgXIgVWZa1DRaqYvtJ9Zo5sUo7I859EGn2WnwnyZZbw2t/Strq5Vgg6fTLsTiLimQppxpyGSfFPDs6QsIuNe6f62PFtpRyLmxXbCIOjGHeRxJ6d6z6vCO8NjrumRrtrZjZUAegMr6IV1/33RBJ5Wa8EGn5R3lDlWL19Wa74lapQjYuVuLteCnLsm0MvLDdG1Q5hue/cHtLBfHZMZwfRv7WkmXZv1SfegxfQ6zCCtT4CJ6zYv58H/viUnTk+ReAnqwr8v3OyBROlSryh8b5ckGcBdr7+lV5Q3VJtecrI7i24WYskwrj/XJ1PWyEpDbfj+ciw6hp/OthbbE3LhvIw/8MAEZL3pSMpxnpAAAAAElFTkSuQmCC)!important;
+    left: -48px!important;
+    bottom: 7px!important;
+    opacity: .75!important;
+}
+.clbc_banner-body {
+    max-width: 415px!important;
+    height: 100%!important;
+    position: relative!important;
+    top: 50px!important;
+    margin: 0 auto!important;
+}
+.clbc_banner-body .clbc_banner-h1 {
+    font-size: 24px;
+    line-height: 34px;
+    height: auto;
+}
+.clbc_banner-button {
+    width: 158px!important;
+    height: 33px!important;
+    font-size: 14px!important;
+    -webkit-border-radius: 4px!important;
+    border-radius: 4px!important;
+    border: 1px solid #333!important;
+    color: #fff!important;
+    line-height: 30px!important;
+    float: left!important;
+    cursor: pointer!important;
+    margin-right: 10px!important;
+    margin-left: 0!important;
+    -webkit-transition: .25s ease-out!important;
+    transition: .25s ease-out!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    padding: 0!important;
+    background: #333!important;
+    letter-spacing: normal!important;
+    text-indent: 0;
+    position: static;
+}
+.clbc_banner-button.clbc_large {
+    width: 200px!important;
+}
+.clbc_banner-button:hover {
+    background-color: #4466BC!important;
+    border-color: #4466BC!important;
+}
+.clbc_banner-exit {
+    -webkit-border-radius: 2px!important;
+    border-radius: 2px!important;
+    position: absolute!important;
+    right: 25px!important;
+    top: 23px!important;
+    height: 15px!important;
+    width: 15px!important;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNmlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjarY6xSsNQFEDPi6LiUCsEcXB4kygotupgxqQtRRCs1SHJ1qShSmkSXl7VfoSjWwcXd7/AyVFwUPwC/0Bx6uAQIYODCJ7p3MPlcsGo2HWnYZRhEGvVbjrS9Xw5+8QMUwDQCbPUbrUOAOIkjvjB5ysC4HnTrjsN/sZ8mCoNTIDtbpSFICpA/0KnGsQYMIN+qkHcAaY6addAPAClXu4vQCnI/Q0oKdfzQXwAZs/1fDDmADPIfQUwdXSpAWpJOlJnvVMtq5ZlSbubBJE8HmU6GmRyPw4TlSaqo6MukP8HwGK+2G46cq1qWXvr/DOu58vc3o8QgFh6LFpBOFTn3yqMnd/n4sZ4GQ5vYXpStN0ruNmAheuirVahvAX34y/Axk/96FpPYgAAACBjSFJNAAB6JQAAgIMAAPn/AACA6AAAUggAARVYAAA6lwAAF2/XWh+QAAAAzElEQVR42qyTsRHCMAxFX7xBVoARpFVghKSjhRUyAhmBFVjhMwsDUIgCwwWwA3egOzey35Nt2ZhZa2ariOCbYbdYRAQJOAIHd+/4EO5ueb3cvU3AmOf2c4IJ2AKDpHOSNAIOnLNgWwBXE7CXNAA0EVEyj5L6nO+Affb0uRhPcEkAnGrgG1wQUAMB0mtC0gnYABcggG0J/G/lwpn7uTamGijpXq0qSAVwd29TvoMRWE/ewUPQmFk3147KznaShsbMBNgcWBAALPnlV10HACwiuaGZ5ZweAAAAAElFTkSuQmCC) center center no-repeat!important;
+    opacity: .3!important;
+    cursor: pointer!important;
+    -webkit-transition: .3s ease-out!important;
+    transition: .3s ease-out!important;
+}
+.clbc_banner-form-row-1, .clbc_banner-form-row-2, .clbc_phone_line {
+    position: relative!important;
+    float: left!important;
+}
+.clbc_banner-exit:hover {
+    opacity: .7!important;
+}
+.clbc_banner-pr {
+    float: left!important;
+    letter-spacing: normal!important;
+}
+.clbc_phone_line {
+    z-index: 20001!important;
+}
+.clbc_banner-form-row-1 {
+    top: 22px!important;
+    height: 33px!important;
+    width: 100%!important;
+}
+.clbc_banner-form-row-2 {
+    top: 56px!important;
+    height: auto!important;
+}
+.clbc_banner-form-row-2 span {
+    font-size: 14px!important;
+}
+.clbc_banner-form-row-2.thx span {
+    color: #4466BC!important;
+}
+.clbc_banner-textbox {
+    min-width: 164px!important;
+    width: 164px!important;
+    height: 34px!important;
+    border: 1px solid #c2c2c2!important;
+    font-size: 14px!important;
+    -webkit-border-radius: 4px!important;
+    border-radius: 4px!important;
+    background: 0 0!important;
+    color: #333!important;
+    line-height: 30px!important;
+    float: left!important;
+    display: block!important;
+    -webkit-transition: .25s ease-out!important;
+    transition: .25s ease-out!important;
+    margin: 0 15px 0 0!important;
+    padding: 0 2px 0 8px!important;
+    text-align: left!important;
+    letter-spacing: normal!important;
+    left: auto!important;
+}
+.clbc_banner-work-to, .clbc_banner-work-to a {
+    font-size: 11px!important;
+    letter-spacing: normal!important;
+    text-align: left!important;
+    color: #333!important;
+}
+.banner-textbox:active, .clbc_banner-textbox:focus {
+    border-color: #4466BC!important;
+}
+@-webkit-keyframes slidetounlock {
+    0% {
+    background-position: -720px 0;
+    }
+    100% {
+        background-position: 720px 0;
+    }
+}
+@keyframes slidetounlock {
+    0% {
+    background-position: -720px 0;
+    }
+    100% {
+        background-position: 720px 0;
+    }
+}
+.clbc_banner-work-to {
+    bottom: 15px!important;
+    position: absolute!important;
+    right: 25px!important;
+    height: auto!important;
+}
+.clbc_banner-wrapper, .clbc_banner_bg {
+    position: fixed!important;
+    width: 100%!important;
+    top: 0!important;
+    left: 0!important;
+    right: 0!important;
+}
+.clbc_banner-work-to a {
+    background: -webkit-gradient(linear, left top, right top, color-stop(0, #4d4d4d), color-stop(.4, #4d4d4d), color-stop(.5, #fff), color-stop(.6, #4d4d4d), color-stop(1, #4d4d4d));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: slidetounlock 25s infinite;
+    animation: slidetounlock 25s infinite;
+    text-decoration: none;
+}
+.clbc_banner-work-to a:hover {
+    text-decoration: none!important;
+}
+.clbc_banner-wrapper {
+    height: 0!important;
+    z-index: 2000000!important;
+    overflow: visible!important;
+}
+.clbc_banner_bg {
+    display: none;
+    height: 100%!important;
+    background-color: rgba(0, 0, 0, .3)!important;
+    z-index: 20000!important;
+}
+.clbc_banner.clbc_closed {
+    opacity: 0!important;
+    display: none!important;
+}
+.clbc_banner-line-wrapper.clbc_banner-pr-line {
+    visibility: visible!important;
+}
+.clbc_timer {
+    position: relative!important;
+    left: 20px!important;
+    text-align: left!important;
+    letter-spacing: normal!important;
+    float: left!important;
+}
+.clbc_timer p {
+    line-height: 30px!important;
+    font-size: 36px!important;
+    margin: 0!important;
+    text-align: left!important;
+    letter-spacing: normal!important;
+}
+.clbc_banner-line-wrapper {
+    position: relative!important;
+    width: 800px!important;
+    height: 20px!important;
+    margin: 0 auto!important;
+    -webkit-border-radius: 16px!important;
+    border-radius: 16px!important;
+    top: -12px!important;
+    background-color: rgba(255, 255, 255, .7)!important;
+    overflow: hidden!important;
+    z-index: 200001!important;
+}
+.clbc_fb, .clbc_tw, .clbc_vk, .clbc_vk:hover {
+    height: 25px!important;
+    width: 50px!important;
+    display: inline-block;
+}
+.clbc_vk {
+    background: url(data:image/png;
+    base64, iVBORw0KGgoAAAANSUhEUgAAACQAAAAVCAYAAAAuJkyQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAotJREFUeNqMVjtyAjEMBYeGkooZSi5AsZQpoUy6cITlCHCE5QhwBGjTsUcIV+AK29IRvR2JeQh5E88slrEl6+nr/mw26/X7/R7G/X5/0LbG4H0dU/lvGuxfhG5yvKBJxtOwcwMhCpkX/qCsG9k7OL6R/HeUvYUJAR9fLvRWyB3v04VTBfMABpl052kg848XTqigwI4Ry3yQ/0YyFxFCgAOPt5DynqFEh7WKJD8H5w6mN878sNpJ1jsItO+f4wtujixHMupk5mU0dBnMWXIcqKC6K04CYKBLViYAcpXvlJSoWRmOC5k3HgksRfsvrg6QL/R7AU4DsdckXey8PznwDB1f6hTs9JXwVdEZAoOwOeG/pBuwUB0oY3SlGcaWCy8I5o1m8otFVf5FrdPelQj1OlcjNDVL2h9565jFWIYG8cYrQefh+rXVrtZCFJBX1B3PTHNFSIsOy4wIxNHWnJWk+BYW4jKQXGxsNbWfsoHWZ5nLHGq9uJCv0ppTZCp9T8H7wtt7G4/HvL7pxYtIkKyHMn1wtfXBrWffhZ5EmWddQKZPWd+821NgShS92mdFFNBe4VwMBnwNlw4eKWpyCDTUBC/MF72oPXQVPwKAYN9HgFIGwVWbZLYz+7YRtR7XdH0BRSzuvdxHDAW+xlNiKN+7D3JvsagvBXH1sqcNeiLrb5OXIuSEdos3TpRNf/ChAa8spXPtQvlQ3/ZRHcpdtvRBnmmObMW1vgqWauknl/k6B6Xka0tJ8n4O2geCe2nlPZdxFB+wSqO08V6jqu5irrL3UKffaeCZMrenRy7d9aXJwKDUShMlfGXS2TJFGZJ5rLWBrm6AYlavGn6WwFWBLPDN9Unc+BqlSrbPoF8BBgD7CFpHrvGnMAAAAABJRU5ErkJggg==) center center no-repeat!important;
+}
+.clbc_vk: hover {
+    background: url(data:image/png;
+    base64, iVBORw0KGgoAAAANSUhEUgAAACQAAAAVCAYAAAAuJkyQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAvtJREFUeNp0VoGRGjEMlG6+AVogJUAJUEJSAl8ClAAlQAn/M0kBuRJCCaGFm6QBRZZsWZIvzHC2z7ZuJa9WRvj+BwCQ/8RNaUuXtC1j6ed52PJja+O2B/HJcwu0122r/5m52sE498ZGdtw9yExbLEDYMMGj9hu4DXc+hvUNvP4u/L9VgLqmL2Qn+N/ntmLTvgGfb9z5ZYhDhKS/4f5N32Hz6CHvAXaj1zI6cHuL0bWo/GQ7PbJtT//2buLRI3mofRnSWftmYOHnp3ywHWuLAEH/SAfno/eV262upQ6kbVB7MwPCW/A0/kokTs7DtnAODnggnoMQwJ066OZw4NCL931O/OJVkNlmSJ4RR8nAGp+WEY0Hgp6LpX9Q3uWTAM/bS7E7afgaT1ajtLUoQToOHwlK+CgYuipP3L52bPp4KBUIJkWMMw/mIT17lK782OSA9NCv5bhl2FkSYOCoScmzZqa8m/r543sgZDg+LKl5ctHZGCltrQNHLrqI5yHmLUIg0vKurW6anIGX6A6skBNr2MVT6e8G1B3MRj2XhPgQnbGMTOdaeAP09AYQfvz1i0skfptYQQYmZL5IChMdQkhi1t1kvogujdyvNh9yKhljB2QbzsIZL2y4EnJfWkyRnaFBbEPkubzgF6kGsSSFI2ttUdl5SFGCKGZZhzKY/6W4DharecmZKYbTFLQSLWvFilj5eoUYU56SIwZUatp91KOSZWGhCdrLUtETkqr1nE3eU4JYv/J5dbBF2+5ZZybjwSh2TDo+Pq+6vj40R4Z9NMhR0KtYWLmc0N1zbRqIG7lRovQc6lWuVblcFNUF+CZ7aSUZIJQM1je8dx3K5z5m05E3zwNvIHEl1pySzqUUHNn2M1wxcnnSuVMT0Gn4SC4beuVgUHSJ3uG61yRCV2+Nkk1HEd3MudHBa70P+XQe9MIbKAV4rzcDijUJvUP1JtCBLvX4XuGKgsn7ekWJWbYmfNGLp0QLcV8BzvWDjeRLq9qRyLJvX6v6+tVFozj/E2AAyOKHxNSW6f8AAAAASUVORK5CYII=) center center no-repeat!important;
+}
+.clbc_blur {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    filter: url(data:image/svg+xml;
+    utf8, %3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%223%22/%3E%3C/filter%3E%3C/svg%3E#blur);
+}
+.clbc_fb {
+    background: url(data:image/png;
+    base64, iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAixJREFUeNqMV4FtwyAQrBELZAVPEMkruCOkI7QjNCMkI7QjJCt4hHqEeoWM4P5HuDpd7iFIyPDAP39/PLjb7/cvpQzrun52XTfad/cSFBu/f23Og9xlOF7ai9XJ6tFkNxeksubd6o9NOrhBn4xVGeQxNgilt77r/3XHNqPe+PKJ20L2AhWjcWzzOt5AceZidZcd0kiB+rInAk7pPXqdrTFuSpUnkRJcU2Qet8n6M87deAKbHbK72zKm4CPZh9Vv9qz0naAjcGCXIlgYRhXnIju6QZShE6zLvykiS3QUKPaL1bOCHucyF7IiT0QWQY5JQH3wIwgx7Vl/VpBuuyOiKOMLbc4NXCKEtpIUtTEmzGzFZoCw5zGFWIpgRFJw9olIp44dG74TScVLTVSKWblisOJJVgdeeVYWvDp5ouRu1ZNDh5u29sreJxXLCOIoBHxEkLnK08RnkpVGcVa5V4SkVxtLKmbKc8HUh2yDaNTYnFUGUTAX+cmaN+hfKQUOJj/BBnuFUG4ld4JmIPJMlGf98hhb93Dm+NQuYmJlNW3WEkxSh74mU4m/dS1KIrViqhQ+SzpFtlR7dEX3qno9tI4c6k/PPsBq1110MURccKOz8iiCF5WrbITeBmGZ3ei1RgjFSpUgWs8d0D351XbevOUnZ0ScWgxrby4r57vR0vHb48oJIXob1RisUmSR+W/F8f+54v8Y1nkr/zNjC2rY0EzKl6IcN3qz/rQ9bbz+CTAAj4Gefja+rOAAAAAASUVORK5CYII=) center center no-repeat!important;
+}
+.clbc_fb: hover {
+    background: url(data:image/png;
+    base64, iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAtRJREFUeNp8Votx2zAMBXRawCtoBa2QjNCOkI4Qj9COUI/Q3GUCreAVvEKuXQAFfyDwRFp3NimIBEDg4RFMn/+ISIiYd5286+9FXy9Vlof8cB2lyqlsy/Igq8K2nuih6w59v+r8K6ulz79pw5sKfpsSAgOm3I0ExtExr6g49qWTV53fF53s2aB/xG3Mhv1mMEhgsL1wkzWPNHpMf1TfRY3Ke/DUjHAfvSNBJl2W5xMH+rilqK769xJDxLDRxZT5HDoLZ87bocvu5kR59FBqo2/Z13RcMyaD8OEYHDHA/FDRzfZabLNgL+A0nZc1oM6jVQiBUL4jcimj8tYd9QDyQOvzpefCoTSEGL5Hh7Qc5FfZ9wxYEf1rzJPLFztvMY19fkBNpueb6nszvcxbdFzUqHejL4xI9MDw30gewQtRdJKWhTmKwCvztSeYu2LPNALHE49iIsDERsOnsVRZu5gxy0s9NQKHINw0AQ25CjCi4P6ew4sE4DlXBnmVAf0h9THFkIpzkLnlFOsPSkUMLK8FPFOEJnJgRxjJiARHc3hDGTAQ+4B9GHJvvg5qpOU4gI9qeMPt4e3w+TT0pCblVAHbiWUyOXiX2d8wTi6O3PEqE8xtIJctEL60k2LIEJEWhSz/mS/ivuRD5ze3fq9r2rNFUDX0Du/HCR+zknfIdwVVr9VLv7UG7GZA8kwkQlMC9Rc4oDGylZszYEWsZHighCYAogEJT6IU9LRalQYkIAMBYOFp0InQkE2qINzJ3NA7UCRPZIhWwdBirxUPsoTQMLDTKMW+UUMjNKDHwNUGJO1pvKJTHfr6xJ6X47U3Ssv5PbWgWmszwJjiEVJHZMBjsvBOa5ktud0gvp8WEvKrxOtMZmATSI2vV06tzbHUEKXO+yN2C1hnfA7/iP6YY7Pd79KrDtc0X+sJErV9V4HSWGUULHq8AYviO/S/j6w81rzq5qN8K079F2AA/Vt6NCjUpugAAAAASUVORK5CYII=) center center no-repeat!important;
+    display: inline-block;
+}
+.clbc_tw {
+    background: url(data:image/png;
+    base64, iVBORw0KGgoAAAANSUhEUgAAAB4AAAAYCAYAAADtaU2/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAmZJREFUeNqMVsFxwkAMNA4N+EmeVMCMUwJ88yMlQAlJCaSEuARSQlxCXAJ884u//IiW2SPyRmfimZu7k8+nlbSSPFksFgWe8/lcpGcymQz2Ksfsv7H93Ka1jSVlRxudjUbvs3Vl637KC5Y4aMI+XahKFFy60J5nk+/c3gPb2HrF79a2Britjb50wg9bV5ESrB1ir3ugVIHaujbZweZv277ZaOENnCl5EC6qqbwugkcUQgncu1O5B0qwFb9/hVICrZLFcyKG0g+6JIy1s3zjw6JWB26Hd2D1O2KcLO7c3UC4BwAAiqyn8jrigLjaA+8RbxsXXSUPt4Fr4f4DAawjtyu7RwiI+SkZCNmULxoysFIikfFL7lvb42Owfy7nQiBe5r0xdQLQfK9xlf0VRM7iG4QsBhab4JOMA9Xnty7U1Bo77wzr/LlpcqHGMXdJdGnO5e45+uJ0IRc3Tc6aHGNVPlbpbG71bOksbiIL/NCc/UfxKNz9g6d0h7Z24CW6YCymQcPQuWfRGAAtBQjSBQC6yBoFdSMD0v5VwV7J5RAjVXZj7fEWocQbIFUT5XYpljWppEXEUVdGoMQbCF2v9Rv7UtAiHitWpz91d6xFBi6GEe9RhuC5m81m6r4TLf/i+mTy+4g4udpNjjzm/mIulcvlmlrVsKO8JVC5ZiCp1dm71QjZflktcURbRMNAX97jr0RjpMpcbOGpFZvIgCNKQtTqZyjjT0Caww6Tixd/7l5STL11mgVXi5lnLYlV5y73H7qBdIHCB1UaNY9BW0yFgwOdCblc85d1KQQBaY5kPcB2udo+Vgsg+xFgAK4+TBY2olQOAAAAAElFTkSuQmCC) center center no-repeat!important;
+}
+.clbc_tw: hover {
+    background: url(data:image/png;
+    base64, iVBORw0KGgoAAAANSUhEUgAAAB4AAAAYCAYAAADtaU2/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAvNJREFUeNp0VouR4zAIBU8acAtpIVeCU0KuhE0JmxKSEjYlJDN3BWxKOJewKeE8sw2wIGEEkuIZW7LQBx4PEMLfbwACAOSXpCN91D7qOECZ5PpFtuWfA/9PKn5yf+beFdpnZPmy0T0mbmc+cLHD143XJymjh659Sv13IDwXnbyC8Mb/ezWEFWPlCI4sXgadcGDJJwvHtMgQcAevY4imF3/e+XOOQOjCbMCOB764/c/jHzz8YMFTZIMeMLGAJ8FnmowQ4cdKkdwyvHRugDQXmYKjjl+4zy5AWTMOKtzqLDmULYdDOcjhHRV6s817iKxKFNTYJfDB7V1cOigks5sw8ga3ZL0ohB24s893hQ+1xeSIapKF3306i59BifLIE8gtFsLRl8J/MMjNEkcy8G5ZYda36PY7MV1JudHJV4VuLASxZ8pvYiYriHPWHreBhNhxC3SiQudvXMweub0FdprMFhcl1olUMT2gT/Hg4ibQOMZ//H1yR6i+7fiz0t4pR3UEYGmj2bNz4xpODGGKOSETlliEavNVocYqag+NxBODFm+9hhO2qa22Eqj99y4xH2KrcOZGGB90vwcLr93w8PhShZ7P771sB5ZiHwWcrM3gID3y91SELgG46Ii1wsNKEEPOEork/3uN5BAgFc0QjkaEV0hbRnPw+TQZrb40iBirC2xTTvp1YoCqPL5gekAh9Z+ZPxhZb6y2PRLJSvr0ClixqCwj5xK3sW5wysnGEdHCKSSINZ/SXJShF8nfVS3P2LLXld97KJXukoHw57sKfld9IJVLSY27hq5mdSd+c1r9Ff0d0RhiLiVPAPHNXetutCpwoIpfQHHVPlan6tZiPoaQAsd0ZclV6Zb+/R2MOjFbDBF499ll2M8BqsBGC/SYUma6+sgNBCt2QgsnoU8gwt5TKvK96lQnFoQUTpfsS4EUp8aHvUtc8dUzRYIQiWBpDiR6WRYxXW8LSbb5/qUFI10GggVzPiy1kmbn/g20CiuqMgjLfgQYAFvei8pT9IpsAAAAAElFTkSuQmCC) center center no-repeat!important;
+    display: inline-block;
+}
+.clbc_stat2 {
+    display: none;
+}
+.clbc_stat1, .clbc_stat2 {
+    width: 260px!important;
+    float: left!important;
+    font-size: 11px!important;
+    cursor: pointer!important;
+}
+.clbc_stat1 span, .clbc_stat2 a {
+    font-size: 11px!important;
+    color: #4466BC!important;
+    text-decoration: underline!important;
+}
+.clbc_banner_office_wrapper {
+    display: inline!important;
+    position: relative;
+}
+.clbc_banner-choose-office {
+    font-size: 14px!important;
+    letter-spacing: normal!important;
+    text-align: left!important;
+    clear: both;
+}
+.clbc_banner_office-list {
+    position: absolute!important;
+    top: 35px!important;
+    left: -10px!important;
+    max-width: 400px!important;
+    width: auto!important;
+    min-width: 200px;
+    background-color: #fff!important;
+    -webkit-border-radius: 10px!important;
+    border-radius: 10px!important;
+    -webkit-box-shadow: 0 0 14px -1px rgba(0, 0, 0, .52)!important;
+    box-shadow: 0 0 14px -1px rgba(0, 0, 0, .52)!important;
+    z-index: 999999;
+    max-height: 200px!important;
+    overflow-y: auto!important;
+}
+.clbc_banner_office-list-item {
+    text-align: center!important;
+    margin: 5px 20px 10px!important;
+}
+.clbc_banner-office-current, .clbc_banner-office-item {
+    text-decoration: none!important;
+}
+.clbc_banner-office-current, .clbc_banner-office-item:hover {
+    border-bottom: 1px #000 dashed!important;
+}
+#clbc_banner_h1 .clbc_night_select {
+    border: 1px solid #C2C2C2!important;
+    padding: 2px 4px!important;
+    background: 0 0!important;
+    -webkit-border-radius: 4px!important;
+    border-radius: 4px!important;
+    font-size: 16px!important;
+    width: 60px!important;
+    height: 32px!important;
+    display: inline;
+}
+#clbc_banner_h1 #clbc_night_day {
+    width: 130px!important;
+}
+#clbc_banner_choose_office_city {
+    float: left;
+    margin-right: 10px;
+    padding: 0!important;
+}
+#clbc_banner_choose_office_city .clbc_banner-textbox {
+    width: 100%!important;
+    padding: 0!important;
+}
+#clbc_banner_choose_office_container {
+    top: 7px;
+    position: relative;
+    float: left;
+}
+.clbc_search_button {
+    position: absolute;
+    height: 34px;
+    width: 20px;
+    right: 0;
+    top: 0;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #fff;
+    background: url(data:image/png;
+    base64, iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkRBQTdEQUM1RUNEQzExRTRCNEVDRDZDRDlFNzhFQjBFIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkRBQTdEQUM2RUNEQzExRTRCNEVDRDZDRDlFNzhFQjBFIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6REFBN0RBQzNFQ0RDMTFFNEI0RUNENkNEOUU3OEVCMEUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6REFBN0RBQzRFQ0RDMTFFNEI0RUNENkNEOUU3OEVCMEUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5HyFQ4AAAB/UlEQVR42gDvARD+Af/++AAAAekP07/Dc621x2fR2+IODhYd/CIyRLEwRE6KDRUC0g4LAQD+/gAAAP///wzJsY3POC4p/y86Rv9rcXPmXlFE/SomJv9bdJXnw/T/L8v7/wDJ+P8AAPPbuGFJNiz/TGaB/ZO10l2VnaEE3cuzM7ahh8snIyX/hLDKw9f//wfP//8AAMGidtMmKzn/v9nxdObw9gCmq6sA2s60AP//40ZuUjv/SWCA/7Hl/y6q4P8ABOvn8SYNEBUA8QAOyt7xAAAIFhoAIyLpAAD619QoHRsAz93lAM3aAAD8+AAAAhgfHdrz7+cA/PfsTSUXAADLvLkAwLbaAAAAECXV4OYAEhoiAEExAAE8MgAAAjA0KJQoD/gAlIiMbMfb7VEGBQUA7e71LriltqnA1uoALD4/xRH//dIXCPsAAf/+5Q7PvLa6bXeRN/wNGwAaFg7T+eziIubt9Av4+/4AIDFE7zJad1wYFhC2A4CAevkZHB2iKhH7+P4BBRz9AAMqChgo6DlGS7gqDvEsv76/Cfnw7VQoNkDJBAAA/gD5+Pj6DAwKhm1rZZHi7PoT+wka8NPi4fJhXTjY9PN0f6e4pgcXITCxBAAAAAAAAAAA/f3+APX19vX29vr1+//1APn29QAEESuAhIqE+BMdqnYPOC7EAgwA9xjuZZE2+x0AAAAASUVORK5CYII=) center center no-repeat;
+}
+#clbc_banner_choose_office_city_container {
+    position: relative;
+    width: 230px!important;
+}
+#clbc_div .clbc_banner_city-list {
+    -webkit-border-radius: 0!important;
+    border-radius: 0!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    cursor: default;
+    font-family: Open Sans;
+    font-size: 16px;
+    margin: 0;
+    max-height: 571.25px;
+    outline: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0;
+    position: absolute;
+    text-align: left;
+    white-space: pre;
+    left: 0!important;
+    top: 35px!important;
+    width: 100%;
+    z-index: 100000;
+}
+#clbc_banner_choose_office_city {
+    width: 100%!important;
+    position: relative;
+}
+.cbc-hide {
+    visibility: hidden;
+}
+.cbc-masks input {
+    border: 1px solid #ccc;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 30px;
+    padding-left: 38px!important;
+    position: relative;
+    z-index: 0;
+    -webkit-user-select: none!important;
+    -moz-user-select: none!important;
+    -ms-user-select: none!important;
+    user-select: none!important;
+    margin: 0;
+}
+.cbc-masks:after, .cbc-masks:before, .cbc-clear:after, .cbc-clear:before {
+    content: " ";
+    display: table;
+}
+.cbc-masks:after, .cbc-clear:after {
+    clear: both;
+}
+.cbc-masks {
+    float: left;
+    z-index: 9999;
+    position: relative!important;
+}
+.cbc-masks .flag {
+    background-image: url(/img/flags.png);
+    border: none!important;
+    -webkit-border-radius: 0!important;
+    border-radius: 0!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    display: block;
+    position: absolute!important;
+}
+.cbc-masks .flags .selected {
+    cursor: pointer;
+    position: absolute!important;
+    bottom: 0!important;
+    left: 0!important;
+    top: 0!important;
+    width: 38px;
+    z-index: 1000;
+}
+.cbc-masks .flags .selected:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+.cbc-masks .flags .selected .flag {
+    left: 5px;
+    position: absolute;
+    top: 32%;
+    width: 20px;
+}
+.cbc-masks .flags .selected .flag .caret {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #000;
+    height: auto!important;
+    left: auto!important;
+    position: absolute!important;
+    right: -10px;
+    top: 40%!important;
+    width: auto!important;
+}
+.cbc-masks .flags .lists {
+    display: none!important;
+    background-color: #fff!important;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
+    list-style: none;
+    margin: 0;
+    max-height: 165px;
+    overflow-y: scroll!important;
+    overflow-x: hidden!important;
+    padding: 0;
+    position: absolute;
+    top: 29px;
+    width: 330px;
+    z-index: 22000!important;
+}
+.cbc-masks .flags .lists.active {
+    display: block!important;
+}
+.cbc-masks .flags .lists.active.top {
+    -webkit-box-shadow: 1px -1px 4px rgba(0, 0, 0, .2);
+    box-shadow: 1px -1px 4px rgba(0, 0, 0, .2);
+    top: auto;
+    bottom: 31px;
+}
+.cbc-masks .flags .lists li {
+    cursor: pointer!important;
+    display: block!important;
+    font-size: 14px!important;
+    line-height: 1pc;
+    padding: 4px 10px;
+    text-align: left!important;
+}
+.cbc-masks .flags .lists li:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+.cbc-masks .flags .lists li i.flag {
+    display: inline-block!important;
+    margin-right: 6px;
+    vertical-align: bottom;
+    position: static!important;
+}
+.cbc-masks .flags .lists li span.name {
+    color: #333!important;
+    display: inline-block!important;
+    line-height: 1pc;
+    margin-right: 6px;
+}
+.cbc-masks .flags .lists li span.code {
+    color: #999!important;
+    margin-left: 8px;
+    display: inline-block!important;
+}
+.cbc-masks input.cbc-input {
+    padding-left: 38px!important;
+    padding-right: 6px!important;
+    position: relative!important;
+    -webkit-user-select: none!important;
+    -moz-user-select: none!important;
+    -ms-user-select: none!important;
+    user-select: none!important;
+    margin: 0!important;
+    width: 185px!important;
+    min-width: 0!important;
+}
+.cbc-masks .flag {
+    width: 20px;
+}
+.cbc-masks .flag.be {
+    width: 18px;
+}
+.cbc-masks .flag.ch {
+    width: 15px;
+}
+.cbc-masks .flag.mc {
+    width: 19px;
+}
+.cbc-masks .flag.ne {
+    width: 18px;
+}
+.cbc-masks .flag.np {
+    width: 13px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min--moz-device-pixel-ratio:2), only screen and (min-device-pixel-ratio:2), only screen and (min-resolution:192dpi), only screen and (min-resolution:2dppx) {
+    .cbc-masks .flag {
+    -webkit-background-size: 5630px 15px;
+    background-size: 5630px 15px;
+}
+}
+.cbc-masks .flag.ac {
+    height: 10px;
+    background-position: 0;
+}
+.cbc-masks .flag.ad {
+    height: 14px;
+    background-position: -22px 0;
+}
+.cbc-masks .flag.ae {
+    height: 10px;
+    background-position: -44px 0;
+}
+.cbc-masks .flag.af {
+    height: 14px;
+    background-position: -66px 0;
+}
+.cbc-masks .flag.ag {
+    height: 14px;
+    background-position: -88px 0;
+}
+.cbc-masks .flag.ai {
+    height: 10px;
+    background-position: -110px 0;
+}
+.cbc-masks .flag.al {
+    height: 15px;
+    background-position: -132px 0;
+}
+.cbc-masks .flag.am {
+    height: 10px;
+    background-position: -154px 0;
+}
+.cbc-masks .flag.ao {
+    height: 14px;
+    background-position: -176px 0;
+}
+.cbc-masks .flag.aq {
+    height: 14px;
+    background-position: -198px 0;
+}
+.cbc-masks .flag.ar {
+    height: 13px;
+    background-position: -220px 0;
+}
+.cbc-masks .flag.as {
+    height: 10px;
+    background-position: -242px 0;
+}
+.cbc-masks .flag.at {
+    height: 14px;
+    background-position: -264px 0;
+}
+.cbc-masks .flag.au {
+    height: 10px;
+    background-position: -286px 0;
+}
+.cbc-masks .flag.aw {
+    height: 14px;
+    background-position: -308px 0;
+}
+.cbc-masks .flag.ax {
+    height: 13px;
+    background-position: -330px 0;
+}
+.cbc-masks .flag.az {
+    height: 10px;
+    background-position: -352px 0;
+}
+.cbc-masks .flag.ba {
+    height: 10px;
+    background-position: -374px 0;
+}
+.cbc-masks .flag.bb {
+    height: 14px;
+    background-position: -396px 0;
+}
+.cbc-masks .flag.bd {
+    height: 12px;
+    background-position: -418px 0;
+}
+.cbc-masks .flag.be {
+    height: 15px;
+    background-position: -440px 0;
+}
+.cbc-masks .flag.bf {
+    height: 14px;
+    background-position: -460px 0;
+}
+.cbc-masks .flag.bg {
+    height: 12px;
+    background-position: -482px 0;
+}
+.cbc-masks .flag.bh {
+    height: 12px;
+    background-position: -504px 0;
+}
+.cbc-masks .flag.bi {
+    height: 12px;
+    background-position: -526px 0;
+}
+.cbc-masks .flag.bj {
+    height: 14px;
+    background-position: -548px 0;
+}
+.cbc-masks .flag.bl {
+    height: 14px;
+    background-position: -570px 0;
+}
+.cbc-masks .flag.bm {
+    height: 10px;
+    background-position: -592px 0;
+}
+.cbc-masks .flag.bn {
+    height: 10px;
+    background-position: -614px 0;
+}
+.cbc-masks .flag.bo {
+    height: 14px;
+    background-position: -636px 0;
+}
+.cbc-masks .flag.bq {
+    height: 14px;
+    background-position: -658px 0;
+}
+.cbc-masks .flag.br {
+    height: 14px;
+    background-position: -680px 0;
+}
+.cbc-masks .flag.bs {
+    height: 10px;
+    background-position: -702px 0;
+}
+.cbc-masks .flag.bt {
+    height: 14px;
+    background-position: -724px 0;
+}
+.cbc-masks .flag.bv {
+    height: 15px;
+    background-position: -746px 0;
+}
+.cbc-masks .flag.bw {
+    height: 14px;
+    background-position: -768px 0;
+}
+.cbc-masks .flag.by {
+    height: 10px;
+    background-position: -790px 0;
+}
+.cbc-masks .flag.bz {
+    height: 14px;
+    background-position: -812px 0;
+}
+.cbc-masks .flag.ca {
+    height: 10px;
+    background-position: -834px 0;
+}
+.cbc-masks .flag.cc {
+    height: 10px;
+    background-position: -856px 0;
+}
+.cbc-masks .flag.cd {
+    height: 15px;
+    background-position: -878px 0;
+}
+.cbc-masks .flag.cf {
+    height: 14px;
+    background-position: -900px 0;
+}
+.cbc-masks .flag.cg {
+    height: 14px;
+    background-position: -922px 0;
+}
+.cbc-masks .flag.ch {
+    height: 15px;
+    background-position: -944px 0;
+}
+.cbc-masks .flag.ci {
+    height: 14px;
+    background-position: -961px 0;
+}
+.cbc-masks .flag.ck {
+    height: 10px;
+    background-position: -983px 0;
+}
+.cbc-masks .flag.cl {
+    height: 14px;
+    background-position: -1005px 0;
+}
+.cbc-masks .flag.cm {
+    height: 14px;
+    background-position: -1027px 0;
+}
+.cbc-masks .flag.cn {
+    height: 14px;
+    background-position: -1049px 0;
+}
+.cbc-masks .flag.co {
+    height: 14px;
+    background-position: -1071px 0;
+}
+.cbc-masks .flag.cp {
+    height: 14px;
+    background-position: -1093px 0;
+}
+.cbc-masks .flag.cr {
+    height: 12px;
+    background-position: -1115px 0;
+}
+.cbc-masks .flag.cu {
+    height: 10px;
+    background-position: -1137px 0;
+}
+.cbc-masks .flag.cv {
+    height: 12px;
+    background-position: -1159px 0;
+}
+.cbc-masks .flag.cw {
+    height: 14px;
+    background-position: -1181px 0;
+}
+.cbc-masks .flag.cx {
+    height: 10px;
+    background-position: -1203px 0;
+}
+.cbc-masks .flag.cy {
+    height: 13px;
+    background-position: -1225px 0;
+}
+.cbc-masks .flag.cz {
+    height: 14px;
+    background-position: -1247px 0;
+}
+.cbc-masks .flag.de {
+    height: 12px;
+    background-position: -1269px 0;
+}
+.cbc-masks .flag.dg {
+    height: 10px;
+    background-position: -1291px 0;
+}
+.cbc-masks .flag.dj {
+    height: 14px;
+    background-position: -1313px 0;
+}
+.cbc-masks .flag.dk {
+    height: 15px;
+    background-position: -1335px 0;
+}
+.cbc-masks .flag.dm {
+    height: 10px;
+    background-position: -1357px 0;
+}
+.cbc-masks .flag.do {
+    height: 13px;
+    background-position: -1379px 0;
+}
+.cbc-masks .flag.dz {
+    height: 14px;
+    background-position: -1401px 0;
+}
+.cbc-masks .flag.ea {
+    height: 14px;
+    background-position: -1423px 0;
+}
+.cbc-masks .flag.ec {
+    height: 14px;
+    background-position: -1445px 0;
+}
+.cbc-masks .flag.ee {
+    height: 13px;
+    background-position: -1467px 0;
+}
+.cbc-masks .flag.eg {
+    height: 14px;
+    background-position: -1489px 0;
+}
+.cbc-masks .flag.eh {
+    height: 10px;
+    background-position: -1511px 0;
+}
+.cbc-masks .flag.er {
+    height: 10px;
+    background-position: -1533px 0;
+}
+.cbc-masks .flag.es {
+    height: 14px;
+    background-position: -1555px 0;
+}
+.cbc-masks .flag.et {
+    height: 10px;
+    background-position: -1577px 0;
+}
+.cbc-masks .flag.eu {
+    height: 14px;
+    background-position: -1599px 0;
+}
+.cbc-masks .flag.fi {
+    height: 12px;
+    background-position: -1621px 0;
+}
+.cbc-masks .flag.fj {
+    height: 10px;
+    background-position: -1643px 0;
+}
+.cbc-masks .flag.fk {
+    height: 10px;
+    background-position: -1665px 0;
+}
+.cbc-masks .flag.fm {
+    height: 11px;
+    background-position: -1687px 0;
+}
+.cbc-masks .flag.fo {
+    height: 15px;
+    background-position: -1709px 0;
+}
+.cbc-masks .flag.fr {
+    height: 14px;
+    background-position: -1731px 0;
+}
+.cbc-masks .flag.ga {
+    height: 15px;
+    background-position: -1753px 0;
+}
+.cbc-masks .flag.gb {
+    height: 10px;
+    background-position: -1775px 0;
+}
+.cbc-masks .flag.gd {
+    height: 12px;
+    background-position: -1797px 0;
+}
+.cbc-masks .flag.ge {
+    height: 14px;
+    background-position: -1819px 0;
+}
+.cbc-masks .flag.gf {
+    height: 14px;
+    background-position: -1841px 0;
+}
+.cbc-masks .flag.gg {
+    height: 14px;
+    background-position: -1863px 0;
+}
+.cbc-masks .flag.gh {
+    height: 14px;
+    background-position: -1885px 0;
+}
+.cbc-masks .flag.gi {
+    height: 10px;
+    background-position: -1907px 0;
+}
+.cbc-masks .flag.gl {
+    height: 14px;
+    background-position: -1929px 0;
+}
+.cbc-masks .flag.gm {
+    height: 14px;
+    background-position: -1951px 0;
+}
+.cbc-masks .flag.gn {
+    height: 14px;
+    background-position: -1973px 0;
+}
+.cbc-masks .flag.gp {
+    height: 14px;
+    background-position: -1995px 0;
+}
+.cbc-masks .flag.gq {
+    height: 14px;
+    background-position: -2017px 0;
+}
+.cbc-masks .flag.gr {
+    height: 14px;
+    background-position: -2039px 0;
+}
+.cbc-masks .flag.gs {
+    height: 10px;
+    background-position: -2061px 0;
+}
+.cbc-masks .flag.gt {
+    height: 13px;
+    background-position: -2083px 0;
+}
+.cbc-masks .flag.gu {
+    height: 11px;
+    background-position: -2105px 0;
+}
+.cbc-masks .flag.gw {
+    height: 10px;
+    background-position: -2127px 0;
+}
+.cbc-masks .flag.gy {
+    height: 12px;
+    background-position: -2149px 0;
+}
+.cbc-masks .flag.hk {
+    height: 14px;
+    background-position: -2171px 0;
+}
+.cbc-masks .flag.hm {
+    height: 10px;
+    background-position: -2193px 0;
+}
+.cbc-masks .flag.hn {
+    height: 10px;
+    background-position: -2215px 0;
+}
+.cbc-masks .flag.hr {
+    height: 10px;
+    background-position: -2237px 0;
+}
+.cbc-masks .flag.ht {
+    height: 12px;
+    background-position: -2259px 0;
+}
+.cbc-masks .flag.hu {
+    height: 10px;
+    background-position: -2281px 0;
+}
+.cbc-masks .flag.ic {
+    height: 14px;
+    background-position: -2303px 0;
+}
+.cbc-masks .flag.id {
+    height: 14px;
+    background-position: -2325px 0;
+}
+.cbc-masks .flag.ie {
+    height: 10px;
+    background-position: -2347px 0;
+}
+.cbc-masks .flag.il {
+    height: 15px;
+    background-position: -2369px 0;
+}
+.cbc-masks .flag.im {
+    height: 10px;
+    background-position: -2391px 0;
+}
+.cbc-masks .flag.in {
+    height: 14px;
+    background-position: -2413px 0;
+}
+.cbc-masks .flag.io {
+    height: 10px;
+    background-position: -2435px 0;
+}
+.cbc-masks .flag.iq {
+    height: 14px;
+    background-position: -2457px 0;
+}
+.cbc-masks .flag.ir {
+    height: 12px;
+    background-position: -2479px 0;
+}
+.cbc-masks .flag.is {
+    height: 15px;
+    background-position: -2501px 0;
+}
+.cbc-masks .flag.it {
+    height: 14px;
+    background-position: -2523px 0;
+}
+.cbc-masks .flag.je {
+    height: 12px;
+    background-position: -2545px 0;
+}
+.cbc-masks .flag.jm {
+    height: 10px;
+    background-position: -2567px 0;
+}
+.cbc-masks .flag.jo {
+    height: 10px;
+    background-position: -2589px 0;
+}
+.cbc-masks .flag.jp {
+    height: 14px;
+    background-position: -2611px 0;
+}
+.cbc-masks .flag.ke {
+    height: 14px;
+    background-position: -2633px 0;
+}
+.cbc-masks .flag.kg {
+    height: 12px;
+    background-position: -2655px 0;
+}
+.cbc-masks .flag.kh {
+    height: 13px;
+    background-position: -2677px 0;
+}
+.cbc-masks .flag.ki {
+    height: 10px;
+    background-position: -2699px 0;
+}
+.cbc-masks .flag.km {
+    height: 12px;
+    background-position: -2721px 0;
+}
+.cbc-masks .flag.kn {
+    height: 14px;
+    background-position: -2743px 0;
+}
+.cbc-masks .flag.kp {
+    height: 10px;
+    background-position: -2765px 0;
+}
+.cbc-masks .flag.kr {
+    height: 14px;
+    background-position: -2787px 0;
+}
+.cbc-masks .flag.kw {
+    height: 10px;
+    background-position: -2809px 0;
+}
+.cbc-masks .flag.ky {
+    height: 10px;
+    background-position: -2831px 0;
+}
+.cbc-masks .flag.kz {
+    height: 10px;
+    background-position: -2853px 0;
+}
+.cbc-masks .flag.la {
+    height: 14px;
+    background-position: -2875px 0;
+}
+.cbc-masks .flag.lb {
+    height: 14px;
+    background-position: -2897px 0;
+}
+.cbc-masks .flag.lc {
+    height: 10px;
+    background-position: -2919px 0;
+}
+.cbc-masks .flag.li {
+    height: 12px;
+    background-position: -2941px 0;
+}
+.cbc-masks .flag.lk {
+    height: 10px;
+    background-position: -2963px 0;
+}
+.cbc-masks .flag.lr {
+    height: 11px;
+    background-position: -2985px 0;
+}
+.cbc-masks .flag.ls {
+    height: 14px;
+    background-position: -3007px 0;
+}
+.cbc-masks .flag.lt {
+    height: 12px;
+    background-position: -3029px 0;
+}
+.cbc-masks .flag.lu {
+    height: 12px;
+    background-position: -3051px 0;
+}
+.cbc-masks .flag.lv {
+    height: 10px;
+    background-position: -3073px 0;
+}
+.cbc-masks .flag.ly {
+    height: 10px;
+    background-position: -3095px 0;
+}
+.cbc-masks .flag.ma {
+    height: 14px;
+    background-position: -3117px 0;
+}
+.cbc-masks .flag.mc {
+    height: 15px;
+    background-position: -3139px 0;
+}
+.cbc-masks .flag.md {
+    height: 10px;
+    background-position: -3160px 0;
+}
+.cbc-masks .flag.me {
+    height: 10px;
+    background-position: -3182px 0;
+}
+.cbc-masks .flag.mf {
+    height: 14px;
+    background-position: -3204px 0;
+}
+.cbc-masks .flag.mg {
+    height: 14px;
+    background-position: -3226px 0;
+}
+.cbc-masks .flag.mh {
+    height: 11px;
+    background-position: -3248px 0;
+}
+.cbc-masks .flag.mk {
+    height: 10px;
+    background-position: -3270px 0;
+}
+.cbc-masks .flag.ml {
+    height: 14px;
+    background-position: -3292px 0;
+}
+.cbc-masks .flag.mm {
+    height: 14px;
+    background-position: -3314px 0;
+}
+.cbc-masks .flag.mn {
+    height: 10px;
+    background-position: -3336px 0;
+}
+.cbc-masks .flag.mo {
+    height: 14px;
+    background-position: -3358px 0;
+}
+.cbc-masks .flag.mp {
+    height: 10px;
+    background-position: -3380px 0;
+}
+.cbc-masks .flag.mq {
+    height: 14px;
+    background-position: -3402px 0;
+}
+.cbc-masks .flag.mr {
+    height: 14px;
+    background-position: -3424px 0;
+}
+.cbc-masks .flag.ms {
+    height: 10px;
+    background-position: -3446px 0;
+}
+.cbc-masks .flag.mt {
+    height: 14px;
+    background-position: -3468px 0;
+}
+.cbc-masks .flag.mu {
+    height: 14px;
+    background-position: -3490px 0;
+}
+.cbc-masks .flag.mv {
+    height: 14px;
+    background-position: -3512px 0;
+}
+.cbc-masks .flag.mw {
+    height: 14px;
+    background-position: -3534px 0;
+}
+.cbc-masks .flag.mx {
+    height: 12px;
+    background-position: -3556px 0;
+}
+.cbc-masks .flag.my {
+    height: 10px;
+    background-position: -3578px 0;
+}
+.cbc-masks .flag.mz {
+    height: 14px;
+    background-position: -3600px 0;
+}
+.cbc-masks .flag.na {
+    height: 14px;
+    background-position: -3622px 0;
+}
+.cbc-masks .flag.nc {
+    height: 10px;
+    background-position: -3644px 0;
+}
+.cbc-masks .flag.ne {
+    height: 15px;
+    background-position: -3666px 0;
+}
+.cbc-masks .flag.nf {
+    height: 10px;
+    background-position: -3686px 0;
+}
+.cbc-masks .flag.ng {
+    height: 10px;
+    background-position: -3708px 0;
+}
+.cbc-masks .flag.ni {
+    height: 12px;
+    background-position: -3730px 0;
+}
+.cbc-masks .flag.nl {
+    height: 14px;
+    background-position: -3752px 0;
+}
+.cbc-masks .flag.no {
+    height: 15px;
+    background-position: -3774px 0;
+}
+.cbc-masks .flag.np {
+    height: 15px;
+    background-position: -3796px 0;
+}
+.cbc-masks .flag.nr {
+    height: 10px;
+    background-position: -3811px 0;
+}
+.cbc-masks .flag.nu {
+    height: 10px;
+    background-position: -3833px 0;
+}
+.cbc-masks .flag.nz {
+    height: 10px;
+    background-position: -3855px 0;
+}
+.cbc-masks .flag.om {
+    height: 10px;
+    background-position: -3877px 0;
+}
+.cbc-masks .flag.pa {
+    height: 14px;
+    background-position: -3899px 0;
+}
+.cbc-masks .flag.pe {
+    height: 14px;
+    background-position: -3921px 0;
+}
+.cbc-masks .flag.pf {
+    height: 14px;
+    background-position: -3943px 0;
+}
+.cbc-masks .flag.pg {
+    height: 15px;
+    background-position: -3965px 0;
+}
+.cbc-masks .flag.ph {
+    height: 10px;
+    background-position: -3987px 0;
+}
+.cbc-masks .flag.pk {
+    height: 14px;
+    background-position: -4009px 0;
+}
+.cbc-masks .flag.pl {
+    height: 13px;
+    background-position: -4031px 0;
+}
+.cbc-masks .flag.pm {
+    height: 14px;
+    background-position: -4053px 0;
+}
+.cbc-masks .flag.pn {
+    height: 10px;
+    background-position: -4075px 0;
+}
+.cbc-masks .flag.pr {
+    height: 14px;
+    background-position: -4097px 0;
+}
+.cbc-masks .flag.ps {
+    height: 10px;
+    background-position: -4119px 0;
+}
+.cbc-masks .flag.pt {
+    height: 14px;
+    background-position: -4141px 0;
+}
+.cbc-masks .flag.pw {
+    height: 13px;
+    background-position: -4163px 0;
+}
+.cbc-masks .flag.py {
+    height: 11px;
+    background-position: -4185px 0;
+}
+.cbc-masks .flag.qa {
+    height: 8px;
+    background-position: -4207px 0;
+}
+.cbc-masks .flag.re {
+    height: 14px;
+    background-position: -4229px 0;
+}
+.cbc-masks .flag.ro {
+    height: 14px;
+    background-position: -4251px 0;
+}
+.cbc-masks .flag.rs {
+    height: 14px;
+    background-position: -4273px 0;
+}
+.cbc-masks .flag.ru {
+    height: 14px;
+    background-position: -4295px 0;
+}
+.cbc-masks .flag.rw {
+    height: 14px;
+    background-position: -4317px 0;
+}
+.cbc-masks .flag.sa {
+    height: 14px;
+    background-position: -4339px 0;
+}
+.cbc-masks .flag.sb {
+    height: 10px;
+    background-position: -4361px 0;
+}
+.cbc-masks .flag.sc {
+    height: 10px;
+    background-position: -4383px 0;
+}
+.cbc-masks .flag.sd {
+    height: 10px;
+    background-position: -4405px 0;
+}
+.cbc-masks .flag.se {
+    height: 13px;
+    background-position: -4427px 0;
+}
+.cbc-masks .flag.sg {
+    height: 14px;
+    background-position: -4449px 0;
+}
+.cbc-masks .flag.sh {
+    height: 10px;
+    background-position: -4471px 0;
+}
+.cbc-masks .flag.si {
+    height: 10px;
+    background-position: -4493px 0;
+}
+.cbc-masks .flag.sj {
+    height: 15px;
+    background-position: -4515px 0;
+}
+.cbc-masks .flag.sk {
+    height: 14px;
+    background-position: -4537px 0;
+}
+.cbc-masks .flag.sl {
+    height: 14px;
+    background-position: -4559px 0;
+}
+.cbc-masks .flag.sm {
+    height: 15px;
+    background-position: -4581px 0;
+}
+.cbc-masks .flag.sn {
+    height: 14px;
+    background-position: -4603px 0;
+}
+.cbc-masks .flag.so {
+    height: 14px;
+    background-position: -4625px 0;
+}
+.cbc-masks .flag.sr {
+    height: 14px;
+    background-position: -4647px 0;
+}
+.cbc-masks .flag.ss {
+    height: 10px;
+    background-position: -4669px 0;
+}
+.cbc-masks .flag.st {
+    height: 10px;
+    background-position: -4691px 0;
+}
+.cbc-masks .flag.sv {
+    height: 12px;
+    background-position: -4713px 0;
+}
+.cbc-masks .flag.sx {
+    height: 14px;
+    background-position: -4735px 0;
+}
+.cbc-masks .flag.sy {
+    height: 14px;
+    background-position: -4757px 0;
+}
+.cbc-masks .flag.sz {
+    height: 14px;
+    background-position: -4779px 0;
+}
+.cbc-masks .flag.ta {
+    height: 10px;
+    background-position: -4801px 0;
+}
+.cbc-masks .flag.tc {
+    height: 10px;
+    background-position: -4823px 0;
+}
+.cbc-masks .flag.td {
+    height: 14px;
+    background-position: -4845px 0;
+}
+.cbc-masks .flag.tf {
+    height: 14px;
+    background-position: -4867px 0;
+}
+.cbc-masks .flag.tg {
+    height: 13px;
+    background-position: -4889px 0;
+}
+.cbc-masks .flag.th {
+    height: 14px;
+    background-position: -4911px 0;
+}
+.cbc-masks .flag.tj {
+    height: 10px;
+    background-position: -4933px 0;
+}
+.cbc-masks .flag.tk {
+    height: 10px;
+    background-position: -4955px 0;
+}
+.cbc-masks .flag.tl {
+    height: 10px;
+    background-position: -4977px 0;
+}
+.cbc-masks .flag.tm {
+    height: 14px;
+    background-position: -4999px 0;
+}
+.cbc-masks .flag.tn {
+    height: 14px;
+    background-position: -5021px 0;
+}
+.cbc-masks .flag.to {
+    height: 10px;
+    background-position: -5043px 0;
+}
+.cbc-masks .flag.tr {
+    height: 14px;
+    background-position: -5065px 0;
+}
+.cbc-masks .flag.tt {
+    height: 12px;
+    background-position: -5087px 0;
+}
+.cbc-masks .flag.tv {
+    height: 10px;
+    background-position: -5109px 0;
+}
+.cbc-masks .flag.tw {
+    height: 14px;
+    background-position: -5131px 0;
+}
+.cbc-masks .flag.tz {
+    height: 14px;
+    background-position: -5153px 0;
+}
+.cbc-masks .flag.ua {
+    height: 14px;
+    background-position: -5175px 0;
+}
+.cbc-masks .flag.ug {
+    height: 14px;
+    background-position: -5197px 0;
+}
+.cbc-masks .flag.um {
+    height: 11px;
+    background-position: -5219px 0;
+}
+.cbc-masks .flag.us {
+    height: 11px;
+    background-position: -5241px 0;
+}
+.cbc-masks .flag.uy {
+    height: 14px;
+    background-position: -5263px 0;
+}
+.cbc-masks .flag.uz {
+    height: 10px;
+    background-position: -5285px 0;
+}
+.cbc-masks .flag.va {
+    width: 15px;
+    height: 15px;
+    background-position: -5307px 0;
+}
+.cbc-masks .flag.vc {
+    height: 14px;
+    background-position: -5324px 0;
+}
+.cbc-masks .flag.ve {
+    height: 14px;
+    background-position: -5346px 0;
+}
+.cbc-masks .flag.vg {
+    height: 10px;
+    background-position: -5368px 0;
+}
+.cbc-masks .flag.vi {
+    height: 14px;
+    background-position: -5390px 0;
+}
+.cbc-masks .flag.vn {
+    height: 14px;
+    background-position: -5412px 0;
+}
+.cbc-masks .flag.vu {
+    height: 12px;
+    background-position: -5434px 0;
+}
+.cbc-masks .flag.wf {
+    height: 14px;
+    background-position: -5456px 0;
+}
+.cbc-masks .flag.ws {
+    height: 10px;
+    background-position: -5478px 0;
+}
+.cbc-masks .flag.xk {
+    height: 15px;
+    background-position: -5500px 0;
+}
+.cbc-masks .flag.ye {
+    height: 14px;
+    background-position: -5522px 0;
+}
+.cbc-masks .flag.yt {
+    height: 14px;
+    background-position: -5544px 0;
+}
+.cbc-masks .flag.za {
+    height: 14px;
+    background-position: -5566px 0;
+}
+.cbc-masks .flag.zm {
+    height: 14px;
+    background-position: -5588px 0;
+}
+.cbc-masks .flag.zw {
+    height: 10px;
+    background-position: -5610px 0;
+}
+#clbc_mob_phone_line .cbc-masks {
+    display: inline-block!important;
+    float: none!important;
+    position: relative!important;
+}
+#clbc_mob_phone_line .cbc-masks input {
+    padding-left: 38px!important;
+    text-align: center;
+}
+.clbc_mob_banner-body .clbc_mob_banner-h1, .clbc_mob_banner-form-row-1, .clbc_mob_banner-form-row-2, .clbc_mob_banner-form-row-2 span {
+    text-align: center!important;
+    letter-spacing: normal!important;
+}
+.clbc_mob_banner-wrapper {
+    height: 0!important;
+    position: fixed!important;
+    bottom: 0!important;
+    width: 100%!important;
+    z-index: 2000003!important;
+    overflow: visible!important;
+    min-width: 0!important;
+}
+.clbc_mob_banner {
+    display: block!important;
+    background-color: #111010!important;
+    height: 220px!important;
+    position: absolute!important;
+    bottom: 0!important;
+    left: 0;
+    width: 100%!important;
+    z-index: 200001!important;
+}
+.clbc_mob_banner * {
+    color: #fff!important;
+    font-family: 'Open Sans', sans-serif!important;
+    font-weight: 100!important;
+    letter-spacing: normal!important;
+}
+.clbc_mob_banner-body {
+    margin: 0 auto!important;
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+}
+.clbc_mob_banner-body .clbc_mob_banner-h1 {
+    font-size: 24px!important;
+    line-height: 28px!important;
+}
+.clbc_mob_banner-button {
+    display: block;
+    background: #31c476!important;
+    border: 1px solid #31c476!important;
+    -webkit-border-radius: 4px!important;
+    border-radius: 4px!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    color: #fff!important;
+    cursor: pointer!important;
+    font-size: 24px!important;
+    height: 45px!important;
+    letter-spacing: normal!important;
+    line-height: 30px!important;
+    margin: 20px auto 0!important;
+    width: 345px!important;
+    -webkit-transition: all .25s ease-out 0s!important;
+    transition: all .25s ease-out 0s!important;
+}
+.clbc_mob_banner-button.clbc_mob_large {
+    width: 200px!important;
+}
+.clbc_mob_banner-button:hover {
+    background-color: #4466BC!important;
+    border-color: #4466BC!important;
+}
+.clbc_mob_phone_line {
+    position: relative!important;
+    z-index: 20001!important;
+}
+.clbc_mob_banner-form-row-1 {
+    position: relative!important;
+    top: 10px!important;
+    width: 100%!important;
+}
+.clbc_mob_banner-form-row-2 {
+    height: auto!important;
+    position: relative!important;
+    top: 26px!important;
+}
+.clbc_mob_banner-form-row-2 span {
+    font-size: 14px!important;
+}
+.clbc_mob_banner-form-row-2.thx span {
+    color: #4466BC!important;
+    letter-spacing: normal!important;
+    text-align: left!important;
+}
+.clbc_mob_banner-textbox {
+    background: #fff!important;
+    border: 1px solid #d9d9d9!important;
+    -webkit-border-radius: 4px!important;
+    border-radius: 4px!important;
+    color: #333!important;
+    display: block!important;
+    font-size: 24px!important;
+    height: 45px!important;
+    letter-spacing: 1px!important;
+    line-height: 30px!important;
+    margin: 0 auto!important;
+    width: 327px!important;
+    padding: 0 8px!important;
+    text-align: center!important;
+    -webkit-transition: all .25s ease-out 0s!important;
+    transition: all .25s ease-out 0s!important;
+}
+.clbc_mob_banner-work-to, .clbc_mob_banner-work-to a {
+    font-size: 11px!important;
+    letter-spacing: normal!important;
+    text-align: right!important;
+}
+.banner-textbox:active, .clbc_mob_banner-textbox:focus {
+    border-color: #4466BC!important;
+}
+.clbc_mob_banner-work-to {
+    bottom: 10px!important;
+    color: #fff!important;
+    position: absolute!important;
+    right: 15px!important;
+}
+.clbc_mob_banner-work-to a {
+    color: #ccc!important;
+    text-decoration: none;
+}
+.clbc_mob_timer, .clbc_mob_timer p {
+    letter-spacing: normal!important;
+    text-align: center!important;
+}
+.clbc_mob_banner-work-to a:hover {
+    text-decoration: none!important;
+}
+.clbc_mob_banner.clbc_mob_closed {
+    display: none!important;
+    opacity: 0!important;
+}
+.clbc_mob_banner-line-wrapper.clbc_mob_banner-pr-line {
+    visibility: visible!important;
+}
+.clbc_mob_timer {
+    position: relative!important;
+    display: none;
+}
+.clbc_mob_timer p {
+    font-size: 25px!important;
+    line-height: 25px!important;
+    margin: 0!important;
+    margin-top: 15px!important;
+}
+.clbc_mob_banner-line-wrapper {
+    background-color: rgba(255, 255, 255, .7)!important;
+    -webkit-border-radius: 16px!important;
+    border-radius: 16px!important;
+    height: 20px!important;
+    margin: 0 auto!important;
+    overflow: hidden!important;
+    position: relative!important;
+    top: -12px!important;
+    width: 800px!important;
+    z-index: 200001!important;
+}
+.clbc_mob_fb, .clbc_mob_tw, .clbc_mob_vk, .clbc_mob_vk:hover {
+    height: 25px!important;
+    width: 50px!important;
+    display: inline-block;
+}
+.clbc_mob_vk {
+    background: url(data:image/png;
+    base64, iVBORw0KGgoAAAANSUhEUgAAACQAAAAVCAYAAAAuJkyQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAotJREFUeNqMVjtyAjEMBYeGkooZSi5AsZQpoUy6cITlCHCE5QhwBGjTsUcIV+AK29IRvR2JeQh5E88slrEl6+nr/mw26/X7/R7G/X5/0LbG4H0dU/lvGuxfhG5yvKBJxtOwcwMhCpkX/qCsG9k7OL6R/HeUvYUJAR9fLvRWyB3v04VTBfMABpl052kg848XTqigwI4Ry3yQ/0YyFxFCgAOPt5DynqFEh7WKJD8H5w6mN878sNpJ1jsItO+f4wtujixHMupk5mU0dBnMWXIcqKC6K04CYKBLViYAcpXvlJSoWRmOC5k3HgksRfsvrg6QL/R7AU4DsdckXey8PznwDB1f6hTs9JXwVdEZAoOwOeG/pBuwUB0oY3SlGcaWCy8I5o1m8otFVf5FrdPelQj1OlcjNDVL2h9565jFWIYG8cYrQefh+rXVrtZCFJBX1B3PTHNFSIsOy4wIxNHWnJWk+BYW4jKQXGxsNbWfsoHWZ5nLHGq9uJCv0ppTZCp9T8H7wtt7G4/HvL7pxYtIkKyHMn1wtfXBrWffhZ5EmWddQKZPWd+821NgShS92mdFFNBe4VwMBnwNlw4eKWpyCDTUBC/MF72oPXQVPwKAYN9HgFIGwVWbZLYz+7YRtR7XdH0BRSzuvdxHDAW+xlNiKN+7D3JvsagvBXH1sqcNeiLrb5OXIuSEdos3TpRNf/ChAa8spXPtQvlQ3/ZRHcpdtvRBnmmObMW1vgqWauknl/k6B6Xka0tJ8n4O2geCe2nlPZdxFB+wSqO08V6jqu5irrL3UKffaeCZMrenRy7d9aXJwKDUShMlfGXS2TJFGZJ5rLWBrm6AYlavGn6WwFWBLPDN9Unc+BqlSrbPoF8BBgD7CFpHrvGnMAAAAABJRU5ErkJggg==) center center no-repeat!important;
+}
+.clbc_mob_vk: hover {
+    background: url(data:image/png;
+    base64, iVBORw0KGgoAAAANSUhEUgAAACQAAAAVCAYAAAAuJkyQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAvtJREFUeNp0VoGRGjEMlG6+AVogJUAJUEJSAl8ClAAlQAn/M0kBuRJCCaGFm6QBRZZsWZIvzHC2z7ZuJa9WRvj+BwCQ/8RNaUuXtC1j6ed52PJja+O2B/HJcwu0122r/5m52sE498ZGdtw9yExbLEDYMMGj9hu4DXc+hvUNvP4u/L9VgLqmL2Qn+N/ntmLTvgGfb9z5ZYhDhKS/4f5N32Hz6CHvAXaj1zI6cHuL0bWo/GQ7PbJtT//2buLRI3mofRnSWftmYOHnp3ywHWuLAEH/SAfno/eV262upQ6kbVB7MwPCW/A0/kokTs7DtnAODnggnoMQwJ066OZw4NCL931O/OJVkNlmSJ4RR8nAGp+WEY0Hgp6LpX9Q3uWTAM/bS7E7afgaT1ajtLUoQToOHwlK+CgYuipP3L52bPp4KBUIJkWMMw/mIT17lK782OSA9NCv5bhl2FkSYOCoScmzZqa8m/r543sgZDg+LKl5ctHZGCltrQNHLrqI5yHmLUIg0vKurW6anIGX6A6skBNr2MVT6e8G1B3MRj2XhPgQnbGMTOdaeAP09AYQfvz1i0skfptYQQYmZL5IChMdQkhi1t1kvogujdyvNh9yKhljB2QbzsIZL2y4EnJfWkyRnaFBbEPkubzgF6kGsSSFI2ttUdl5SFGCKGZZhzKY/6W4DharecmZKYbTFLQSLWvFilj5eoUYU56SIwZUatp91KOSZWGhCdrLUtETkqr1nE3eU4JYv/J5dbBF2+5ZZybjwSh2TDo+Pq+6vj40R4Z9NMhR0KtYWLmc0N1zbRqIG7lRovQc6lWuVblcFNUF+CZ7aSUZIJQM1je8dx3K5z5m05E3zwNvIHEl1pySzqUUHNn2M1wxcnnSuVMT0Gn4SC4beuVgUHSJ3uG61yRCV2+Nkk1HEd3MudHBa70P+XQe9MIbKAV4rzcDijUJvUP1JtCBLvX4XuGKgsn7ekWJWbYmfNGLp0QLcV8BzvWDjeRLq9qRyLJvX6v6+tVFozj/E2AAyOKHxNSW6f8AAAAASUVORK5CYII=) center center no-repeat!important;
+}
+.clbc_mob_blur {
+    filter: url("data:image/svg+xml;
+    utf8, <svg xmlns='http: //www.w3.org/2000/svg'><filter id='blur'><feGaussianBlur stdDeviation='3'/></filter></svg>#blur");
+}
+.clbc_mob_fb {
+    background: url(data:image/png;
+    base64, iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAixJREFUeNqMV4FtwyAQrBELZAVPEMkruCOkI7QjNCMkI7QjJCt4hHqEeoWM4P5HuDpd7iFIyPDAP39/PLjb7/cvpQzrun52XTfad/cSFBu/f23Og9xlOF7ai9XJ6tFkNxeksubd6o9NOrhBn4xVGeQxNgilt77r/3XHNqPe+PKJ20L2AhWjcWzzOt5AceZidZcd0kiB+rInAk7pPXqdrTFuSpUnkRJcU2Qet8n6M87deAKbHbK72zKm4CPZh9Vv9qz0naAjcGCXIlgYRhXnIju6QZShE6zLvykiS3QUKPaL1bOCHucyF7IiT0QWQY5JQH3wIwgx7Vl/VpBuuyOiKOMLbc4NXCKEtpIUtTEmzGzFZoCw5zGFWIpgRFJw9olIp44dG74TScVLTVSKWblisOJJVgdeeVYWvDp5ouRu1ZNDh5u29sreJxXLCOIoBHxEkLnK08RnkpVGcVa5V4SkVxtLKmbKc8HUh2yDaNTYnFUGUTAX+cmaN+hfKQUOJj/BBnuFUG4ld4JmIPJMlGf98hhb93Dm+NQuYmJlNW3WEkxSh74mU4m/dS1KIrViqhQ+SzpFtlR7dEX3qno9tI4c6k/PPsBq1110MURccKOz8iiCF5WrbITeBmGZ3ei1RgjFSpUgWs8d0D351XbevOUnZ0ScWgxrby4r57vR0vHb48oJIXob1RisUmSR+W/F8f+54v8Y1nkr/zNjC2rY0EzKl6IcN3qz/rQ9bbz+CTAAj4Gefja+rOAAAAAASUVORK5CYII=) center center no-repeat!important;
+}
+.clbc_mob_fb: hover {
+    background: url(data:image/png;
+    base64, iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAtRJREFUeNp8Votx2zAMBXRawCtoBa2QjNCOkI4Qj9COUI/Q3GUCreAVvEKuXQAFfyDwRFp3NimIBEDg4RFMn/+ISIiYd5286+9FXy9Vlof8cB2lyqlsy/Igq8K2nuih6w59v+r8K6ulz79pw5sKfpsSAgOm3I0ExtExr6g49qWTV53fF53s2aB/xG3Mhv1mMEhgsL1wkzWPNHpMf1TfRY3Ke/DUjHAfvSNBJl2W5xMH+rilqK769xJDxLDRxZT5HDoLZ87bocvu5kR59FBqo2/Z13RcMyaD8OEYHDHA/FDRzfZabLNgL+A0nZc1oM6jVQiBUL4jcimj8tYd9QDyQOvzpefCoTSEGL5Hh7Qc5FfZ9wxYEf1rzJPLFztvMY19fkBNpueb6nszvcxbdFzUqHejL4xI9MDw30gewQtRdJKWhTmKwCvztSeYu2LPNALHE49iIsDERsOnsVRZu5gxy0s9NQKHINw0AQ25CjCi4P6ew4sE4DlXBnmVAf0h9THFkIpzkLnlFOsPSkUMLK8FPFOEJnJgRxjJiARHc3hDGTAQ+4B9GHJvvg5qpOU4gI9qeMPt4e3w+TT0pCblVAHbiWUyOXiX2d8wTi6O3PEqE8xtIJctEL60k2LIEJEWhSz/mS/ivuRD5ze3fq9r2rNFUDX0Du/HCR+zknfIdwVVr9VLv7UG7GZA8kwkQlMC9Rc4oDGylZszYEWsZHighCYAogEJT6IU9LRalQYkIAMBYOFp0InQkE2qINzJ3NA7UCRPZIhWwdBirxUPsoTQMLDTKMW+UUMjNKDHwNUGJO1pvKJTHfr6xJ6X47U3Ssv5PbWgWmszwJjiEVJHZMBjsvBOa5ktud0gvp8WEvKrxOtMZmATSI2vV06tzbHUEKXO+yN2C1hnfA7/iP6YY7Pd79KrDtc0X+sJErV9V4HSWGUULHq8AYviO/S/j6w81rzq5qN8K079F2AA/Vt6NCjUpugAAAAASUVORK5CYII=) center center no-repeat!important;
+    display: inline-block;
+}
+.clbc_mob_tw {
+    background: url(data:image/png;
+    base64, iVBORw0KGgoAAAANSUhEUgAAAB4AAAAYCAYAAADtaU2/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAmZJREFUeNqMVsFxwkAMNA4N+EmeVMCMUwJ88yMlQAlJCaSEuARSQlxCXAJ884u//IiW2SPyRmfimZu7k8+nlbSSPFksFgWe8/lcpGcymQz2Ksfsv7H93Ka1jSVlRxudjUbvs3Vl637KC5Y4aMI+XahKFFy60J5nk+/c3gPb2HrF79a2Britjb50wg9bV5ESrB1ir3ugVIHaujbZweZv277ZaOENnCl5EC6qqbwugkcUQgncu1O5B0qwFb9/hVICrZLFcyKG0g+6JIy1s3zjw6JWB26Hd2D1O2KcLO7c3UC4BwAAiqyn8jrigLjaA+8RbxsXXSUPt4Fr4f4DAawjtyu7RwiI+SkZCNmULxoysFIikfFL7lvb42Owfy7nQiBe5r0xdQLQfK9xlf0VRM7iG4QsBhab4JOMA9Xnty7U1Bo77wzr/LlpcqHGMXdJdGnO5e45+uJ0IRc3Tc6aHGNVPlbpbG71bOksbiIL/NCc/UfxKNz9g6d0h7Z24CW6YCymQcPQuWfRGAAtBQjSBQC6yBoFdSMD0v5VwV7J5RAjVXZj7fEWocQbIFUT5XYpljWppEXEUVdGoMQbCF2v9Rv7UtAiHitWpz91d6xFBi6GEe9RhuC5m81m6r4TLf/i+mTy+4g4udpNjjzm/mIulcvlmlrVsKO8JVC5ZiCp1dm71QjZflktcURbRMNAX97jr0RjpMpcbOGpFZvIgCNKQtTqZyjjT0Caww6Tixd/7l5STL11mgVXi5lnLYlV5y73H7qBdIHCB1UaNY9BW0yFgwOdCblc85d1KQQBaY5kPcB2udo+Vgsg+xFgAK4+TBY2olQOAAAAAElFTkSuQmCC) center center no-repeat!important;
+}
+.clbc_mob_tw: hover {
+    background: url(data:image/png;
+    base64, iVBORw0KGgoAAAANSUhEUgAAAB4AAAAYCAYAAADtaU2/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAvNJREFUeNp0VouR4zAIBU8acAtpIVeCU0KuhE0JmxKSEjYlJDN3BWxKOJewKeE8sw2wIGEEkuIZW7LQBx4PEMLfbwACAOSXpCN91D7qOECZ5PpFtuWfA/9PKn5yf+beFdpnZPmy0T0mbmc+cLHD143XJymjh659Sv13IDwXnbyC8Mb/ezWEFWPlCI4sXgadcGDJJwvHtMgQcAevY4imF3/e+XOOQOjCbMCOB764/c/jHzz8YMFTZIMeMLGAJ8FnmowQ4cdKkdwyvHRugDQXmYKjjl+4zy5AWTMOKtzqLDmULYdDOcjhHRV6s817iKxKFNTYJfDB7V1cOigks5sw8ga3ZL0ohB24s893hQ+1xeSIapKF3306i59BifLIE8gtFsLRl8J/MMjNEkcy8G5ZYda36PY7MV1JudHJV4VuLASxZ8pvYiYriHPWHreBhNhxC3SiQudvXMweub0FdprMFhcl1olUMT2gT/Hg4ibQOMZ//H1yR6i+7fiz0t4pR3UEYGmj2bNz4xpODGGKOSETlliEavNVocYqag+NxBODFm+9hhO2qa22Eqj99y4xH2KrcOZGGB90vwcLr93w8PhShZ7P771sB5ZiHwWcrM3gID3y91SELgG46Ii1wsNKEEPOEork/3uN5BAgFc0QjkaEV0hbRnPw+TQZrb40iBirC2xTTvp1YoCqPL5gekAh9Z+ZPxhZb6y2PRLJSvr0ClixqCwj5xK3sW5wysnGEdHCKSSINZ/SXJShF8nfVS3P2LLXld97KJXukoHw57sKfld9IJVLSY27hq5mdSd+c1r9Ff0d0RhiLiVPAPHNXetutCpwoIpfQHHVPlan6tZiPoaQAsd0ZclV6Zb+/R2MOjFbDBF499ll2M8BqsBGC/SYUma6+sgNBCt2QgsnoU8gwt5TKvK96lQnFoQUTpfsS4EUp8aHvUtc8dUzRYIQiWBpDiR6WRYxXW8LSbb5/qUFI10GggVzPiy1kmbn/g20CiuqMgjLfgQYAFvei8pT9IpsAAAAAElFTkSuQmCC) center center no-repeat!important;
+    display: inline-block;
+}
+.clbc_mob_stat1, .clbc_mob_stat2 {
+    display: block!important;
+    cursor: pointer!important;
+    font-size: 11px!important;
+}
+.clbc_mob_banner-phone, .clbc_mob_banner-startphone {
+    background: url(data:image/png;
+    base64, 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UmVhZHlxyWU8AAADImlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4zLWMwMTEgNjYuMTQ1NjYxLCAyMDEyLzAyLzA2LTE0OjU2OjI3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpCMzkxQUNERDI0QzExMUU0QjlERThFMDU2NjFFREZGMiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpCMzkxQUNERTI0QzExMUU0QjlERThFMDU2NjFFREZGMiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkIzOTFBQ0RCMjRDMTExRTRCOURFOEUwNTY2MUVERkYyIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkIzOTFBQ0RDMjRDMTExRTRCOURFOEUwNTY2MUVERkYyIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+BbS4zAAABk1JREFUeNpiFBQQYMAC/jMQCZgo0YzNgAm4FL57/x6MCRmQj0uzkKAgw/379zHkGJHC4D8+zaSEAQawtLLCKcdCKODw2U60C/AB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) center center no-repeat!important;
+    height: 59px!important;
+    width: 128px!important;
+    cursor: pointer;
+}
+.clbc_mob_stat1 span, .clbc_mob_stat2 a {
+    color: #4466BC!important;
+    font-size: 11px!important;
+    text-decoration: underline!important;
+}
+.clbc_mob_banner-phone {
+    position: absolute;
+    right: 0;
+    top: -58px;
+    z-index: 2000003!important;
+}
+.clbc_mob_banner-startphone {
+    position: fixed!important;
+    bottom: 0!important;
+    right: 0!important;
+    z-index: 2000001!important;
+    overflow: visible!important;
+    min-width: 0!important;
+}
+#clbc_mob_banner-closephone {
+    height: 100%;
+    width: 70px;
+}
+.clbc_mob_banner-closephone {
+    position: absolute;
+    left: -68px;
+    height: 59px;
+    width: 100px;
+    background: url(data:image/png;
+    base64, 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) left top no-repeat!important;
+}
+.clbc_mob_banner-closephone: hover {
+    background-position: left bottom;
+}
+.clbc_mob_hide {
+    display: none!important;
+}
+.clbc_mob_show {
+    display: block!important;
+}
+@media only screen and (max-width:320px) {
+    .clbc_mob_banner-button, .clbc_mob_banner-textbox {
+    font-size: 20px!important;
+    height: 38px!important;
+    line-height: 25px!important;
+}
+.clbc_mob_banner-textbox {
+    letter-spacing: 1px!important;
+    margin: 0 auto;
+    width: 250px!important;
+}
+.clbc_mob_banner-button {
+    width: 265px!important;
+}
+.clbc_mob_banner-work-to {
+    display: none!important;
+}
+.clbc_mob_banner-body .clbc_mob_banner-h1 {
+    font-size: 18px!important;
+    line-height: 24px!important;
+}
+}
