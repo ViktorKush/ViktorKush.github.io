@@ -6,7 +6,7 @@
 			url("../fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"),
 			url("../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf") format("truetype");
 			font-style: normal;
-			font-weight: normal;
+			font-weight: 500;
 	}
 
 	@font-face {
@@ -16,7 +16,7 @@
 			url("../fonts/ProximaNovaBold/ProximaNovaBold.woff") format("woff"),
 			url("../fonts/ProximaNovaBold/ProximaNovaBold.ttf") format("truetype");
 			font-style: normal;
-			font-weight: normal;
+			font-weight: 700;
 	}
 
 
@@ -75,7 +75,8 @@ table {
 }
 /*wrapper*/
 .wrapper {
-    min-width: 1280px;
+    margin: 0 auto;
+    max-width: 1280px;
     padding-top: 20px;
 }
 /*header*/
@@ -101,16 +102,15 @@ header .first_row li {
 }
 .contacts a[href^="tel:"] {
     color: #1e1e1e;
-    font-family: "Proxima Nova - Semibold";
+    font-family: "ProximaNovaBold";
     font-size: 14px;
-    font-weight: 1000;
     line-height: 17.02px;
     text-transform: uppercase;
     letter-spacing: 0.35px;
 }
 .contacts span {
     color: #ababab;
-    font-family: "Proxima Nova - Semibold";
+    font-family: "ProximaNovaBold";
     font-size: 12px;
     font-weight: 400;
     line-height: 17.02px;
@@ -119,9 +119,9 @@ header .first_row li {
     margin-left: 19px;
 }
 header .first_row nav {
-    flex-basis: 37%;
+    flex-basis: 38%;
     color: #9c9c9c;
-    font-family: "Proxima Nova - Semibold";
+    font-family: "ProximaNovaRegular";
     font-size: 10px;
     font-weight: 400;
     line-height: 17.02px;
@@ -130,7 +130,7 @@ header .first_row nav {
 }
 .login_block {
     color: #9c9c9c;
-    font-family: "Proxima Nova - Semibold";
+    font-family: "ProximaNovaRegular";
     font-size: 10px;
     font-weight: 400;
     line-height: 17.02px;
@@ -143,7 +143,7 @@ header .first_row nav {
 .cart {
     flex-basis: 3%;
     color: #1e1e1e;
-    font-family: "Proxima Nova - Semibold";
+    font-family: "ProximaNovaRegular";
     font-size: 12px;
     font-weight: 400;
     line-height: 17.02px;
@@ -182,7 +182,7 @@ header .third_row ul li {
     justify-content: space-around;
     height: 55px;
     color: #f0ece6;
-    font-family: "Proxima Nova";
+    font-family: "ProximaNovaBold";
     font-size: 13px;
     font-weight: 700;
     line-height: 17.02px;
@@ -399,9 +399,12 @@ main {
 }
 .DemoText2{
 	position: relative;
-	max-width: 60%;
-	font: 112.5% ProximaNova-Semibold;
+	max-width: 196px;
+	font: "ProximaNovaRegular";
 	color:#1e1e1e;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
 }
 .DemoItem{
 	position: absolute;
@@ -430,7 +433,7 @@ main {
 	bottom: 43%;
 	color:#c59a77;
 	transform: translate(-50%, 0);
-	font: 80% ProximaNovaBold;
+	font: 80% "ProximaNovaBold";
 	text-transform: uppercase;
 }
 /*goods*/
@@ -453,22 +456,10 @@ main {
     justify-content: space-around;
 }
 .goods div[class*="prod"] {
-    flex-basis: calc(100%/3);
+    flex-basis: 33.33%;
+    background-position: right;
+    background-repeat: no-repeat;
 }
-/*
-.goods :not(.first-row) div[class*="prod1"] {
-    background: url(../img/product1.png) no-repeat center;
-    background-size: 100% 100%;
-}
-.goods :not(.first-row) div[class*="prod2"] {
-    background: url(../img/product2.png) no-repeat center;
-    background-size: 100% 100%;
-}
-.goods :not(.first-row) div[class*="prod3"] {
-    background: url(../img/product3.png) no-repeat center;
-    background-size: 100% 100%;
-}
-*/
 .first-row .prod1 {
     background: url(../img/background1.jpg) no-repeat center;
     background-size: 102% 128%;
@@ -482,44 +473,34 @@ main {
     background-size: 100% 100%;
 }
 .second-row .prod1 {
-    background: url(../img/product1.png) no-repeat center;
-    background-size: 100% 100%;
+    background: url(../img/1.png) no-repeat center;
 }
 .second-row .prod2 {
-    background-image: url(../img/product2.png);
-    background-size: 100% 100%;
+    background-image: url(../img/2.png);
 }
 .second-row .prod3 {
-    background-image: url(../img/product3.png);
-    background-size: 100% 100%;
+    background-image: url(../img/3.png);
 }
 .third-row .prod1 {
-    background-image: url(../img/product4.png);
-    background-size: 100% 100%;
+    background-image: url(../img/4.png);
 }
 .third-row .prod2 {
-    background-image: url(../img/product5.png);
-    background-size: 100% 100%;
+    background-image: url(../img/5.png);
 }
 .third-row .prod3 {
-    background-image: url(../img/product6.png);
-    background-size: 100% 100%;
+    background-image: url(../img/6.png);
 }
 .fourth-row .prod1 {
-    background-image: url(../img/product7.png);
-    background-size: 100% 100%;
+    background-image: url(../img/7.png);
 }
 .fourth-row .prod2 {
-    background-image: url(../img/product8.png);
-    background-size: 100% 100%;
+    background-image: url(../img/8.png);
 }
 .fourth-row .prod3 {
-    background-image: url(../img/product9.png);
-    background-size: 100% 100%;
+    background-image: url(../img/2.png);
 }
 .fifth-row .prod1 {
-    background-image: url(../img/product10.png);
-    background-size: 100% 100%;
+    background-image: url(../img/9.png);
 }
 .btn1 {
 	width: 39px;
@@ -543,7 +524,7 @@ main {
 }
 .goods .link .text {
 	position: relative;
-    font-family: "Proxima Nova";
+    font-family: "ProximaNovaBold";
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -559,22 +540,18 @@ main {
 .i1 .btn1 {
 	background: #c59a77;
 }
-
 .prod1:hover .btn1{
 	background: #bbc1c6;
 }
-
 .first-row .prod2 .btn1{
 	background: #1e1e1e;
 }
 .first-row .prod2:hover .btn1{
 	background: #949ba3;
 }
-
 .first-row .prod3 .btn1{
 	background: #ffffff;
 }
-
 .first-row .prod3:hover .btn1{
 	background: #a27c5d;
 }
@@ -584,11 +561,9 @@ main {
 .i1 .text {
 	color: #c59a77;
 }
-
 .i2 .text {
 	color: #1e1e1e;
 }
-
 .i3 .text {
 	color: #ffffff;
 }
@@ -616,7 +591,6 @@ main {
 	height: auto;
 	text-align: center;
 }
-
  .item:hover {
 	background-color: rgba(246,240,235,.9);
 }
@@ -651,7 +625,7 @@ main {
 .item .head {
     position: relative;
     color: #1e1e1e;
-    font-family: Proxima Nova;
+    font-family: "ProximaNovaRegular";
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -667,7 +641,7 @@ main {
 	margin-left:32px;
 	width: 118px;
     color: #7f7f7f;
-    font-family: 'Proxima Nova - Semibold';
+    font-family: 'ProximaNovaRegular';
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
@@ -681,7 +655,7 @@ main {
     text-transform: uppercase;
 	bottom: 32px;
 	left:32px;
-	font: 18px ProximaNova-Semibold;
+	font: 18px "ProximaNovaRegular";
 	color:#7f7f7f;
 	text-transform: uppercase;
 }
@@ -715,7 +689,7 @@ main {
 .goods .fifth-row .item .text {
     width: 270px;
     color: #535151;
-    font-family: "Proxima Nova";
+    font-family: "ProximaNovaRegular";
     font-size: 14px;
     font-weight: 400;
     text-align: left;
@@ -723,7 +697,7 @@ main {
 .goods .prod1 .ItemSpec .text {
     width: 104px;
     color: #7f7f7f;
-    font-family: "Proxima Nova - Semibold";
+    font-family: "ProximaNovaRegular";
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
@@ -741,7 +715,6 @@ footer {
     padding-left: 3px;
 }
 .footer-wrapper {
-    margin-top: 31px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -753,14 +726,14 @@ footer {
 }
 footer .column ul li a {
     color: #8e8e8e;
-    font-family: "Proxima Nova - Semibold";
+    font-family: "ProximaNovaRegular";
     font-size: 12px;
     font-weight: 400;
 }
 footer .column ul li:first-child a {
     color: white;
     color: #ffffff;
-    font-family: "Proxima Nova";
+    font-family: "ProximaNovaBold";
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -773,10 +746,10 @@ footer .column ul li:first-child a {
     width: 100%;
 }
 .footer-wrapper li:first-child {
-    width: 58px;
+    width: 65px;
     height: 13px;
     color: #ffffff;
-    font-family: "Proxima Nova";
+    font-family: "ProximaNovaBold";
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -786,7 +759,7 @@ footer .column ul li:first-child a {
 .rights {
     width: 130px;
     color: #8e8e8e;
-    font-family: "Proxima Nova - Semibold";
+    font-family: "ProximaNovaRegular";
     font-size: 12px;
     font-weight: 400;
     /* Text style for "@ 2010-201" */
