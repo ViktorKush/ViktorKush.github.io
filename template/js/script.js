@@ -1,4 +1,12 @@
     $(function() {
+            $(".changeback").mouseenter(function() {
+        var newUrl = 'url("img/changed/product' +$(this).css("background-image").split("product")[1];
+        $(this).css("background-image", newUrl).css("background-size", "100% 100%");
+})
+    $(".changeback").mouseleave(function() {
+        var newUrl = 'url("img/product' +$(this).css("background-image").split("product")[1];
+        $(this).css("background-image", newUrl).css("background-size", "100% 100%");
+})
       $("#owl-demo").owlCarousel({
 
       navigation : true,

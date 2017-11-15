@@ -1,5 +1,4 @@
 /* Код для подключения шрифта в /css/stylename.css */
-
 	@font-face {
 			font-family: "ProximaNovaRegular";
 			src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot");
@@ -408,6 +407,7 @@ main {
 	position: absolute;
 	right: -52px;
 	top: 200px;
+    width: 223px;
 }
 #demo .DemoItem>img{
 	max-width: 100%;
@@ -455,6 +455,7 @@ main {
 .goods div[class*="prod"] {
     flex-basis: calc(100%/3);
 }
+/*
 .goods :not(.first-row) div[class*="prod1"] {
     background: url(../img/product1.png) no-repeat center;
     background-size: 100% 100%;
@@ -467,6 +468,7 @@ main {
     background: url(../img/product3.png) no-repeat center;
     background-size: 100% 100%;
 }
+*/
 .first-row .prod1 {
     background: url(../img/background1.jpg) no-repeat center;
     background-size: 102% 128%;
@@ -484,11 +486,39 @@ main {
     background-size: 100% 100%;
 }
 .second-row .prod2 {
-    background-image: url(../img/product1.png);
+    background-image: url(../img/product2.png);
     background-size: 100% 100%;
 }
 .second-row .prod3 {
-    background-image: url(../img/product1.png);
+    background-image: url(../img/product3.png);
+    background-size: 100% 100%;
+}
+.third-row .prod1 {
+    background-image: url(../img/product4.png);
+    background-size: 100% 100%;
+}
+.third-row .prod2 {
+    background-image: url(../img/product5.png);
+    background-size: 100% 100%;
+}
+.third-row .prod3 {
+    background-image: url(../img/product6.png);
+    background-size: 100% 100%;
+}
+.fourth-row .prod1 {
+    background-image: url(../img/product7.png);
+    background-size: 100% 100%;
+}
+.fourth-row .prod2 {
+    background-image: url(../img/product8.png);
+    background-size: 100% 100%;
+}
+.fourth-row .prod3 {
+    background-image: url(../img/product9.png);
+    background-size: 100% 100%;
+}
+.fifth-row .prod1 {
+    background-image: url(../img/product10.png);
     background-size: 100% 100%;
 }
 .btn1 {
@@ -643,7 +673,7 @@ main {
     line-height: 16px;
 }
 
-.item .coast {
+.item .cost {
 	position: absolute;
     color: #7f7f7f;
     font-weight: 400;
@@ -666,7 +696,7 @@ main {
 
 .item:hover .btn1{
 	background-color: #c59a77;
-}
+}*
 
 .item .btn1>img:last-child {
 	display: none;
@@ -690,6 +720,14 @@ main {
     font-weight: 400;
     text-align: left;
 } 
+.goods .prod1 .ItemSpec .text {
+    width: 104px;
+    color: #7f7f7f;
+    font-family: "Proxima Nova - Semibold";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
 /*footer*/
 footer {
 	position: relative;
@@ -759,6 +797,9 @@ footer .column ul li:first-child a {
     line-height: 16px;
     text-align: left
 }
+.soc {
+    padding-left: 4px;
+}
 .soc a{
 	display: inline-block;
 }
@@ -768,6 +809,7 @@ footer .column ul li:first-child a {
 	height: 39px;
 	border-radius: 50%;
 	background-color: #c59a77;
+    margin-right: 9px;
 }
 .soc .btn1 img{
 	width: 50%;
