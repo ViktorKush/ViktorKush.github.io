@@ -460,7 +460,7 @@ main {
     background-position: right;
     background-repeat: no-repeat;
 }
-.first-row .prod1 {
+.goods .first-row .prod1 {
     background: url(../img/background1.jpg) no-repeat center;
     background-size: 102% 128%;
 }
@@ -577,7 +577,9 @@ main {
 	border-right: 1px solid #e5e5e5;
 	border-bottom: 1px solid #e5e5e5;	
 }
-
+.prod1 {
+    border-left: 1px solid #e5e5e5;
+}
 .second-row .item-photo, .third-row .item-photo, .fourth-row .item-photo, .fifth-row .item-photo {
 	width: 60%;
 	position: absolute;
