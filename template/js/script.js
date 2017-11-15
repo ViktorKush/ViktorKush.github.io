@@ -1,4 +1,16 @@
     $(function() {
+    var images = [
+        'img/changed/product1.png',
+        'img/changed/product2.png',
+        'img/changed/product3.png',
+        'img/changed/product4.png',
+        'img/changed/product5.png',
+        'img/changed/product6.png',
+        'img/changed/product7.png',
+        'img/changed/product8.png',
+        'img/changed/product9.png',
+        'img/changed/product10.png'
+    ]
             $(".changeback").mouseenter(function() {
         var newUrl = 'url("img/changed/product' +$(this).css("background-image").split("product")[1];
         $(this).css("background-image", newUrl).css("background-size", "100% 100%");
