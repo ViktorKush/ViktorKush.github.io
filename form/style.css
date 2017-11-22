@@ -1,0 +1,93 @@
+body {
+    background-color: #158bce;
+}
+
+.container-fluid {
+    margin: 10%;
+}
+
+.block-wrapper {
+    background-color: white;
+    padding: 3% 7%;
+    border-radius: 10px;
+    margin-top: 10px;
+
+}
+
+option {
+    background-color: aqua;
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+legend {
+    font-size: 16px;
+    font-weight: 700;
+}
+input {
+    min-width: 50px;
+}
+.changed .col {
+    padding-right: 5px;
+}
+/*toggle*/
+
+.wrap_toggle {
+    margin-left: 5px;
+    margin-top: 32px;
+}
+
+.toggle-handle {
+    background: #ffffff;
+    width: 50px;
+}
+
+.toggle.off .toggle-handle {
+    left: -10px;
+}
+
+.toggle .toggle-handle {
+    left: 10px;
+}
+
+.changed {
+    display: inherit;
+}
+
+/*order*/
+
+.order button:not(.submit) {
+    background-color: #0A4C86;
+}
+
+.order {
+    margin-top: 15px;
+}
+
+.order .submit {
+    background-color: #d10909;
+    position: absolute;
+    right: 5%;
+}
+
+.order * {
+    font-size: 1vw;
+}
+
+.order * {
+    font-size: 1vw;
+}
+
+@media only screen and (max-width: 700px) {
+    .order * {
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .order * {
+        font-size: 3vw;
+    }
+}
