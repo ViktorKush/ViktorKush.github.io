@@ -1,0 +1,98 @@
+body {
+    background-color: #80cdc6;
+}
+* {
+    overflow: hidden;
+}
+.water {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.clouds {
+    z-index: 0;
+    position: absolute;
+    top: -1vw;
+    width: 50vw;
+    max-height: 50%;
+    left: 41%;
+}
+.wooden-ship {
+    position: absolute;
+    bottom: 7vw;
+    left: 3%;
+    width: 25vw;
+    max-height: 55%;
+    z-index: 2;
+}
+
+.world {
+    position: absolute;
+    width: 100vw;
+    bottom: 4vw;
+    z-index: 1;
+    max-height: 80%;
+}
+
+
+.water {
+    width:  102%;
+}
+@-webkit-keyframes ship {
+    0%   {left:5%;bottom: 7vw;}
+    25% {left:4%;}
+    50%{left:4%;}
+    100% {left:6%;bottom: 5vw;}
+
+}
+@keyframes ship {
+    0%   {left:3%;bottom: 7vw;}
+    25% {left:4%;}
+    50%{left:4%;}
+    100% {left:5%;bottom: 5vw;}}
+.wooden-ship {
+    -webkit-animation-name: ship;
+    animation-name: ship;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+.clouds {
+    -webkit-animation-name: clouds;
+    animation-name: clouds;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration: 15s;
+    animation-duration: 15s;
+}
+@-webkit-keyframes clouds {
+    0% {left:100%;}
+
+}
+@keyframes clouds {
+    0% {left:100%;}
+    100% {left: -80%;}
+}
+.water {
+    -webkit-animation-name: water;
+    animation-name: water;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+@-webkit-keyframes water {
+    0% {bottom:0;}
+    100%{bottom:-2%;}
+}
+@keyframes water {
+    0% {bottom:0;}
+    100%{bottom:-2%;}
+}
