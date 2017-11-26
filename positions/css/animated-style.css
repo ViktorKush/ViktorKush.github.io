@@ -1,9 +1,11 @@
 body {
     background-color: #80cdc6;
 }
+
 * {
     overflow: hidden;
 }
+
 .water {
     position: absolute;
     bottom: 0;
@@ -19,6 +21,7 @@ body {
     max-height: 50%;
     left: 41%;
 }
+
 .wooden-ship {
     position: absolute;
     bottom: 7vw;
@@ -37,21 +40,47 @@ body {
 }
 
 
-.water {
-    width:  102%;
+#water {
+    position: absolute;
+    width: 102%;
+    left: -100px;
 }
+
 @-webkit-keyframes ship {
-    0%   {left:5%;bottom: 7vw;}
-    25% {left:4%;}
-    50%{left:4%;}
-    100% {left:6%;bottom: 5vw;}
+    0% {
+        left: 5%;
+        bottom: 7vw;
+    }
+    25% {
+        left: 4%;
+    }
+    50% {
+        left: 4%;
+    }
+    100% {
+        left: 6%;
+        bottom: 5vw;
+    }
 
 }
+
 @keyframes ship {
-    0%   {left:3%;bottom: 7vw;}
-    25% {left:4%;}
-    50%{left:4%;}
-    100% {left:5%;bottom: 5vw;}}
+    0% {
+        left: 3%;
+        bottom: 7vw;
+    }
+    25% {
+        left: 4%;
+    }
+    50% {
+        left: 4%;
+    }
+    100% {
+        left: 5%;
+        bottom: 5vw;
+    }
+}
+
 .wooden-ship {
     -webkit-animation-name: ship;
     animation-name: ship;
@@ -62,6 +91,7 @@ body {
     -webkit-animation-direction: alternate;
     animation-direction: alternate;
 }
+
 .clouds {
     -webkit-animation-name: clouds;
     animation-name: clouds;
@@ -70,14 +100,23 @@ body {
     -webkit-animation-duration: 15s;
     animation-duration: 15s;
 }
+
 @-webkit-keyframes clouds {
-    0% {left:100%;}
+    0% {
+        left: 100%;
+    }
 
 }
+
 @keyframes clouds {
-    0% {left:100%;}
-    100% {left: -80%;}
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -80%;
+    }
 }
+
 .water {
     -webkit-animation-name: water;
     animation-name: water;
@@ -88,11 +127,21 @@ body {
     -webkit-animation-direction: alternate;
     animation-direction: alternate;
 }
+
 @-webkit-keyframes water {
-    0% {bottom:0;}
-    100%{bottom:-2%;}
+    0% {
+        bottom: 0;
+    }
+    100% {
+        bottom: -2%;
+    }
 }
+
 @keyframes water {
-    0% {bottom:0;}
-    100%{bottom:-2%;}
+    0% {
+        bottom: 0;
+    }
+    100% {
+        bottom: -2%;
+    }
 }

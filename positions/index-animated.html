@@ -5,12 +5,134 @@
     <title>Picture</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" href="css/animated-style.min.css">
+    <style>
+        body {
+            transition-property: background-color;
+            transition-duration: 3s;
+        }
+
+        @keyframes rotate {
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }
+
+        .animate {
+            -webkit-animation: 1600ms rotate alternate ease-in-out;
+            -moz-animation: 1600ms rotate alternate ease-in-out;
+            -ms-animation: 1600ms rotate alternate ease-in-out;
+            -o-animation: 1600ms rotate alternate ease-in-out;
+            animation: 1600ms rotate alternate ease-in-out;
+            transform-origin: bottom;
+        }
+
+        #sun {
+            transition-property: top;
+            transition-duration: 1500ms;
+        }
+
+        #moon {
+            transition-property: top;
+            transition-duration: 1500ms;
+        }
+
+        #mount, #ship, #water, #clouds {
+            transition-property: filter;
+            transition-duration: 1500ms;
+        }
+
+        .sun {
+            z-index: 0;
+            display: block;
+            width: 160px;
+            height: 160px;
+            background: #ff0;
+            background: -moz-radial-gradient(center, ellipse cover, #f90 0%, #fc0 50%, #ff0 100%);
+            background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f90), color-stop(50%, #fc0), color-stop(100%, #ff0));
+            background: -webkit-radial-gradient(center, ellipse cover, #f90 0%, #fc0 50%, #ff0 100%);
+            background: -o-radial-gradient(center, ellipse cover, #f90 0%, #fc0 50%, #ff0 100%);
+            background: -ms-radial-gradient(center, ellipse cover, #f90 0%, #fc0 50%, #ff0 100%);
+            background: radial-gradient(ellipse at center, #f90 0%, #fc0 50%, #ff0 100%);
+            border-radius: 100%;
+            right: 30px;
+            top: -30px;
+            position: absolute;
+            box-shadow: 0 0 100px #ff0, 0 0 100px #ff0;
+        }
+
+        .moon {
+            z-index: 0;
+            display: block;
+            width: 160px;
+            height: 160px;
+            background: #fdfdda;
+            background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #e8e8e8 50%, #f0f0f0 100%);
+            background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fbedd7), color-stop(50%, #f7f0d4), color-stop(100%, #ffffc7));
+            background: -webkit-radial-gradient(center, ellipse cover, #ffe2b8 0%, #fff8de 50%, #ffff91 100%);
+            background: -o-radial-gradient(center, ellipse cover, #ffe2b8 0%, #fff8de 50%, #ffff91 100%);
+            background: -ms-radial-gradient(center, ellipse cover, #ffe2b8 0%, #fff8de 50%, #ffff91 100%);
+            background: radial-gradient(center, ellipse cover, #ffffff 0%, #e8e8e8 50%, #f0f0f0 100%%);
+            border-radius: 100%;
+            right: 30px;
+            top: 1000px;
+            position: absolute;
+            box-shadow: 0 0 100px #ffff67, 0 0 100px #ffff57;
+        }
+    </style>
 </head>
 
 <body>
-    <img src="clouds.svg" alt="clouds" class="clouds">
-    <img src="water.svg" alt="water" class="water">
-    <img src="wooden-ship.svg" alt="wooden-ship"  class="wooden-ship">
-    <img src="world.svg" alt="world" class="world">
+    <div class="sun" id="sun"></div>
+    <div class="moon" id="moon"></div>
+    <img src="clouds.svg" alt="clouds" class="clouds" id="clouds">
+    <img src="water.svg" alt="water" class="water" id="water">
+    <img src="wooden-ship.svg" alt="wooden-ship" class="wooden-ship" id="ship">
+    <img src="world.svg" alt="world" class="world" id="mount">
+    <script>
+        var mount = document.getElementById("mount"),
+            time = "day",
+            sun = document.getElementById("sun"),
+            moon = document.getElementById("moon"),
+            ship = document.getElementById("ship"),
+            water = document.getElementById("water");
+        document.body.onclick = function() {
+            if (time == "day") {
+                night()
+            } else {
+                day()
+            }
+        }
+
+        function night() {
+            document.body.style = "background-color: #050579"
+            mount.className = "animate";
+            setTimeout(function() {
+                mount.removeAttribute("class")
+            }, 1600);
+            time = "night"
+            sun.style = "top: 1000px";
+            moon.style = "top: -30px";
+            mount.style = "filter: brightness(30%)";
+            ship.style = "filter: brightness(30%)";
+            water.style = "filter: brightness(50%)";
+            clouds.style = "filter: brightness(30%)";
+
+        }
+
+        function day() {
+            document.body.style = "background-color: #80cdc6"
+            mount.className = "animate";
+            setTimeout(function() {
+                mount.removeAttribute("class")
+            }, 1600);
+            time = "day"
+            moon.style = "top: 1000px";
+            sun.style = "top: -30px";
+            mount.style = "filter: brightness(100%)";
+            ship.style = "filter: brightness(100%)";
+            water.style = "filter: brightness(100%)";
+            clouds.style = "filter: brightness(100%)";
+        }
+    </script>
 </body>
 </html>
