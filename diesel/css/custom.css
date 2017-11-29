@@ -981,7 +981,7 @@ button.pull-right,
   color: #ffffff;
   border-radius: 0;
   border: 0;
-/*  vertical-align: top;*/
+  vertical-align: top;
   -webkit-transition: all 1.2s .6s ease, background-color .4s ease-in-out, color .4s ease;
   -moz-transition: all 1.2s .6s ease, background-color .4s ease-in-out, color .4s ease;
   -ms-transition: all 1.2s .6s ease, background-color .4s ease-in-out, color .4s ease;
@@ -1378,12 +1378,6 @@ html {
   background: url(../images/block-bg-1.jpg) no-repeat fixed center center;
   background-size: cover;
   padding: 75px 0 60px;
-}
-.block.bg-0 {
-  background: url(../images/bg-0.jpg) no-repeat fixed center center;
-  height: 620px;
-  background-size: cover;
-
 }
 @media (max-width: 767px) {
   .block.bg-1,
@@ -2689,16 +2683,6 @@ body.slide-active .darkout-menu {
 #mainSliderWrapper {
   position: relative;
 }
-.link-puzzle {
-  color: yellow;
-}
-a.link-puzzle:hover {
-  color:  red;
-}
-a.link-puzzle:active {
-  color: yellow; 
-}
-
 /*---------------------------------------*/
 /*--------      3. Content       --------*/
 /*---------------------------------------*/
@@ -3596,151 +3580,6 @@ h2 + .testimonials {
   }
 }
 /*-----  3.8 Appointment Form    --------*/
-#appointmentForm.modal {
-  padding-left: 0 !important;
-}
-#appointmentForm.modal .modal-dialog {
-  margin: 0 auto;
-  width: 1170px;
-  padding-left: 0;
-  padding-right: 0;
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  #appointmentForm.modal .modal-dialog {
-    width: 970px;
-  }
-}
-@media (max-width: 991px) {
-  #appointmentForm.modal .modal-dialog {
-    width: 100%;
-  }
-}
-#appointmentForm.modal .modal-dialog .modal-body {
-  padding: 0;
-}
-#appointmentForm.modal .modal-dialog .modal-content {
-  background-color: #f7f7f7;
-  border-radius: 0;
-  border: 0;
-}
-@media (max-width: 991px) {
-  #appointmentForm.modal .modal-dialog .modal-content {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-}
-#appointmentForm.modal .modal-dialog .modal-header {
-  height: 59px;
-  border: 0;
-  padding: 0;
-}
-@media (max-width: 1240px) {
-  #appointmentForm.modal .modal-dialog .modal-header {
-    margin-bottom: 35px;
-  }
-}
-#appointmentForm.modal .modal-dialog .modal-header .close {
-  margin-top: 0;
-  position: absolute;
-  right: -70px;
-  top: 5px;
-  font-size: 58px;
-  text-shadow: inherit;
-  opacity: 1;
-  color: #fede00;
-}
-@media (max-width: 1240px) {
-  #appointmentForm.modal .modal-dialog .modal-header .close {
-    left: 0;
-    right: 0;
-    top: 0;
-    background: #131313;
-    width: 100%;
-    text-align: left;
-    z-index: 0;
-    font-size: 24px;
-    line-height: 58px;
-    padding-left: 25px;
-  }
-}
-@media (max-width: 1240px) {
-  #appointmentForm.modal .modal-dialog .modal-header .close {
-    font-size: 20px;
-    line-height: 22px;
-    height: 42px;
-  }
-}
-#appointmentForm.modal a.appointment {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-}
-#appointmentForm.modal .container-fluid {
-  padding: 0;
-  overflow-x: hidden;
-}
-#appointmentForm .form-group {
-  position: relative;
-}
-#appointmentForm .form-horizontal {
-  padding: 0;
-}
-#appointmentForm .form-horizontal .form-group {
-  margin-left: 0;
-  margin-right: 0;
-}
-#appointmentForm .input-group .form-control {
-  display: block;
-  float: none;
-  width: 100%;
-}
-#appointmentForm .input-group {
-  display: block;
-}
-#appointmentForm .input-group-addon {
-  display: block;
-  position: absolute;
-  top: 1px;
-  right: 1px;
-  z-index: 10;
-  padding: 12px 15px;
-  margin: 0;
-  font-size: 18px;
-  line-height: 30px;
-  height: 52px;
-  width: 52px;
-  background: #fff;
-  border: 0;
-  border-radius: 0;
-  color: #989898;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-#appointmentForm .input-group-addon:before {
-  content: '';
-  position: absolute;
-  left: -5px;
-  top: 0;
-  height: 100%;
-  width: 10px;
-  background-color: #fff;
-}
-#appointmentForm .datetimepicker {
-  min-width: 200px;
-}
-@media (max-width: 991px) {
-  #appointmentForm .datetimepicker {
-    margin-left: -19px;
-  }
-}
-#appointmentForm.modal.fade,
-#appointmentForm.modal.fade .modal-dialog,
-#appointmentForm.modal.fade.in .modal-dialog {
-  opacity: 1;
-}
-/*-----  3.8 map Form    --------*/
 #mapForm.modal {
   padding-left: 0 !important;
 }
@@ -3885,6 +3724,150 @@ h2 + .testimonials {
 #mapForm.modal.fade.in .modal-dialog {
   opacity: 1;
 }
+#appointmentForm.modal {
+  padding-left: 0 !important;
+}
+#appointmentForm.modal .modal-dialog {
+  margin: 0 auto;
+  width: 1170px;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #appointmentForm.modal .modal-dialog {
+    width: 970px;
+  }
+}
+@media (max-width: 991px) {
+  #appointmentForm.modal .modal-dialog {
+    width: 100%;
+  }
+}
+#appointmentForm.modal .modal-dialog .modal-body {
+  padding: 0;
+}
+#appointmentForm.modal .modal-dialog .modal-content {
+  background-color: #f7f7f7;
+  border-radius: 0;
+  border: 0;
+}
+@media (max-width: 991px) {
+  #appointmentForm.modal .modal-dialog .modal-content {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+#appointmentForm.modal .modal-dialog .modal-header {
+  height: 59px;
+  border: 0;
+  padding: 0;
+}
+@media (max-width: 1240px) {
+  #appointmentForm.modal .modal-dialog .modal-header {
+    margin-bottom: 35px;
+  }
+}
+#appointmentForm.modal .modal-dialog .modal-header .close {
+  margin-top: 0;
+  position: absolute;
+  right: -70px;
+  top: 5px;
+  font-size: 58px;
+  text-shadow: inherit;
+  opacity: 1;
+  color: #fede00;
+}
+@media (max-width: 1240px) {
+  #appointmentForm.modal .modal-dialog .modal-header .close {
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #131313;
+    width: 100%;
+    text-align: left;
+    z-index: 0;
+    font-size: 24px;
+    line-height: 58px;
+    padding-left: 25px;
+  }
+}
+@media (max-width: 1240px) {
+  #appointmentForm.modal .modal-dialog .modal-header .close {
+    font-size: 20px;
+    line-height: 22px;
+    height: 42px;
+  }
+}
+#appointmentForm.modal a.appointment {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+#appointmentForm.modal .container-fluid {
+  padding: 0;
+  overflow-x: hidden;
+}
+#appointmentForm .form-group {
+  position: relative;
+}
+#appointmentForm .form-horizontal {
+  padding: 0;
+}
+#appointmentForm .form-horizontal .form-group {
+  margin-left: 0;
+  margin-right: 0;
+}
+#appointmentForm .input-group .form-control {
+  display: block;
+  float: none;
+  width: 100%;
+}
+#appointmentForm .input-group {
+  display: block;
+}
+#appointmentForm .input-group-addon {
+  display: block;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  z-index: 10;
+  padding: 12px 15px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+  height: 52px;
+  width: 52px;
+  background: #fff;
+  border: 0;
+  border-radius: 0;
+  color: #989898;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+#appointmentForm .input-group-addon:before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 0;
+  height: 100%;
+  width: 10px;
+  background-color: #fff;
+}
+#appointmentForm .datetimepicker {
+  min-width: 200px;
+}
+@media (max-width: 991px) {
+  #appointmentForm .datetimepicker {
+    margin-left: -19px;
+  }
+}
+#appointmentForm.modal.fade,
+#appointmentForm.modal.fade .modal-dialog,
+#appointmentForm.modal.fade.in .modal-dialog {
+  opacity: 1;
+}
 /*-----  3.9 Appointment Banner  --------*/
 @media (min-width: 1400px) {
   .text-appointment {
@@ -4026,7 +4009,7 @@ h2 + .testimonials {
 .services-block .caption h2 {
   margin-bottom: 18px;
 }
-.services-block .image {
+.services-block image {
   background-color: #fede00;
 }
 .services-block .image img {

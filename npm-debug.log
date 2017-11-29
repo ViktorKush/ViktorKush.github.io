@@ -1,0 +1,166 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '--global',
+1 verbose cli   'gulpjs/gulp-cli#4.0',
+1 verbose cli   '-g' ]
+2 info using npm@3.10.9
+3 info using node@v7.2.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData gulpjs/gulp-cli#4.0
+8 silly fetchOtherPackageData gulpjs/gulp-cli#4.0
+9 silly cache add args [ 'gulpjs/gulp-cli#4.0', null ]
+10 verbose cache add spec gulpjs/gulp-cli#4.0
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'gulpjs/gulp-cli#4.0',
+11 silly cache add   scope: null,
+11 silly cache add   escapedName: null,
+11 silly cache add   name: null,
+11 silly cache add   rawSpec: 'gulpjs/gulp-cli#4.0',
+11 silly cache add   spec: 'github:gulpjs/gulp-cli#4.0',
+11 silly cache add   type: 'hosted',
+11 silly cache add   hosted:
+11 silly cache add    { type: 'github',
+11 silly cache add      ssh: 'git@github.com:gulpjs/gulp-cli.git#4.0',
+11 silly cache add      sshUrl: 'git+ssh://git@github.com/gulpjs/gulp-cli.git#4.0',
+11 silly cache add      httpsUrl: 'git+https://github.com/gulpjs/gulp-cli.git#4.0',
+11 silly cache add      gitUrl: 'git://github.com/gulpjs/gulp-cli.git#4.0',
+11 silly cache add      shortcut: 'github:gulpjs/gulp-cli#4.0',
+11 silly cache add      directUrl: 'https://raw.githubusercontent.com/gulpjs/gulp-cli/4.0/package.json' } }
+12 verbose addRemoteGit caching gulpjs/gulp-cli#4.0
+13 verbose addRemoteGit gulpjs/gulp-cli#4.0 is a repository hosted by github
+14 silly tryGitProto attempting to clone git://github.com/gulpjs/gulp-cli.git#4.0
+15 silly tryClone cloning gulpjs/gulp-cli#4.0 via git://github.com/gulpjs/gulp-cli.git#4.0
+16 verbose tryClone git-github-com-gulpjs-gulp-cli-git-4-0-177dc8bb not in flight; caching
+17 verbose correctMkdir C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes correctMkdir not in flight; initializing
+18 info git [ 'config', '--get', 'remote.origin.url' ]
+19 silly validateExistingRemote gulpjs/gulp-cli#4.0 remote.origin.url: git://github.com/gulpjs/gulp-cli.git
+20 verbose validateExistingRemote gulpjs/gulp-cli#4.0 is updating existing cached remote C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\git-github-com-gulpjs-gulp-cli-git-4-0-177dc8bb
+21 info git [ 'fetch', '-a', 'origin' ]
+22 verbose updateRemote git fetch -a origin (git://github.com/gulpjs/gulp-cli.git)
+23 verbose setPermissions gulpjs/gulp-cli#4.0 skipping chownr on Windows
+24 verbose resolveHead gulpjs/gulp-cli#4.0 original treeish: 4.0
+25 info git [ 'rev-list', '-n1', '4.0' ]
+26 error git rev-list -n1 4.0: fatal: ambiguous argument '4.0': unknown revision or path not in the working tree.
+26 error git rev-list -n1 4.0: Use '--' to separate paths from revisions, like this:
+26 error git rev-list -n1 4.0: 'git <command> [<revision>...] -- [<file>...]'
+27 silly tryHTTPS attempting to clone git+https://github.com/gulpjs/gulp-cli.git#4.0
+28 silly tryClone cloning gulpjs/gulp-cli#4.0 via git+https://github.com/gulpjs/gulp-cli.git#4.0
+29 verbose tryClone git-https-github-com-gulpjs-gulp-cli-git-4-0-4d1486f1 not in flight; caching
+30 verbose correctMkdir C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes correctMkdir not in flight; initializing
+31 info git [ 'config', '--get', 'remote.origin.url' ]
+32 silly validateExistingRemote gulpjs/gulp-cli#4.0 remote.origin.url: https://github.com/gulpjs/gulp-cli.git
+33 verbose validateExistingRemote gulpjs/gulp-cli#4.0 is updating existing cached remote C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\git-https-github-com-gulpjs-gulp-cli-git-4-0-4d1486f1
+34 info git [ 'fetch', '-a', 'origin' ]
+35 verbose updateRemote git fetch -a origin (https://github.com/gulpjs/gulp-cli.git)
+36 verbose setPermissions gulpjs/gulp-cli#4.0 skipping chownr on Windows
+37 verbose resolveHead gulpjs/gulp-cli#4.0 original treeish: 4.0
+38 info git [ 'rev-list', '-n1', '4.0' ]
+39 error git rev-list -n1 4.0: fatal: ambiguous argument '4.0': unknown revision or path not in the working tree.
+39 error git rev-list -n1 4.0: Use '--' to separate paths from revisions, like this:
+39 error git rev-list -n1 4.0: 'git <command> [<revision>...] -- [<file>...]'
+40 silly trySSH attempting to clone git@github.com:gulpjs/gulp-cli.git#4.0
+41 silly tryClone cloning gulpjs/gulp-cli#4.0 via git@github.com:gulpjs/gulp-cli.git#4.0
+42 verbose tryClone git-github-com-gulpjs-gulp-cli-git-4-0-799725fb not in flight; caching
+43 verbose correctMkdir C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes correctMkdir not in flight; initializing
+44 info git [ 'config', '--get', 'remote.origin.url' ]
+45 warn addRemoteGit Error: Command failed: git -c core.longpaths=true config --get remote.origin.url
+45 warn addRemoteGit
+45 warn addRemoteGit     at ChildProcess.exithandler (child_process.js:211:12)
+45 warn addRemoteGit     at emitTwo (events.js:106:13)
+45 warn addRemoteGit     at ChildProcess.emit (events.js:191:7)
+45 warn addRemoteGit     at maybeClose (internal/child_process.js:885:16)
+45 warn addRemoteGit     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+45 warn addRemoteGit  gulpjs/gulp-cli#4.0 resetting remote C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\git-github-com-gulpjs-gulp-cli-git-4-0-799725fb because of error: { Error: Command failed: git -c core.longpaths=true config --get remote.origin.url
+45 warn addRemoteGit
+45 warn addRemoteGit     at ChildProcess.exithandler (child_process.js:211:12)
+45 warn addRemoteGit     at emitTwo (events.js:106:13)
+45 warn addRemoteGit     at ChildProcess.emit (events.js:191:7)
+45 warn addRemoteGit     at maybeClose (internal/child_process.js:885:16)
+45 warn addRemoteGit     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+45 warn addRemoteGit   killed: false,
+45 warn addRemoteGit   code: 1,
+45 warn addRemoteGit   signal: null,
+45 warn addRemoteGit   cmd: 'git -c core.longpaths=true config --get remote.origin.url' }
+46 info resetRemote resetting C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\git-github-com-gulpjs-gulp-cli-git-4-0-799725fb for gulpjs/gulp-cli#4.0
+47 silly gentlyRm C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\git-github-com-gulpjs-gulp-cli-git-4-0-799725fb is being purged
+48 verbose gentlyRm don't care about contents; nuking C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\git-github-com-gulpjs-gulp-cli-git-4-0-799725fb
+49 silly vacuum-fs purging C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\git-github-com-gulpjs-gulp-cli-git-4-0-799725fb
+50 silly vacuum-fs quitting because other entries in C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes
+51 info git [ 'clone',
+51 info git   '--template=C:\\Users\\Viktor.Виктор-ПК\\AppData\\Roaming\\npm-cache\\_git-remotes\\_templates',
+51 info git   '--mirror',
+51 info git   'git@github.com:gulpjs/gulp-cli.git',
+51 info git   'C:\\Users\\Viktor.Виктор-ПК\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-github-com-gulpjs-gulp-cli-git-4-0-799725fb' ]
+52 error git clone --template=C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:gulpjs/gulp-cli.git C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\git-github-com-gulpjs-gulp-cli-git-4-0-799725fb: Cloning into bare repository 'C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\git-github-com-gulpjs-gulp-cli-git-4-0-799725fb'...
+52 error git clone --template=C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:gulpjs/gulp-cli.git C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\git-github-com-gulpjs-gulp-cli-git-4-0-799725fb: Permission denied (publickey).
+52 error git clone --template=C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:gulpjs/gulp-cli.git C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\git-github-com-gulpjs-gulp-cli-git-4-0-799725fb: fatal: Could not read from remote repository.
+52 error git clone --template=C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:gulpjs/gulp-cli.git C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\git-github-com-gulpjs-gulp-cli-git-4-0-799725fb:
+52 error git clone --template=C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:gulpjs/gulp-cli.git C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\git-github-com-gulpjs-gulp-cli-git-4-0-799725fb: Please make sure you have the correct access rights
+52 error git clone --template=C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:gulpjs/gulp-cli.git C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\git-github-com-gulpjs-gulp-cli-git-4-0-799725fb: and the repository exists.
+53 silly fetchPackageMetaData Error: Command failed: git -c core.longpaths=true clone --template=C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:gulpjs/gulp-cli.git C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\git-github-com-gulpjs-gulp-cli-git-4-0-799725fb
+53 silly fetchPackageMetaData Cloning into bare repository 'C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\git-github-com-gulpjs-gulp-cli-git-4-0-799725fb'...
+53 silly fetchPackageMetaData Permission denied (publickey).
+53 silly fetchPackageMetaData fatal: Could not read from remote repository.
+53 silly fetchPackageMetaData
+53 silly fetchPackageMetaData Please make sure you have the correct access rights
+53 silly fetchPackageMetaData and the repository exists.
+53 silly fetchPackageMetaData
+53 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:211:12)
+53 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+53 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+53 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:885:16)
+53 silly fetchPackageMetaData     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+53 silly fetchPackageMetaData  error for gulpjs/gulp-cli#4.0 { Error: Command failed: git -c core.longpaths=true clone --template=C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:gulpjs/gulp-cli.git C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\git-github-com-gulpjs-gulp-cli-git-4-0-799725fb
+53 silly fetchPackageMetaData Cloning into bare repository 'C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\git-github-com-gulpjs-gulp-cli-git-4-0-799725fb'...
+53 silly fetchPackageMetaData Permission denied (publickey).
+53 silly fetchPackageMetaData fatal: Could not read from remote repository.
+53 silly fetchPackageMetaData
+53 silly fetchPackageMetaData Please make sure you have the correct access rights
+53 silly fetchPackageMetaData and the repository exists.
+53 silly fetchPackageMetaData
+53 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:211:12)
+53 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+53 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+53 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:885:16)
+53 silly fetchPackageMetaData     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+53 silly fetchPackageMetaData   killed: false,
+53 silly fetchPackageMetaData   code: 128,
+53 silly fetchPackageMetaData   signal: null,
+53 silly fetchPackageMetaData   cmd: 'git -c core.longpaths=true clone --template=C:\\Users\\Viktor.Виктор-ПК\\AppData\\Roaming\\npm-cache\\_git-remotes\\_templates --mirror git@github.com:gulpjs/gulp-cli.git C:\\Users\\Viktor.Виктор-ПК\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-github-com-gulpjs-gulp-cli-git-4-0-799725fb' }
+54 silly rollbackFailedOptional Starting
+55 silly rollbackFailedOptional Finishing
+56 silly runTopLevelLifecycles Finishing
+57 silly install printInstalled
+58 verbose stack Error: Command failed: git -c core.longpaths=true clone --template=C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:gulpjs/gulp-cli.git C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\git-github-com-gulpjs-gulp-cli-git-4-0-799725fb
+58 verbose stack Cloning into bare repository 'C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\git-github-com-gulpjs-gulp-cli-git-4-0-799725fb'...
+58 verbose stack Permission denied (publickey).
+58 verbose stack fatal: Could not read from remote repository.
+58 verbose stack
+58 verbose stack Please make sure you have the correct access rights
+58 verbose stack and the repository exists.
+58 verbose stack
+58 verbose stack     at ChildProcess.exithandler (child_process.js:211:12)
+58 verbose stack     at emitTwo (events.js:106:13)
+58 verbose stack     at ChildProcess.emit (events.js:191:7)
+58 verbose stack     at maybeClose (internal/child_process.js:885:16)
+58 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+59 verbose cwd V:\github\portfolio\ViktorKush.github.io
+60 error Windows_NT 6.1.7601
+61 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "--global" "gulpjs/gulp-cli#4.0" "-g"
+62 error node v7.2.0
+63 error npm  v3.10.9
+64 error code 128
+65 error Command failed: git -c core.longpaths=true clone --template=C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:gulpjs/gulp-cli.git C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\git-github-com-gulpjs-gulp-cli-git-4-0-799725fb
+65 error Cloning into bare repository 'C:\Users\Viktor.Виктор-ПК\AppData\Roaming\npm-cache\_git-remotes\git-github-com-gulpjs-gulp-cli-git-4-0-799725fb'...
+65 error Permission denied (publickey).
+65 error fatal: Could not read from remote repository.
+65 error
+65 error Please make sure you have the correct access rights
+65 error and the repository exists.
+66 error If you need help, you may report this error at:
+66 error     <https://github.com/npm/npm/issues>
+67 verbose exit [ 1, true ]
