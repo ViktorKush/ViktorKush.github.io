@@ -4,9 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <title>test</title>
+    <style>
+        li:active {
+            background-color: aqua;
+        }
+
+        li:hover {
+            background-color: aquamarine;
+            transform: translateX(2px);
+        }
+
+    </style>
 </head>
 
 <body>
+    <ul id="list">
+        <li>first task</li>
+        <li>second task 1</li>
+        <li>second task 2</li>
+        <li>second task 3</li>
+        <li>third task</li>
+        <li>fourth task</li>
+    </ul>
+    <p>p.s. Everything works on click.</p>
+    <p>p.p.s. Displays to console</p>
 </body>
 <script>
     //        first task
@@ -44,19 +65,19 @@
     //    firstTask();
 
     //    second task 1)for
-    function fizzBuzzFor() {
-        var fizzBuzzArray = [];
+    function fizzbuzzFor() {
+        var fizzbuzzArray = [];
         for (var i = 1; i <= 100; i++) {
             if (i % 15 == 0)
-                fizzBuzzArray.push("fizzbuzz");
+                fizzbuzzArray.push("fizzbuzz");
             else if (i % 3 == 0)
-                fizzBuzzArray.push("fizz");
+                fizzbuzzArray.push("fizz");
             else if (i % 5 == 0)
-                fizzBuzzArray.push("buzz");
+                fizzbuzzArray.push("buzz");
             else
-                fizzBuzzArray.push(i);
+                fizzbuzzArray.push(i);
         }
-        console.log(fizzBuzzArray);
+        console.log(fizzbuzzArray);
     }
     //    fizzBuzzFor();
 
@@ -124,6 +145,20 @@
     //    bankWithParam(10000, 30, 100000, 1);
     //    bankWithParam(10000, 30, 100000, 2);
     //    bankWithParam(10000, 10, 100000, 0);
+    function wrapperBank() {
+        bank(10000, 10, 1000000);
+    }
+
+    function wrapperBankWithParam() {
+        bankWithParam(10000, 30, 100000, 1);
+        bankWithParam(10000, 30, 100000, 2);
+        bankWithParam(10000, 10, 100000, 0);
+    }
+    var first = [firstTask, fizzbuzzFor, fizzbuzzDo, fizzbuzzWhile, wrapperBank, wrapperBankWithParam];
+    for (var i = 0; i < document.getElementById("list").children.length; i++) {
+        //            alert(i + "" +first[i]);
+        document.getElementById("list").children[i].addEventListener("click", first[i]);
+    }
 
 </script>
 
