@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+
+<body>
+</body>
+<script>
+    //        first task
+    function firstTask() {
+        var x, y, s;
+        s = "+";
+        x = 1;
+        y = 1;
+        switch (s) {
+            case "+":
+                y = y + x;
+                break;
+            case "-":
+                y = y - x;
+                break;
+            case "*":
+                y = y * x;
+                break;
+            case "/":
+                y = y / x;
+                break;
+            case "Abs":
+            case "abs":
+            case "ABS":
+                y = Math.abs(y);
+                break;
+            case "Mod":
+            case "MOD":
+                y = y % x;
+            default:
+                y = x;
+        }
+        console.log("y=" + y)
+    }
+    //    firstTask();
+
+    //    second task 1)for
+    function fizzBuzzFor() {
+        var fizzBuzzArray = [];
+        for (var i = 1; i <= 100; i++) {
+            if (i % 15 == 0)
+                fizzBuzzArray.push("fizzbuzz");
+            else if (i % 3 == 0)
+                fizzBuzzArray.push("fizz");
+            else if (i % 5 == 0)
+                fizzBuzzArray.push("buzz");
+            else
+                fizzBuzzArray.push(i);
+        }
+        console.log(fizzBuzzArray);
+    }
+    //    fizzBuzzFor();
+
+    //    second task 2)do
+    function fizzbuzzDo() {
+        var soWhat = "";
+        var fizzBuzz = function() {
+            var i = 1;
+            do {
+                var isFizz = i % 3 === 0;
+                var isBuzz = i % 5 === 0;
+                soWhat += (isFizz ? isBuzz ? "FizzBuzz" : "Fizz" : isBuzz ? "Buzz" : i) + ", ";
+                i++;
+            } while (i <= 100)
+            console.log(soWhat);
+        }
+        fizzBuzz();
+    }
+    //        fizzbuzzDo();
+
+    //        second task 3)while
+    function fizzbuzzWhile() {
+        var i = 0;
+        while (i < 100) {
+            i++;
+            var isFizz = i % 3 === 0;
+            var isBuzz = i % 5 === 0;
+            if (isFizz || isBuzz) {
+                (isFizz && isBuzz) && console.log("fizzbuzz")
+                isFizz && console.log("fizz");
+                isBuzz && console.log("buzz");
+            } else {
+                console.log(i);
+            }
+        }
+    }
+    //    fizzbuzzWhile();
+
+    //    task 3
+    function bank(s0, p, sn) {
+        var profit = s0;
+        var months = 0;
+        do {
+            profit += profit * p / 1200;
+            months++;
+        } while (sn > profit);
+        console.log("In " + months + " months you'll get " + sn + " UAH");
+    };
+    //    bank(1000, 10, 1000000);
+
+    //task 4
+    function bankWithParam(s0, p, sn, f) {
+        var profit = s0,
+            months = 0,
+            error = "";
+        do {
+            profit = (f == 1) ? profit + s0 * p / 1200 :
+                profit = (f == 2) ? profit + profit * p / 1200 :
+                error = "Sorry, 'f' can't be assigned " + f;
+            months++;
+        } while (sn > profit);
+        var message = error || "In " + months + " months you'll get " + sn + " UAH";
+        console.log(message);
+    };
+    //    bankWithParam(10000, 30, 100000, 1);
+    //    bankWithParam(10000, 30, 100000, 2);
+    //    bankWithParam(10000, 10, 100000, 0);
+
+</script>
+
+</html>
