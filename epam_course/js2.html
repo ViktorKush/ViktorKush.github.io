@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function palindrome(str) {
+
+            var newString = "";
+            var re = /[^A-Za-zA-Яa-я0-9]/g;
+            str = str.toLowerCase().replace(re, "")
+            for (var i = str.length - 1; i >= 0; i--) {
+                newString += str[i];
+            }
+            console.log(newString == str);
+
+
+        }
+
+        //palindrome("Муза! Ранясь шилом опыта, ты помолишься на разум.");
+
+        function temperature(IDontKnow) {
+            [
+                {date: “2017 - 12 - 12”, time: “02: 00”, temp: -4},
+                {date: “2017 - 12 - 12”, time: “08: 00”, temp: 4},
+                {date: “2017 - 13 - 12”, time: “08: 00”, temp: 14}
+            ]
+        }
+        temperature();
+
+    </script>
+</body>
+
+</html>
