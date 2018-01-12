@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Acordeon</title>
+  <style>
+    p {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="acordeon">
+    <div>
+      <h2>Heading1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, recusandae! Expedita accusamus explicabo sint dolor, vel quos tempore. Perspiciatis maxime, molestiae minima quos officia, animi! Magnam atque natus cupiditate sapiente.</p>
+    </div>
+    <div>
+      <h2>Heading2</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, recusandae! Expedita accusamus explicabo sint dolor, vel quos tempore. Perspiciatis maxime, molestiae minima quos officia, animi! Magnam atque natus cupiditate sapiente.</p>
+    </div>
+    <div>
+      <h2>Heading3</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, recusandae! Expedita accusamus explicabo sint dolor, vel quos tempore. Perspiciatis maxime, molestiae minima quos officia, animi! Magnam atque natus cupiditate sapiente.</p>
+    </div>
+  </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script>
+  var acordeon = $("#acordeon");
+  acordeon.find("h2").click(function() {
+    acordeon.find("p").not($(this).next()).slideUp("1000");
+    $(this).next().slideToggle("1000");
+  })
+
+</script>
+
+</html>
