@@ -1,4 +1,10 @@
 # Gallery
+## The app is deployed here: https://gallery-562a1.firebaseapp.com/
+### It requires registering with your google account in order to visit some pages.
+
+### You can use this one
+ * login:beautifulpersonalityindeed@gmail.com
+  * password:beautifulpersonalityindeed1
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
