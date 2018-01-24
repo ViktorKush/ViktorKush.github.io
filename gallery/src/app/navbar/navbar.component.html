@@ -1,0 +1,29 @@
+<header>
+  <div class="logo"><a routerLink="/"><img src="../../assets/images/logo_w.png" alt="logo"></a></div>
+  <label aria-label="Search" class="search">
+    <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+    <input type="text" placeholder="Photos, people or groups">
+  </label>
+  <nav>
+    <i class="fa mobile-menu fa-bars fa-lg" aria-hidden="true"></i>
+    <ul class="top-menu">
+      <li class="dropdown">
+        <label *ngIf="auth.user$ | async as user; else anonymousUser" for="toggle2" class="animate"> {{user.displayName}} </label>
+        <input id="toggle2" type="checkbox">
+        <ul *ngIf="auth.user$" class="animate">
+          <li class="animate"><a routerLink="/">Your photos</a></li>
+          <li class="animate"><a routerLink="/add">Add photos</a></li>
+          <li class="animate"><a routerLink="/user/feed">Explore</a></li>
+          <li class="animate"><a routerLink="/favorites">Favs</a></li>
+          <li class="animate"><a routerLink="/liked">Liked</a></li>
+          <li class="animate"><a routerLink="/test">Test</a></li>
+        </ul>
+      </li>
+      <li><a routerLink="/about">About</a></li>
+      <ng-template #anonymousUser>
+        <li *ngIf="!(auth.user$ | async)"><a (click)="login()">Join Astonish</a></li>
+      </ng-template>
+      <li class="animate" *ngIf="(auth.user$ | async)"><a (click)="logout()">Log out</a></li>
+    </ul>
+  </nav>
+</header>

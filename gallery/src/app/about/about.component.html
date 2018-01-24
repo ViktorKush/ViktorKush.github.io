@@ -1,0 +1,54 @@
+<div class="wrapper"><div class="container-flex">
+  <div class="col-flex col-flex-left">
+    <ul class="links">
+      <li *ngFor="let item of items; let i = index" (click)="updateCurrent(i)">{{item}}</li>
+    </ul>
+  </div>
+  <div class="col-flex col-flex-right" [ngSwitch]="current">
+    <div *ngSwitchCase="0">
+      <h2 class="text-center">You can skip this brief introduction and click on the map link</h2>
+      <p>Lorem ipsum Eagle Ernest Hemingway US 1 salvage beer bow sharks mangroves cafe con leche Henry Flagler Truman Annex reef one human family fantasy fest key deer web design homeless sailing watersports snuba Florida Keys.Lorem ipsum Cuban Chug 90 miles Florida Keys conch republic banana trees gecko sunset celebration cuban Ernest Hemingway snuba Over-Sea Railroad lighthouse US 1 mooring Fort Zachary Matthew C. Perry schooner wharf eagle ocean dive custom house simonton osprey sightsee web design fantasy fest golf rest beach east martillo conch fritters music sunset key Captain Tony cuban missile crisis Duval street sunset cuban mix key lime key deer beach Pan Am Airways port channel mallory square Laid Back Key West tank island eastern dry rocks coast guard sun swim cleat palm tree treasure west martillo parrot heads Key West eco-tourism kayak Blue Heaven mel fisher boat.
+        <p>Lorem ipsum Laid Back Key West key deer turtle cow key cafe con leche western dry rocks Blue Heaven atocha salvage cigar Thomas Edison conch fritters bone cay Matthew C. Perry shrimp cuba east martillo mel fisher Whitehead Street smathers beach snorkel web design bight conch Key West sand key Pan Am Airways southernmost city buoy port little white house mallory square Over-Sea Railroad mile zero Truman Annex west martillo lesbian cuban missile crisis schooner wharf web development Sloppy Joe's sub-tropical Key West ipsum beach music custom house.
+        </p>
+        <p>Lorem ipsum Lesbian Spanish galleon Santa Margarita watersports fleming key port island mallory square treasure cuban west martillo sunset celebration queen conch little white house east martillo web design bone cay reef harbor beach lighthouse bahama village boat cuban chug snorkel Matthew C. Perry US 1 old town Laid Back Key West square grouper custom house rest beach mile zero hurricane conch tank island ship wreck Sloppy Joe's bight sightsee fantasy fest fish shrimp civil war hammock Captain Tony eco-tourism dingy eagle cigar stern lobster boca grand sand.</p>
+        <p>Lorem ipsum Snorkel island Key West dingy bicycle cafe con leche boat 90 miles Fort Jefferson yellow tail old town sailing roosters kayak sun tan salvage port Key West ipsum Thomas Edison sailfish cuban chug Florida Keys fleming key Jimmy Buffet cuban mix sub-tropical mile zero gulf of mexico.</p>
+    </div>
+    <div *ngSwitchCase="1">
+      <h2>Here is the map</h2>
+      <agm-map [latitude]="lat" [longitude]="lng">
+        <agm-marker 
+          [latitude]="lat" 
+          [longitude]="lng"
+          >
+        </agm-marker>
+      </agm-map>
+    </div>
+    <div *ngSwitchCase="2">
+      <h3 class="text-center">There is no "I" in team</h3>
+      <p>A team is a group of individuals working together to achieve a goal. A group does not necessarily constitute a team. Teams normally have members with complementary skills and generate synergy through a coordinated effort which allows each member to maximize their strengths and minimize their weaknesses. Naresh Jain (2009) claims: Team members need to learn how to help one another, help other team members realize their true potential, and create an environment that allows everyone to go beyond his or her limitations. Teams can be broken down into from a huge team or one big group of people, even if these smaller secondary teams are temporary.</p>
+      <p>A team becomes more than just a collection of people when a strong sense of mutual commitment creates synergy, thus generating performance greater than the sum of the performance of its individual members.</p>
+      <p>Thus teams of game players can form (and re-form) to practise their craft/sport. Transport logistics executives can select teams of horses, dogs, or oxen for the purpose of conveying passengers or goods.</p>
+      <p>A team is only as strong as its weakest link. When your top players don’t know how to work together, their individual talents are useless. Ego is the ultimate killer of a team, as per Patrick Lencioni’s words. That’s the price companies pay when they reward individuals rather than collective achievements.</p>
+      <p>The weakest link breaks when individualism takes over.</p>
+      <p>Your employees’ behaviors are determined but what’s you reward or punish as a leader. No matter how much you praise teamwork, if your actions don’t match your words, then unwritten rules take over, as I wrote here. Some traditions, like employee-of-the-month, go against promoting a culture of teamwork. When individual performances are constantly singled out, don’t expect your team to behave as a team.</p>
+      <p>Now you now something about teams.</p>
+
+    </div>
+    <div *ngSwitchCase="3"><img src="http://tredwellsmusic.com/content/images/thumbs/0007122_more-theme-from-mondo-cane-r-ortolani-n-oliviero-arr-for-piano-duet-by-lawrence-anthony.jpg" alt="More"></div>
+    <div *ngSwitchDefault>
+      <h2>Section 1</h2>
+      <p>Shank fatback pastrami short loin, turkey jowl kielbasa ribeye chicken jerky drumstick flank ham. Swine shankle pork belly kielbasa shoulder flank jowl, sirloin doner. Kevin tri-tip bresaola leberkas. Swine ball tip cow strip steak. Ham filet mignon pork chop, pork fatback andouille pork loin shoulder jowl swine strip steak turducken prosciutto rump.</p>
+      <h2>Section 2</h2>
+      <p>Bacon strip steak ground round, tongue pastrami short ribs pork chop venison turducken sausage sirloin. Flank chicken pork chop capicola turkey turducken cow pork loin biltong meatball drumstick pancetta filet mignon ground round fatback. Ham hock jerky short ribs brisket. Meatloaf shoulder pork chop capicola, sirloin swine pig pork. Jerky ribeye hamburger pork loin sirloin kevin bresaola boudin chuck flank. Ham hock pork belly chicken jerky rump bresaola.</p>
+      <h2>Section 3</h2>
+      <p>Tri-tip kevin boudin, cow doner turducken sirloin chuck shank chicken short ribs meatloaf frankfurter. T-bone filet mignon short ribs biltong ground round tongue kevin meatball short loin cow beef ribs cupim fatback rump. Short loin rump andouille venison, jowl prosciutto sirloin buffalo meatball doner filet mignon. Flank beef ribs sirloin beef drumstick.</p>
+      <h2>Section 4</h2>
+      <p>Tri-tip kevin boudin, cow doner turducken sirloin chuck shank chicken short ribs meatloaf frankfurter. T-bone filet mignon short ribs biltong ground round tongue kevin meatball short loin cow beef ribs cupim fatback rump. Short loin rump andouille venison, jowl prosciutto sirloin buffalo meatball doner filet mignon. Flank beef ribs sirloin beef drumstick.</p>
+      <h2>Section 5</h2>
+      <p>Tri-tip kevin boudin, cow doner turducken sirloin chuck shank chicken short ribs meatloaf frankfurter. T-bone filet mignon short ribs biltong ground round tongue kevin meatball short loin cow beef ribs cupim fatback rump. Short loin rump andouille venison, jowl prosciutto sirloin buffalo meatball doner filet mignon. Flank beef ribs sirloin beef drumstick.</p>
+      <h2>Section 6</h2>
+      <p>Tri-tip kevin boudin, cow doner turducken sirloin chuck shank chicken short ribs meatloaf frankfurter. T-bone filet mignon short ribs biltong ground round tongue kevin meatball short loin cow beef ribs cupim fatback rump. Short loin rump andouille venison, jowl prosciutto sirloin buffalo meatball doner filet mignon. Flank beef ribs sirloin beef drumstick.</p>
+    </div>
+  </div>
+</div>
+</div>

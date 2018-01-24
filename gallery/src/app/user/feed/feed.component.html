@@ -1,0 +1,11 @@
+<h1>List of photos</h1>
+<div class="content">
+  <div class="gallery">
+    <div *ngFor="let photo of photoListStream | async; let i = index" class="photo" >
+      <div  class="inside-image" [ngStyle]="{'background-image': 'url(' + photo.url + ')'}">
+      </div>
+        <div class="text-center">Title#{{i}}/Author</div>
+    </div>
+  </div>
+  <div class="pagination">pagination/scroll</div>
+</div>

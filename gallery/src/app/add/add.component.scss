@@ -1,0 +1,125 @@
+.container-flex {
+  margin: 1% 7%;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+}
+
+.col-flex {
+  margin: 20px 20px;
+  flex-grow: 0;
+  align-content: stretch;
+}
+
+.col-flex-right {
+  flex-grow: 1;
+}
+
+.col-flex-right img {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-center {
+  text-align: center;
+}
+h1 {
+  text-align: center;
+}
+
+img {
+  max-height: 350px;
+}
+
+.logo {
+  height: 30px;
+}
+
+.logo img {
+  height: 30px;
+  width: auto;
+}
+
+.heading {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.field {
+  margin: 0 0 18px;
+}
+
+.field label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.field input {
+  font: 12px Arial, Tahoma, sans-serif;
+  color: #444;
+  width: 100%;
+  padding: 9px 0;
+  border: 1px solid #D2D9DC;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 2px 2px 6px #EBEBEB, 0 0 0 5px #F7F9FA;
+  box-shadow: inset 2px 2px 6px #EBEBEB, 0 0 0 5px #F7F9FA;
+  outline: none;
+}
+
+.field input:focus {
+  border-color: #B7D4EA;
+  -webkit-box-shadow: inset 2px 2px 6px #EBEBEB, 0 0 4px #D0E6F6, 0 0 0 5px #F2F8FC;
+  box-shadow: inset 2px 2px 6px #EBEBEB, 0 0 4px #D0E6F6, 0 0 0 5px #F2F8FC;
+}
+
+.btn-upload {
+  background-color: #29c5e6;
+  border: 2px solid #29c5e6;
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 30px;
+  line-height: 30px;
+  font-size: 19px;
+  color: white;
+  z-index: 1;
+  text-align: center;
+}
+
+.btn-upload:hover {
+  font-size: 20px;
+  cursor: pointer;
+  border-color: #1399b5;
+}
+
+input[type=file] {
+  z-index: 1;
+}
+
+.preview {
+  background: url(//placehold.it/350x150);
+  background-size: cover;
+  width: 541px;
+  height: 398px;
+  margin: 0 auto;
+  background-image: url(../../assets/images/sophiscated_cat.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 785px) {
+  .col-flex {
+    padding: 10px auto;
+  }
+  .container-flex {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 620px) {
+  .preview {
+    max-width:90%;
+    height: 200px;
+  }
+}
