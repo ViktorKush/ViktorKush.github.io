@@ -1,2 +1,2 @@
 # ViktorKush.github.io
-EPAM courses tasks
+EPAM's course tasks
