@@ -41,12 +41,16 @@ p {
   min-width: 100px;
   border: 1px solid #000;
   border-radius: 10px;
+//  background-color: white;
 }
 
 .links li {
   text-align: center;
+  background-color: #f3f5f6;
   transition: 100ms ease-in-out;
-  border: 2px solid white;
+  border: 2px solid #f3f5f6;
+  border-bottom-color:#fff;
+  border-top-color: #fff;
 }
 
 .links li:hover {

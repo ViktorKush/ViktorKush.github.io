@@ -1,49 +1,97 @@
 a {
   cursor: pointer;
-      color: #337ab7;
-    text-decoration: none;
+  color: #337ab7;
+  text-decoration: none;
   background-color: transparent;
   position: relative;
-    float: left;
-    padding: 6px 12px;
-    margin-left: -1px;
-    line-height: 1.42857143;
-    color: #337ab7;
-    text-decoration: none;
-    background-color: #fff;
-    border: 1px solid #ddd;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #337ab7;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
 }
 
+.container {
+  margin: 30px auto;
+  width: 80%;
+  max-width: 600px;
+}
+
+.inner-container {
+  margin: 30px auto;
+}
+ul {
+  padding: 0px;
+}
 li {
-    display: inline//  width: auto;
-//  height: 20px;
-//  text-align: center;
-//  line-height: 20px;
-//  margin: 5px;
+    display: inline
 }
 
 //li:hover {
 //  background-color: blue;
 //}
-.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
-    z-index: 3;
-    color: #fff;
-    cursor: default;
-    background-color: #337ab7;
-    border-color: #337ab7;
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+  z-index: 3;
+  color: #fff;
+  cursor: default;
+  background-color: #337ab7;
+  border-color: #337ab7;
 }
+
 a {
-  
-    position: relative;
-    float: left;
-    padding: 6px 12px;
-    margin-left: -1px;
-    line-height: 1.42857143;
-    color: #337ab7;
-    text-decoration: none;
-    background-color: #fff;
-    border: 1px solid #ddd;
+
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #337ab7;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
 }
+
 a:hover {
   color: red;
+}
+
+.list-item {
+  border: 1px solid #000;
+  border-bottom: none;
+  height: 30px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+}
+.list-item:nth-last-child(2) {
+  border-bottom: 1px solid #000;
+}
+.col-flex {
+//  flex-grow: 1;
+  align-content: stretch;
+  align-self: center;
+}
+.col-flex.number {
+  border-right: 1px solid #000;
+  flex-basis: 10%;
+}
+.list-item:nth-child(even) {
+  background: #CCC;
+}
+
+.list-item:nth-child(odd) {
+  background: #FFF;
+}
+
+.text-center {
+  text-align: center;
 }

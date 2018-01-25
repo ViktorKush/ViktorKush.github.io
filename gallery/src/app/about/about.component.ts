@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
   
-  items =["About us", "Map", "Team", "More", "Lorem", "Ipsum", "Eagle", "Ernest"];
+  items =["About us", "Map", "Team", "More", "Lorem", "Ipsum"];
   current = 0;
   lat: number = 49.230;
   lng: number = 28.495;

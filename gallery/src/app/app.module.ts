@@ -57,7 +57,7 @@ import { PagerService } from './pager.service';
       { path: 'success', component: SuccessComponent, canActivate: [AuthGuardService] },
       { path: 'favorites', component: FavoritesComponent, canActivate: [AuthGuardService] },
       { path: 'about', component: AboutComponent },
-      { path: 'add', component: AddComponent },
+      { path: 'add', component: AddComponent, canActivate: [AuthGuardService]  },
       { path: 'user/user-images', component: UserImagesComponent, canActivate: [AuthGuardService] },
       { path: 'user/feed', component: FeedComponent, canActivate: [AuthGuardService] }
     ]),
