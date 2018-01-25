@@ -1,17 +1,21 @@
 <h1>List of photos</h1>
 <div class="content">
   <div class="gallery">
-    <div *ngFor="let photo of photoListStream | async; let i = index" class="photo">
+    <div *ngFor="let photo of photoListStream | async; let i = index" class="photo" [ngStyle]="{'margin-top': '30px'}">
       <div class="card">
         <div class="caption">
+         <div class="avatar"></div>
+         <div class="container">
           <div class="author">Author</div>
           <div class="date">21.01.18</div>
+         </div>
         </div>
         <div class="inside-image" [ngStyle]="{'background-image': 'url(' + photo.url + ')'}">
           <div class="text-center title">I can't come up with any title#{{i+1}}
             <hr><span class="album">Album</span></div>
         </div>
         <hr>
+        <div class="description">I was walking a street minding my business when all of a sudden... <br>...and I realised that was not a coincidence.</div><hr>
         <div class="likes">43k likes
 
           <div class="heart">
