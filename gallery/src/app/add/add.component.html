@@ -23,9 +23,9 @@
       <div class="input">
         <input type="text" name="" value="" placeholder="It was a lovely day...">
       </div>
-    </div><div class="btn-upload">
-    <input type="file" (change)="photoSelectedForList($event)" hidden>Upload
     </div>
+    <input type="file" (change)="photoSelectedForList($event)" #input hidden>
+    <div class="btn-upload" (click)="input.click()">Upload</div>
   </div>
   <div class="col-flex col-flex-right">
   <div class="Title text-center">Title: {{photosTitle.value}}</div>
