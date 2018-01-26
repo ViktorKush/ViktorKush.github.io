@@ -1,0 +1,133 @@
+<div class="outer-wrapper">
+  <div class="s-wrap s-type-2" role="slider">
+    <div class="caption">
+      <h1 class="text-center">Join up</h1>
+      <h1 class="text-center">&</h1>
+      <h1 class="text-center">Find your inspiration</h1>
+      <div *ngIf="!(auth.user$ | async)" (click)="login()" class="btn get-started">GET STARTED</div>
+    </div>
+    <ul class="s-content">
+      <li class="s-item s-item-1"></li>
+      <li class="s-item s-item-2"></li>
+      <li class="s-item s-item-3"></li>
+      <li class="s-item s-item-4"></li>
+      <li class="s-item s-item-5"></li>
+    </ul>
+  </div>
+</div>
+<div class="section-wrap text-justify">
+  <h1 class="text-center">Welcome </h1>
+  <div class="section-content greeting text-justify">
+    <h2>Hello. Thanks for taking your time.</h2>
+    <p class="secondary-heading">Well actually this app isn't meant to meet the needs of any user... So I don't know what to write here. Ok, a brief overview.</p>
+    <p class="secondary-heading"> This is a single page application made with angular and firebase. While I haven't finished, it has some back-end as for example you can register with your google account and upload photos. Yet I'd better add lazy loading and infinite scrolling, but <a href="https://cs8.pikabu.ru/post_img/2017/12/09/6/1512811497134326179.jpg"></a>it takes a lot of time. And a bit more of Samuel L.Ipsum. Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing. Didn't expect anyone to read this.</p>
+    <p class="secondary-heading"> Anyway hope you enjoy it and I will get a job. Let's get back on track.</p>
+    <div *ngIf="!(auth.user$ | async)" (click)="login()" class="btn get-started ">
+      <h4>Sign up</h4>
+    </div>
+  </div>
+</div>
+  <div class="section-wrap flex-cont section-wrap-green">
+    <div class="text-center col">
+      <i class="fa fa-comments-o fa-5x"></i>
+      <h3 class="primary-heading">FAST FRIENDLY SUPPORT</h3>
+      <p class="desc">Have a question or need help? Our professional and experienced support team will help you solve your problems fast. There are no call centers, and nothing is outsourced.</p>
+    </div>
+    <div class="text-center col">
+      <i class="fa fa-cloud fa-5x"></i>
+      <h3 class="primary-heading">BEST-IN-CLASS CLOUD HOSTING</h3>
+      <p class="desc">All your Original, full-res images are stored with Amazon Web Services, the most reliable cloud hosting infrastructure. Your files are always secure and backed-up. </p>
+    </div>
+  </div>
+<div class="section-wrap">
+  <div class="section-wrap section-content text-justify flex-cont flex-cont-between">
+    <div class="col"><h2 class="text-center" id="samuel">Samuel Jackson(CEO)</h2></div>
+    <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee. You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
+  </div>
+</div>
+  <div class="wrapper section-wrap flex-cont" [ngStyle]="{'backgroundColor': color[n-1]}">
+    <div class="menu-wrapper">
+      <button class="menu-btn" has-ripple="true" (click)="openedMenu = !openedMenu" [ngClass]="{'clicked': openedMenu}">
+    <i></i>
+    <i></i>
+    <i></i>
+    <span class="ripple"></span>
+  </button>
+      <ul class="menu" [ngClass]="{'open': openedMenu }">
+        <li class="menuitem-wrapper">
+          <div class="icon-holder">
+            <a class="menu-item" (click)="changeDisplayed(n); openedMenu = !openedMenu; n = 1">
+            <i class="material-icons">home</i>
+        </a>
+          </div>
+          <svg class="circle-holder">
+        <circle r="88" cx="50%" cy="50%" fill="none">
+        </circle>
+      </svg>
+        </li>
+        <li class="menuitem-wrapper">
+          <div class="icon-holder">
+            <a class="menu-item" (click)="changeDisplayed(n); openedMenu = !openedMenu; n = 2">
+            <i class="material-icons">face</i>
+        </a>
+          </div>
+          <svg class="circle-holder">
+        <circle r="88" cx="50%" cy="50%" fill="none">
+        </circle>
+      </svg>
+        </li>
+        <li class="menuitem-wrapper">
+          <div class="icon-holder">
+            <a class="menu-item" (click)="changeDisplayed(n); openedMenu = !openedMenu; n = 3">
+            <i class="material-icons">android</i>
+        </a>
+          </div>
+          <svg class="circle-holder">
+        <circle r="88" cx="50%" cy="50%" fill="none">
+        </circle>
+      </svg>
+        </li>
+        <li class="menuitem-wrapper">
+          <div class="icon-holder">
+            <a class="menu-item" (click)="changeDisplayed(n); openedMenu = !openedMenu; n = 4">
+            <i class="material-icons">shopping_cart</i>
+        </a>
+          </div>
+          <svg class="circle-holder">
+        <circle r="88" cx="50%" cy="50%" fill="none">
+        </circle>
+      </svg>
+        </li>
+        <li class="menuitem-wrapper">
+          <div class="icon-holder">
+            <a class="menu-item" (click)="changeDisplayed(n); openedMenu = !openedMenu; n = 5">
+            <i class="material-icons">room</i>
+        </a>
+          </div>
+          <svg class="circle-holder">
+        <circle r="88" cx="50%" cy="50%" fill="none">
+        </circle>
+      </svg>
+        </li>
+      </ul>
+    </div>
+    <div [ngSwitch]="displayed" class="text-center">
+      <div *ngSwitchCase="1">
+        <p><b>Competitive salary.</b> - Highest salary for twiddling your thumbs.</p>
+      </div>
+      <div *ngSwitchCase="2">
+        <p><b>Life assurance.</b> - We offer cover by the hospital's life insurance scheme throughout your employment with the our team, subject to the rules of the scheme.</p>
+      </div>
+      <div *ngSwitchCase="3">
+        <p>It could be your advertising.</p>
+      </div>
+      <div *ngSwitchCase="4">
+        <p><b>Brand Exposure</b> - Work alongside one of the most respected, trusted and recognised brands in the UK, a heritage brand with strong values, clear goals and a long term ambition.</p>
+      </div>
+      <div *ngSwitchCase="5">
+        <p><b>Gym membership.</b> - Discounted membership at  Soho Gym (Earl’s Court) at a cost of £15 per month.Sorry. Where were we?</p>
+      </div>
+      <ng-template ngSwitchDefault>Enjoy the benefits of working with us.<!--I found this on <a href="https://codepen.io/wbarahona/pen/vLoyOb">codepen</a> and noticed that it's easily implemented in angular.--> Just click the button.</ng-template>
+    </div>
+
+  </div>

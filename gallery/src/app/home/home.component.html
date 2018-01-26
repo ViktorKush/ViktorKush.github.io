@@ -5,7 +5,7 @@
       <div *ngFor="let photo of photoListStream; let i = index" class="photo" [ngStyle]="{'margin-top': '30px'}">
         <div class="card">
           <div class="caption">
-            <div class="avatar"></div>
+            <div class="avatar avatar1"></div>
             <div class="container">
               <div class="author">Author</div>
               <div class="date">21.01.18</div>
@@ -37,7 +37,7 @@
     <div class="friends container-flex-row_col">
       <ul>
         <li>
-          <div class="left-part"><img src="../../assets/images/avatar1.jpg" alt="avatar" class="avatar"></div>
+          <div class="left-part"><img src="../../assets/images/avatar.jpg" alt="avatar" class="avatar"></div>
           <div class="right-part">
             <div *ngIf="auth.user$ | async as user" class="friends-name">{{user.displayName}}</div>
             <div class="status online">online</div>
@@ -51,35 +51,35 @@
           <div class="left-part"><img src="../../assets/images/avatar2.jpg" alt="avatar" class="avatar"></div>
           <div class="right-part">
             <div class="friends-name">Leonid Kravchuk</div>
-            <div class="status">offline(last seen in 1994)</div>
+            <div class="status">offline (last seen in 1994)</div>
           </div>
         </li>
         <li>
           <div class="left-part"><img src="../../assets/images/avatar2.jpg" alt="avatar" class="avatar"></div>
           <div class="right-part">
             <div class="friends-name">Leonid Kuchma</div>
-            <div class="status">offline(last seen in 2005)</div>
+            <div class="status">offline (last seen in 2005)</div>
           </div>
         </li>
         <li>
           <div class="left-part"><img src="../../assets/images/avatar2.jpg" alt="avatar" class="avatar"></div>
           <div class="right-part">
             <div class="friends-name">Viktor Yuschenko</div>
-            <div class="status">offline(last seen in 2010)</div>
+            <div class="status">offline (last seen in 2010)</div>
           </div>
         </li>
         <li>
           <div class="left-part"><img src="../../assets/images/avatar2.jpg" alt="avatar" class="avatar"></div>
           <div class="right-part">
             <div class="friends-name">Viktor Yanukovych</div>
-            <div class="status">offline(last seen in 2014)</div>
+            <div class="status">offline (last seen in 2014)</div>
           </div>
         </li>
         <li>
           <div class="left-part"><img src="../../assets/images/avatar2.jpg" alt="avatar" class="avatar"></div>
           <div class="right-part">
             <div class="friends-name">Oleksandr Turchynov</div>
-            <div class="status">offline(last seen in 2014)</div>
+            <div class="status">offline (last seen in 2014)</div>
           </div>
         </li>
         <li>

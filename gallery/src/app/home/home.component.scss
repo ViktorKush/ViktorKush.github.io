@@ -223,12 +223,15 @@ input[type=file] {
 }
 
 .avatar {
-  background-image: url('../../assets/images/avatar.jpg');
   height: 35px;
   width: 35px;
   margin: 10px 10px;
   display: inline-block;
   border-radius: 50px;
+  border-collapse: separate;
+}
+.avatar1 {
+  background-image: url('../../assets/images/avatar.jpg');
 }
 
 /* The Modal (background) */

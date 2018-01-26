@@ -13,7 +13,9 @@ export class HomeComponent implements OnInit {
     {"url": "../../assets/images/back2.jpg"}, 
     {"url": "../../assets/images/back3.jpg"}, 
     {"url": "../../assets/images/back4.jpg"}, 
-    {"url": "../../assets/images/back5.jpg"} 
+    {"url": "../../assets/images/back5.jpg"}, 
+    {"url": "../../assets/images/back6.jpg"},
+    {"url": "../../assets/images/back7.jpg"} 
   ];
   constructor(public auth: AuthService) {
   }

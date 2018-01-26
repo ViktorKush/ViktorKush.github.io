@@ -27,6 +27,7 @@ import { PhotoStreamService } from './photo-stream.service';
 import { AgmCoreModule } from '@agm/core';
 import { TestComponent } from './test/test.component';
 import { PagerService } from './pager.service';
+import { FirstComponent } from './first/first.component';
 
 @NgModule({
   declarations: [
@@ -42,14 +43,16 @@ import { PagerService } from './pager.service';
     FeedComponent,
     AboutComponent,
     AddComponent,
-    TestComponent
+    TestComponent,
+    FirstComponent
   ],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent },
+      { path: '', component: FirstComponent  },
+      { path: 'home', component: HomeComponent, canActivate: [AuthGuardService]  },
       { path: 'photos', component: PhotosComponent, canActivate: [AuthGuardService] },
       { path: 'liked', component: LikedComponent, canActivate: [AuthGuardService] },
       { path: 'test', component: TestComponent, canActivate: [AuthGuardService] },

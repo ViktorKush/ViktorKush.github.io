@@ -12,7 +12,7 @@
     <div class="dropdown dropdown2">
 
       <ul class="mobile-menu animate hidden">
-        <li class="animate dropdown-item"><a routerLink="/">Your photos</a></li>
+        <li class="animate dropdown-item"><a routerLink="/home">Your photos</a></li>
         <li class="animate dropdown-item"><a routerLink="/add">Add photos</a></li>
         <li class="animate dropdown-item"><a routerLink="/user/feed">Explore</a></li>
         <li class="animate dropdown-item not-done"><a routerLink="/favorites">Favs</a></li>
@@ -27,7 +27,7 @@
         <label *ngIf="auth.user$ | async as user" for="toggle2" class="animate">{{user.displayName}}</label>
         <input id="toggle2" type="checkbox">
         <ul *ngIf="auth.user$" class="animate">
-          <li class="animate dropdown-item"><a routerLink="/">Your photos</a></li>
+          <li class="animate dropdown-item"><a routerLink="/home">Your photos</a></li>
           <li class="animate dropdown-item"><a routerLink="/add">Add photos</a></li>
           <li class="animate dropdown-item"><a routerLink="/user/feed">Explore</a></li>
           <li class="animate dropdown-item not-done"><a routerLink="/favorites">Favs</a></li>
