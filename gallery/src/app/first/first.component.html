@@ -56,7 +56,7 @@
       <ul class="menu" [ngClass]="{'open': openedMenu }">
         <li class="menuitem-wrapper">
           <div class="icon-holder">
-            <a class="menu-item" (click)="changeDisplayed(n); openedMenu = !openedMenu; n = 1">
+            <a class="menu-item" (click)="n = 1; changeDisplayed(n); openedMenu = !openedMenu">
             <i class="material-icons">home</i>
         </a>
           </div>
@@ -67,7 +67,7 @@
         </li>
         <li class="menuitem-wrapper">
           <div class="icon-holder">
-            <a class="menu-item" (click)="changeDisplayed(n); openedMenu = !openedMenu; n = 2">
+            <a class="menu-item" (click)="n = 2; changeDisplayed(n); openedMenu = !openedMenu">
             <i class="material-icons">face</i>
         </a>
           </div>
@@ -78,7 +78,7 @@
         </li>
         <li class="menuitem-wrapper">
           <div class="icon-holder">
-            <a class="menu-item" (click)="changeDisplayed(n); openedMenu = !openedMenu; n = 3">
+            <a class="menu-item" (click)="n = 3; changeDisplayed(n); openedMenu = !openedMenu">
             <i class="material-icons">android</i>
         </a>
           </div>
@@ -89,7 +89,7 @@
         </li>
         <li class="menuitem-wrapper">
           <div class="icon-holder">
-            <a class="menu-item" (click)="changeDisplayed(n); openedMenu = !openedMenu; n = 4">
+            <a class="menu-item" (click)="n = 4; changeDisplayed(n); openedMenu = !openedMenu">
             <i class="material-icons">shopping_cart</i>
         </a>
           </div>
@@ -100,7 +100,7 @@
         </li>
         <li class="menuitem-wrapper">
           <div class="icon-holder">
-            <a class="menu-item" (click)="changeDisplayed(n); openedMenu = !openedMenu; n = 5">
+            <a class="menu-item" (click)="n = 5; changeDisplayed(n); openedMenu = !openedMenu">
             <i class="material-icons">room</i>
         </a>
           </div>
@@ -125,7 +125,7 @@
         <p><b>Brand Exposure</b> - Work alongside one of the most respected, trusted and recognised brands in the UK, a heritage brand with strong values, clear goals and a long term ambition.</p>
       </div>
       <div *ngSwitchCase="5">
-        <p><b>Gym membership.</b> - Discounted membership at  Soho Gym (Earl’s Court) at a cost of £15 per month.Sorry. Where were we?</p>
+        <p><b>Gym membership.</b> - Discounted membership at  Soho Gym (Earl’s Court) at a cost of £15 per month.</p>
       </div>
       <ng-template ngSwitchDefault>Enjoy the benefits of working with us.<!--I found this on <a href="https://codepen.io/wbarahona/pen/vLoyOb">codepen</a> and noticed that it's easily implemented in angular.--> Just click the button.</ng-template>
     </div>

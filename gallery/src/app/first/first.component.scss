@@ -235,11 +235,12 @@ a {color: white;text-decoration: none;}
 
 .menu-wrapper {
   position: absolute;
-  right: 0;
+  right: 10px;
   width: 30rem;
   height: 30rem;
   overflow: hidden;
-  max-width: 100%;
+  
+//  max-width: 100%;
 }
 
 .menu {
