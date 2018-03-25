@@ -9,17 +9,21 @@ body {
   margin: 0;
 }
 
-.wrapper {
-  margin-top: 75px;
-}
-
 body {
   background-color: #f3f5f6;
   color: #8f8f8f;
   font: 14px Proxima Nova, Oswald, helvetica neue, helvetica, arial, sans-serif;
   height: 100%
 }
+.container {
+  margin-top: 75px;
+}
 
+@media (max-width:750px) {
+  .container {
+    margin-top: 75px;
+  }
+}
 -scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;

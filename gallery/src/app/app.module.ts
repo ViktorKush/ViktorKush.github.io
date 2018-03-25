@@ -11,12 +11,8 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
-import { PhotosComponent } from './photos/photos.component';
-import { LikedComponent } from './liked/liked.component';
-import { FavoritesComponent } from './favorites/favorites.component';
-import { CheckOutComponent } from './check-out/check-out.component';
-import { SuccessComponent } from './success/success.component';
-import { UserImagesComponent } from './user/user-images/user-images.component';
+//import { LikedComponent } from './liked/liked.component';
+//import { FavoritesComponent } from './favorites/favorites.component';
 import { FeedComponent } from './user/feed/feed.component';
 import { AboutComponent } from './about/about.component';
 import { AuthService } from './auth.service';
@@ -34,12 +30,8 @@ import { FirstComponent } from './first/first.component';
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    PhotosComponent,
-    LikedComponent,
-    FavoritesComponent,
-    CheckOutComponent,
-    SuccessComponent,
-    UserImagesComponent,
+//    LikedComponent,
+//    FavoritesComponent,
     FeedComponent,
     AboutComponent,
     AddComponent,
@@ -53,15 +45,11 @@ import { FirstComponent } from './first/first.component';
     RouterModule.forRoot([
       { path: '', component: FirstComponent  },
       { path: 'home', component: HomeComponent, canActivate: [AuthGuardService]  },
-      { path: 'photos', component: PhotosComponent, canActivate: [AuthGuardService] },
-      { path: 'liked', component: LikedComponent, canActivate: [AuthGuardService] },
+//      { path: 'liked', component: LikedComponent, canActivate: [AuthGuardService] },
       { path: 'test', component: TestComponent, canActivate: [AuthGuardService] },
-      { path: 'check-out', component: CheckOutComponent, canActivate: [AuthGuardService] },
-      { path: 'success', component: SuccessComponent, canActivate: [AuthGuardService] },
-      { path: 'favorites', component: FavoritesComponent, canActivate: [AuthGuardService] },
+//      { path: 'favorites', component: FavoritesComponent, canActivate: [AuthGuardService] },
       { path: 'about', component: AboutComponent },
       { path: 'add', component: AddComponent, canActivate: [AuthGuardService]  },
-      { path: 'user/user-images', component: UserImagesComponent, canActivate: [AuthGuardService] },
       { path: 'user/feed', component: FeedComponent, canActivate: [AuthGuardService] }
     ]),
 //    FormsModule,

@@ -1,37 +1,39 @@
-<h1 class="text-center">Add new photos</h1>
-<div class="container-flex">
-  <div class="col-flex">
-    <div class="heading">
-      <div class="logo text-center"><img src="../../assets/images/logo.png" alt="logo"></div>
-      <h2 class="text-center">Upload more images</h2>
-      <h2 class="text-center">astonish</h2>
-    </div>
-    <div class="field">
-      <label class="text-center">Title:</label>
-      <div class="input">
-        <input type="text" name="" value="" maxlength="20" #photosTitle placeholder="My cat's pijama..." (keyup)="inputTest($event.target.value)">
+<div class="container">
+  <h1 class="text-center">Add new photos</h1>
+  <div class="container-flex">
+    <div class="col-flex">
+      <div class="heading">
+        <div class="logo text-center"><img src="../../assets/images/logo.png" alt="logo"></div>
+        <h2 class="text-center">Upload more images</h2>
+        <h2 class="text-center">astonish</h2>
       </div>
-    </div>
-    <div class="field">
-      <label class="text-center">Author:</label>
-      <div class="input">
-        <input type="text" name="" *ngIf="auth.user$ | async as user;" [value]="user.displayName" disabled>
+      <div class="field">
+        <label class="text-center">Title:</label>
+        <div class="input">
+          <input type="text" name="" value="" maxlength="20" #photosTitle placeholder="My cat's pijama..." (keyup)="inputTest($event.target.value)">
+        </div>
       </div>
-    </div>
-    <div class="field">
-      <label class="text-center">Description:</label>
-      <div class="input">
-        <input type="text" name="" value="" placeholder="It was a lovely day...">
+      <div class="field">
+        <label class="text-center">Author:</label>
+        <div class="input">
+          <input type="text" name="" *ngIf="auth.user$ | async as user;" [value]="user.displayName" disabled>
+        </div>
       </div>
+      <div class="field">
+        <label class="text-center">Description:</label>
+        <div class="input">
+          <input type="text" name="" value="" placeholder="It was a lovely day...">
+        </div>
+      </div>
+      <input type="file" (change)="photoSelectedForList($event)" #input hidden>
+      <div class="btn-upload" (click)="input.click()">Upload</div>
     </div>
-    <input type="file" (change)="photoSelectedForList($event)" #input hidden>
-    <div class="btn-upload" (click)="input.click()">Upload</div>
-  </div>
-  <div class="col-flex col-flex-right">
-  <div class="Title text-center">Title: {{photosTitle.value}}</div>
-  <div class="Author text-center" *ngIf="auth.user$ | async as user;">Author: {{user.displayName}}</div>
-  <div class="text-center">Preview isn't done yet so there is an image of a cat reading his morning newspaper.</div>
-  <div class="preview"></div>
-  </div>
+    <div class="col-flex col-flex-right">
+      <div class="Title text-center">Title: {{photosTitle.value}}</div>
+      <div class="Author text-center" *ngIf="auth.user$ | async as user;">Author: {{user.displayName}}</div>
+      <div class="text-center">Preview isn't done yet so there is an image of a cat reading his morning newspaper.</div>
+      <div class="preview"></div>
+    </div>
 
+  </div>
 </div>

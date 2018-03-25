@@ -29,7 +29,7 @@ export class TestComponent implements OnInit {
  
     ngOnInit() {
         // get dummy data
-        this.http.get('./dummy-data.json')
+        this.http.get('./src/assets/dummy-data.json')
             .map((response: Response) => response.json())
             .subscribe(data => {
                 // set items to json response

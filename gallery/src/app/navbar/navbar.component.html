@@ -5,6 +5,8 @@
     <input type="text" placeholder="Photos, people or groups">
   </label>
   <nav>
+   <div *ngIf="auth.user$ | async; else anonymousUser2">
+     
     <input id="toggle1" type="checkbox">
     <label for="toggle1" id="mobile-label">
     <i class="fa mobile-menu fa-bars fa-lg" aria-hidden="true"></i>
@@ -15,13 +17,16 @@
         <li class="animate dropdown-item"><a routerLink="/home">Your photos</a></li>
         <li class="animate dropdown-item"><a routerLink="/add">Add photos</a></li>
         <li class="animate dropdown-item"><a routerLink="/user/feed">Explore</a></li>
+<!--
         <li class="animate dropdown-item not-done"><a routerLink="/favorites">Favs</a></li>
         <li class="animate dropdown-item not-done"><a routerLink="/liked">Liked</a></li>
+-->
         <li class="animate dropdown-item"><a routerLink="/test">Users</a></li>
         <li class="animate dropdown-item"><a routerLink="/about">About</a></li>
         <li class="animate dropdown-item"><a (click)="logout()">Log out</a></li>
       </ul>
     </div>
+   </div>
     <ul class="top-menu">
       <li class="dropdown dropdown1 navbar-item" *ngIf="auth.user$ | async; else anonymousUser1">
         <label *ngIf="auth.user$ | async as user" for="toggle2" class="animate">{{user.displayName}}</label>
@@ -30,8 +35,10 @@
           <li class="animate dropdown-item"><a routerLink="/home">Your photos</a></li>
           <li class="animate dropdown-item"><a routerLink="/add">Add photos</a></li>
           <li class="animate dropdown-item"><a routerLink="/user/feed">Explore</a></li>
+<!--
           <li class="animate dropdown-item not-done"><a routerLink="/favorites">Favs</a></li>
           <li class="animate dropdown-item not-done"><a routerLink="/liked">Liked</a></li>
+-->
           <li class="animate dropdown-item"><a routerLink="/test">Users</a></li>
           <li class="animate dropdown-item"><a routerLink="/about">About</a></li>
         </ul>
@@ -42,6 +49,11 @@
       <ng-template #anonymousUser>
         <li *ngIf="!(auth.user$ | async)" class="navbar-item"><a (click)="login()">Join Astonish</a></li>
       </ng-template>
+      <ng-template #anonymousUser2>
+<!--        <ul class="top-menu">-->
+          <div *ngIf="!(auth.user$ | async)" class="mobile-join"><a (click)="login()">Sign Up</a></div>
+<!--        </ul>-->
+    </ng-template>
       <li class="animate" *ngIf="auth.user$ | async; else anonymousUser"><a (click)="logout()">Log out</a></li>
     </ul>
   </nav>
