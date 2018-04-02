@@ -3,7 +3,6 @@ export default function filterTable(tbody, filters) {
     let rowQuantity = 0;
     function filterColumns(elem) {
         const key = `${elem.dataset.fieldName}`;
-        // console.log(filters[key] === undefined);
         if ((key && elem.textContent.includes(filters[key])) || (filters[key] === undefined)) {
             return true;
         }
