@@ -1,0 +1,57 @@
+.comment {
+  position: absolute;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  bottom: 25px;
+  right: 25px;
+  background-color: aliceblue;
+  padding: 5px;
+  border-radius: 5px;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background: black;
+}
+
+#container {
+  margin: 0 auto;
+  width: 350px;
+  height: 300px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell {
+  font-size: 30px;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 5px double black;
+  line-height: 100px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cell:hover {
+  border-color: red;
+}
+
+#restart {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  border: 1px double black;
+  border-radius: 100px;
+  padding: 5px;
+}
+
+#restart:hover {
+  border-bottom: 1px double white;
+  border-top: 1px double white;
+}

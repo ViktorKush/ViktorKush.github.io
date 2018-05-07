@@ -1,0 +1,62 @@
+function game() { 
+  var myNode = document.getElementById("container");
+  while (myNode.firstChild) {
+    myNode.removeChild(myNode.firstChild);
+  }
+  let fieldSize = 25;
+  let container = document.getElementById("container");
+  let movesNumber = 0;
+  let symbols = ["x", "o"];
+  let symbolsChoice = 0;
+  // let movesArray = new Array(fieldSize);
+  let rowSize = Math.sqrt(fieldSize);
+  container.style.width = rowSize*100 + 50 + "px";
+  //блок в якому ми створюємо клітинки
+  //a block of code in which we add cells
+  for(let i = 0; i < fieldSize; i++) {
+    let cell = document.createElement('div') //создаем ячейку(creating a cell)
+    cell.innerHTML = "";
+    cell.className = "cell";
+    cell.id = "cell" + i;
+    container.appendChild(cell);
+  }
+  let cells = document.getElementsByClassName("cell")
+  for(let i = 0; i<cells.length; i++) {cells[i].addEventListener("click", makingMove)}
+  function makingMove() {
+    movesNumber++;
+    this.innerText = symbols[symbolsChoice];
+    check();
+    symbolsChoice++;
+    if(symbolsChoice>1) symbolsChoice = 0;
+    this.removeEventListener("click", makingMove);
+    this.style.cssText = "border-color:black; cursor:default;";
+    
+  }
+  // checking
+  // тепер перевірка
+  function checking (element, index, array){
+    return element.innerText===symbols[symbolsChoice]; 
+  }
+  // для того, щоб перевірити і вертикаль і горизонталь і діагональ нам треба змінювати ітератор.
+
+  function check() {
+      let weHaveWinnerDiagonal1 = [...cells].filter((item,index) => index%(rowSize+1)===0).every(checking);
+      let weHaveWinnerDiagonal2 = [...cells].filter((item,index) => (index!==0)&&(index!==cells.length-1)&&index%(rowSize-1)===0).every(checking);
+            
+    for(let i = 0; i < rowSize; i++) {
+      let weHaveWinnerHorizontal = [...cells].slice(i*rowSize, i*rowSize+rowSize).every(checking);
+      let weHaveWinnerVertical = [...cells].filter((item,index) => (index-i)%rowSize===0).every(checking);
+      if((weHaveWinnerHorizontal||weHaveWinnerVertical||weHaveWinnerDiagonal1||weHaveWinnerDiagonal2) && end()){
+        break;
+      };
+    };
+  }
+  function end(){
+    alert(`${symbols[symbolsChoice]} wins!`);
+    for(let i = 0; i<cells.length; i++) {cells[i].removeEventListener("click", makingMove);
+    cells[i].style.cssText = "border-color:black; cursor:default;";}
+    return true;
+  }
+}
+game()
+document.getElementById("restart").addEventListener("click", game)

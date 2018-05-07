@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css"/>
+       <link rel="shortcut icon" href="favicon.ico"/>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+			<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+    <script defer src="js/jquery.flexslider.js"></script>
+    <link href="css/star-rating.css" media="all" rel="stylesheet" type="text/css"/>
+    <!--suppress JSUnresolvedLibraryURL -->
+    <script src="js/star-rating.js" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+</script>
+	<!--[if IE 8]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+<!-- <link rel="stylesheet" href="http://gmstyle.com.ua/themes/default-bootstrap/cache/v_59_d566c537abf761aea4614ba3f6059ac3_all.css" type="text/css" media="all" /> -->
+<script type="text/javascript">
+var FancyboxI18nClose = 'Закрыть';
+var FancyboxI18nNext = 'Вперед';
+var FancyboxI18nPrev = 'Назад';
+var contentOnly = false;
+
+
+</script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</head>
+<body>
+	<div class="container">	
+		<div class="row">
+			<div class="col-xs-12 col-sm-12">
+				<header>
+					<div class="logo-cont">
+						<div class="line1"></div>
+						<img src="img/logo.png" alt="logo" class="logo">
+						<a href="#"><img src="img/facebook.png" alt="facebook" class="socials"></a>
+						<a href="#"><img src="img/youtube.png" alt="youtube" class="socials"></a>
+						<a href="#"><img src="img/twitter.png" alt="twitter" class="socials"></a>
+					</div>
+					<div id="slidemenu">
+						<div class="row-green">
+							<div class="col-xs-9 col-md-9">
+								<ul class="nav navbar-nav">
+									<li><a href="index.html"><span>О магазине</span></a></li>
+									<li class="dropdown active">
+										<a href="services.html" data-toggle="dropdown" data-submenu=""><span>Доставка</span></a>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="#">Турбинные вентиляторы</a></li>
+											<li><a href="#">Электропилы</a></li>
+											<li><a href="#"></a></li>
+											<li><a href="#"></a></li>
+											<li><a href="#"></a></li>
+										</ul>
+									</li>
+									<li><a href="#"><span>Оплата</span></a></li>
+									<li><a href="#"><span>Система скидок</span></a></li>
+									<li><a href="#"><span>Бонусная программа</span></a></li>
+									<li><a href="#"><span>Как оформить заказ?</span></a></li>
+								</ul>
+							</div>
+							<div class="col-xs-3 col-md-3">
+								<div class="search-container">
+									<input placeholder="Найти товары" type="text">
+									<a class="button"><button type="button" class="btn btn-xs" aria-label="Left Align"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</header>
+			</div>	
+		</div>
+		<div class="content">
+			<div class="row row-content">
+				<div class="content-left content col-xs-6">
+					<div class="register"><a href="#"><img src="img/register.png" alt="reg"> <p class="register-text">Вход</p> / <p class="register-text">Регистрация</p></a>
+					</div>
+					<div class="basket-cont register">
+						<div class="descr">
+							<div class="name">
+								<p>Ваша корзина</p>
+								<hr>
+							</div>
+							<div class="cart-inside">
+								<div class="cart-item row column-without-padding">
+									<div class="col-xs-2 column-without-padding">
+										<img src="img/cart-item-1.png" alt="cart1">
+									</div>
+									<div class="col-xs-5 column-without-padding">
+										<div class="price-count">
+									    	<label for="price-count">
+					                        	<div class="addcount">
+													<div class="minus col-xs-3 column-without-padding">
+								                        <a rel="nofollow" href="#remove-from-cart" class="jsRemoveFromCart remove-button" title="-">-</a>
+								                    </div>
+								                    
+													<div class="kol col-xs-6 column-without-padding">
+								                        <input type="text" id="price-count" class="jsCount" value="0" maxlength="6"/>
+								                    </div>
+								                    <div class="plus col-xs-3 column-without-padding">
+								                        <a rel="nofollow" href="#add-to-cart" id="118" class="jsAddToCart add-button" title="+">+</a>
+								                    </div>
+								                </div>
+									        </label>
+									    </div>
+								    </div>
+								    <div class="col-xs-4 column-without-padding">
+									    <div class="name-and-price">
+											<p class="name-cart">some name</p>
+											<p class="price-cart">13213 $</p>
+										</div>
+									</div>
+									<div class="col-xs-1 column-without-padding">
+										<div class="pull-right"><img src="img/forma-cruz.png" alt="cancel"></div>
+									</div>
+									<hr class="grey">
+								</div>
+								<div class="cart-item row column-without-padding">
+									<div class="col-xs-2 column-without-padding">
+										<img src="img/cart-item-1.png" alt="cart1">
+									</div>
+									<div class="col-xs-5 column-without-padding">
+										<div class="price-count">
+									    	<label for="price-count">
+					                        	<div class="addcount">
+													<div class="minus col-xs-3 column-without-padding">
+								                        <a rel="nofollow" href="#remove-from-cart" class="jsRemoveFromCart remove-button" title="-">-</a>
+								                    </div>
+													<div class="kol col-xs-6 column-without-padding">
+								                        <input type="text" id="price-count" class="jsCount" value="0" maxlength="6"/>
+								                    </div>
+								                    <div class="plus col-xs-3 column-without-padding">
+								                        <a rel="nofollow" href="#add-to-cart" id="118" class="jsAddToCart add-button" title="+">+</a>
+								                    </div>
+								                </div>
+									        </label>
+									    </div>
+								    </div>
+								    <div class="col-xs-4 column-without-padding">
+									    <div class="name-and-price">
+											<p class="name-cart">some name</p>
+											<p class="price-cart">13213 $</p>
+										</div>
+									</div>
+									<div class="col-xs-1 column-without-padding">
+										<div class="pull-right"><img src="img/forma-cruz.png" alt="cancel"></div>
+									</div>
+									<hr class="grey">
+								</div>
+								<div class="cart-item row column-without-padding">
+									<div class="col-xs-2 column-without-padding">
+										<img src="img/cart-item-1.png" alt="cart1">
+									</div>
+									<div class="col-xs-5 column-without-padding">
+										<div class="price-count">
+									    	<label for="price-count">
+					                        	<div class="addcount">
+													<div class="minus col-xs-3 column-without-padding">
+								                        <a rel="nofollow" href="#remove-from-cart" class="jsRemoveFromCart remove-button" title="-">-</a>
+								                    </div>
+													<div class="kol col-xs-6 column-without-padding">
+								                        <input type="text" id="price-count" class="jsCount" value="0" maxlength="6"/>
+								                    </div>
+								                    <div class="plus col-xs-3 column-without-padding">
+								                        <a rel="nofollow" href="#add-to-cart" id="118" class="jsAddToCart add-button" title="+">+</a>
+								                    </div>
+								                </div>
+									        </label>
+									    </div>
+								    </div>
+								    <div class="col-xs-4 column-without-padding">
+									    <div class="name-and-price">
+											<p class="name-cart">some name</p>
+											<p class="price-cart">13213 $</p>
+										</div>
+									</div>
+									<div class="col-xs-1 column-without-padding">
+										<div class="pull-right"><img src="img/forma-cruz.png" alt="cancel"></div>
+									</div>
+								</div>
+							</div>
+							<div class="total name">Общая сумма: 2 931 $</div>
+							<hr>
+							<a href="#"><div class="btn btn-success">Перейти в корзину</div></a>
+						</div>
+						<a href="#">
+							<div class="row column-without-padding cart-text">
+								<div class="basket lll"><p><img src="img/basket.png" alt="reg"> Корзина</p></div>
+								<div class="basket-counter-1 ccc"><p>5</p></div>
+								<div class="basket-counter-2 rrr"><p class="price1">6325&nbsp<span class="rub">Р</span></p></div>
+							</div>
+						</a>
+					</div>
+					<div class="catalog">
+						<div class="goods">
+							<div class="container catalog">
+							  <div class="panel-group">
+							    <div class="panel panel-default">
+							        <div class="catalog-caption">
+								        <a data-toggle="collapse" href="#collapse">
+									        <h4 class="panel-title">Каталог товаров</h4>
+									     	<img class="catalog-caption-img" src="img/accordion.png" alt="accordion">
+									     </a>
+							        </div>
+							      <div id="collapse" class="panel-collapse collapse">
+							        <ul class="list-group">
+							          <a href="#">
+							          	<li class="list-group-item">Распродажа</li>
+							          </a>
+							          <a href="#">
+							          	<li class="list-group-item">Распродажа</li>
+							          </a>
+							          	<a data-toggle="collapse" href="#collapse1"><li class="list-group-item">Новинки</li>
+							          </a>
+							          <div id="collapse1" class="panel-collapse collapse">
+								          <ul class="list-group">
+									          <a href="#">
+									          	<li class="list-group-item">Handmade</li>
+									          </a>
+									          <a href="#">
+									          	<li class="list-group-item">Macquina</li>
+									          </a>
+								          </ul>
+							          </div>
+							          <a href="#">
+							          	<li class="list-group-item">Распродажа</li>
+							          </a>
+							          <a href="#">
+							          	<li class="list-group-item">Распродажа</li>
+							          </a>
+							          <a href="#">
+							          	<li class="list-group-item">Распродажа</li>
+							          </a>
+							          <a href="#">
+							          	<li class="list-group-item">Распродажа</li>
+							          </a>
+							          <a href="#">
+							          	<li class="list-group-item">Распродажа</li>
+							          </a>
+							          <a href="#">
+							          	<li class="list-group-item">Распродажа</li>
+							          </a>
+							          <a href="#">
+							          	<li class="list-group-item">Распродажа</li>
+							          </a>
+							        </ul>
+							      </div>
+							    </div>
+							  </div>
+							</div>
+						</div>
+					</div>
+					<div class="news">
+						<div class="caption">Новости</div>
+						<div class="date">&gt; 10.08.2015</div>
+						<a href="#" class="title-article">10% комиссия при оплате QIWI wallet</a>
+						<hr>
+						<div class="date">&gt; 10.08.2015</div>
+						<a href="#" class="title-article">10% комиссия при оплате QIWI wallet</a>
+						<hr>
+						<div class="date">&gt; 10.08.2015</div>
+						<a href="#" class="title-article">10% комиссия при оплате QIWI wallet</a>
+						<hr>
+					</div>
+					<div class="articles">
+						<div class="caption">Статьи</div>
+						<div class="date">&gt; 10.08.2015</div>
+						<a href="#" class="title-article">10% комиссия при оплате QIWI wallet</a>
+						<hr>
+						<div class="date">&gt; 10.08.2015</div>
+						<a href="#" class="title-article">10% комиссия при оплате QIWI wallet</a>
+						<hr>
+						<div class="date">&gt; 10.08.2015</div>
+						<a href="#" class="title-article">10% комиссия при оплате QIWI wallet</a>
+						<hr>
+					</div>
+					<img src="img/side-banner.png" alt="banner">
+				</div>
+				<div class="content-right col-xs-6">
+					<div class="row">
+						<div class="col-xs-6">
+							<ul class="breadcrumb">
+							  <li><a href="#">Главная</a></li>
+							  <li>Dinafem</li>
+							  <li>Mobi Dick #2</li>
+							</ul>
+						</div>
+						<div class="col-xs-6 currency">Валюта
+							<select name="Валюта" id="currency" class="price">
+								<option value="Rubl" class="price">&#8399;</option>
+								<option value="Euro">&euro;</option>
+								<option value="Dollar">$</option>
+								<option value="Hryvna">&#8372;</option>
+							</select>
+						</div>
+					</div>
+			<div class="col-xs-6">
+					<div class="container">
+						<div class="top-hr"></div>
+					</div>
+								<!-- left infos-->
+					<div class="pb-left-column col-xs-12 col-sm-4 col-md-5">
+					<!-- product img-->
+					<div id="image-block" class="clearfix">
+					<span id="view_full_size">
+					<img id="bigpic" itemprop="image" src="img/mask.png" title="Mask" alt="Mask" width="458" height="458"/>
+					</span>
+					</div> <!-- end image-block -->
+					<!-- thumbnails -->
+					<div id="views_block" class="clearfix ">
+					<span class="view_scroll_spacer">
+					<a id="view_scroll_left" class="" title="Другие виды" href="javascript:{}">
+					Назад
+					</a>
+					</span>
+					<div id="thumbs_list">
+					<ul id="thumbs_list_frame">
+					<li id="thumbnail_1329">
+					<a href="img/mask.png"	data-fancybox-group="other-views" class="fancybox shown" title="Mask">
+					<img class="img-responsive" id="thumb_1329" src="img/mask.png" alt="Mask" title="Mask" height="80" width="80" itemprop="image" />
+					</a>
+					</li>
+					<li id="thumbnail_1330">
+					<a href="img/mask.png"	data-fancybox-group="other-views" class="fancybox" title="Mask">
+					<img class="img-responsive" id="thumb_1330" src="img/mask.png" alt="Mask" title="Mask" height="80" width="80" itemprop="image" />
+					</a>
+					</li>
+					<li id="thumbnail_1331" class="last">
+					<a href="img/mask.png"	data-fancybox-group="other-views" class="fancybox" title="Mask">
+					<img class="img-responsive" id="thumb_1331" src="img/mask.png" alt="Mask" title="Mask" height="80" width="80" itemprop="image" />
+					</a>
+					</li>
+					</ul>
+					</div> <!-- end thumbs_list -->
+					<a id="view_scroll_right" title="Другие виды" href="javascript:{}">
+					Вперед
+					</a>
+					</div> <!-- end views-block -->
+					<!-- end thumbnails -->
+					<p class="resetimg clear no-print">
+					<span id="wrapResetImages" style="display: none;">
+					<a href="http://gmstyle.com.ua/home/262-figurki-geroev-monster-high.html" name="resetImages">
+					<i class="icon-repeat"></i>
+					Показать все фотографии
+					</a>
+					</span>
+					</p>
+					</div>
+
+					 <!-- end pb-left-column -->
+					<!-- end left infos-->
+					</div>
+					<div class="col-xs-6 column-without-padding">
+						<div class="col-xs-6 column-without-padding">
+							<span class="product-caption"><b>Moby Dick #2</b></span>
+						</div>
+						<div class="col-xs-6 column-without-padding in-stock-cont">
+							<div class="ellipse1"></div><span class="in-stock">В наличии</span>
+						</div>
+					</div>
+	<div class="col-xs-6 column-without-padding">
+		<div class="col-xs-6 column-without-padding">
+			<img class="image-details" src="img/details.png" alt="details">
+			<select name="wrapper-type" id="wrapper-type">
+				<option value="type-1">5 магнитов</option>
+			</select>
+		</div>
+		<ul class="list-details-cont ">
+			<li class="list-details">Original cheese X Blueberry</li>
+			<li class="list-details">Original cheese X Blueberry</li>
+			<li class="list-details">Original cheese X Blueberry</li>
+			<li class="list-details">Original cheese X Blueberry</li>
+			<li class="list-details">60-70 см.</li>
+			<li class="list-details">500/600 гр.</li>
+			<li class="list-details">Original cheese X Blueberry</li>
+			<li class="list-details">Original cheese X Blueberry</li>
+			<li class="list-details">Original cheese X Blueberry</li>
+			<li class="list-details">Original cheese X Blueberry</li>
+			<li class="list-details">Original cheese X Blueberry</li>
+			<li class="list-details">20 %</li>
+		</ul>
+		<br>
+		<a href="#"></a><span class="favourite-1">&#x2764;</span><span>Добавить в избранное</span>
+	</div>
+	<div class="row">
+		<div class="col-xs-6"></div>
+			<div class="product-details-big">
+				<div class="col-xs-6 column-buy column-without-padding">
+					<div class="product-price-old">
+						<b>30 248.55</b><span class="price"> &#8399;</span>
+					</div>
+					<div class="row">
+						<div class="col-xs-12"><span class="product-price">
+						<b>25 248.55</b><span class="price"> &#8399;</span></span>
+						</div>
+					</div>
+					<div class="row timer-and-button">
+						<div class="col-xs-3 column-without-padding" id="timer-container">
+							<div id="timer">
+								<div id="hour">23</div>&nbsp;:
+								<div id="minute">59</div>&nbsp;:
+								<div id="second">59</div>
+							</div>
+						</div>
+						<div class="col-xs-8 column-without-padding">
+							<span class="button to-cart">Купить</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-4 left-column"><img src="img/discount.png" alt="discount"><img src="img/delivery.png" alt="delivery"></div>
+						<div class="col-xs-8 rating-col">Рейтинг <input type="text" class="rating rating-loading" value="5" data-step="1" data-size="sm" title=""> Голосов: <span class="rating">0</span>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<div class="grey-caption">Описание</div>
+
+		<hr class="grey">
+	<div class="container-description">
+		<p class="description">Керамзитовый дренаж в практичной упаковке объемом 25 литров. Изготовлен из обожженной глины, имеет мелкопористую структуру, отличается полным отсутствием запаха, нейтральным уровнем кислотности (pH) и абсолютной химической инертностью. Нетребователен к условиям хранения: может храниться при любой температуре в течение неограниченного периода времени. Керамзитовый дренаж используется для обеспечения оптимального воздухообмена и влагообмена в почве (субстрате). Эффективно препятствует закислению грунта, образованию мха и плесени на поверхности; позволяет создать оптимальные условия для развития корневой системы. Может использоваться:</p>
+	    <p class="description">&nbspдля обеспечения дренажного слоя – насыпается на дно горшка слоем 3-5 см и обеспечивает отвод избытков влаги от корней растения;</p>
+	    <p class="description">&nbspдля облегчения слишком глинистой почвы – смешивается с почвой, позволяет насытить ее воздухом и сделать более проницаемой для влаги.</p>
+		<p class="description">Постепенно разрушаясь, керамзит не наносит почве никакого вреда, однако также теряет свои дренажные свойства. Поэтому дренажный слой керамзита на дне горшка или керамзитовый наполнитель в почве необходимо регулярно обновлять.</p>
+	</div>
+	<div class="grey-caption">Похожие товары</div>
+	<hr class="grey">
+					<ul class="products clearfix">
+						<li class="product-wrapper">
+							<a href="" class="product">
+								<div class="product-main">
+									<div class="product-photo">
+										<img src="img/product-1.jpg" alt="">
+									</div>
+								</div>
+									<div class="product-text">
+										<h2 class="product-name">Бензопила Husqvarna 135 9667618-04</h2>
+										<div class="ellipse"></div>
+										<p>Надежный двигатель</p>
+									</div>
+								<div class="product-details-wrap">						
+									<div class="product-details">
+										<div class="product-price product-price-old">
+											<b>326,90</b>
+											<small>&euro;</small>
+										</div>
+										<div class="row">
+											<div class="col-xs-7"><span class="product-price">
+											<b>253.70</b>
+											<small>&euro;</small></div>
+											<div class="col-xs-5 raiting-col"><input type="text" class="rating rating-loading" value="5" data-step="1" data-size="xs" title=""></div>
+										</span>
+										</div>
+									</div>
+									<div class="product-buttons-wrap">
+										<div class="buttons">
+											<span class="button to-cart">В корзину ></span>
+											<span class="button favourite">&#x2764;</span>
+											<span class="button favourite details"><img src="img/eye.png" alt="details"></span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="product-wrapper">
+							<a href="" class="product">
+								<div class="product-main">
+									<div class="product-photo">
+										<img src="img/product-2.jpg" alt="">
+									</div>
+									</div>
+									<div class="product-text">
+										<h2 class="product-name">Погружной дренажный насос Калибр НПЦ-400/35П</h2>
+										<div class="ellipse"></div>
+										<p>Легко запускать и управлять</p>
+								</div>
+								<div class="product-details-wrap">						
+									<div class="product-details">
+										<div class="product-price product-price-old">
+											<b>326,90</b>
+											<small>&euro;</small>
+										</div>
+										<div class="row">
+											<div class="col-xs-7"><span class="product-price">
+											<b>253.70</b>
+											<small>&euro;</small></div>
+											<div class="col-xs-5 raiting-col"><input type="text" class="rating rating-loading" value="5" data-step="1" data-size="xs" title=""></div>
+										</span>
+										</div>
+									</div>
+									<div class="product-buttons-wrap">
+										<div class="buttons">
+											<span class="button to-cart">В корзину ></span>
+											<span class="button favourite">&#x2764;</span>
+											<span class="button favourite details"><img src="img/eye.png" alt="details"></span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="product-wrapper">
+							<a href="" class="product">
+								<div class="product-main">
+									<div class="product-photo">
+										<img src="img/product-3.jpg" alt="">
+									</div>
+								</div>
+									<div class="product-text">
+										<h2 class="product-name">Триммер Crosser CR-T1</h2>
+										<div class="ellipse"></div><p>Диски и ранцевый ремень в подарок</p>
+									</div>
+								<div class="product-details-wrap">						
+									<div class="product-details">
+										<div class="product-price product-price-old">
+											<b>326,90</b>
+											<small>&euro;</small>
+										</div>
+										<div class="row">
+											<div class="col-xs-7"><span class="product-price">
+											<b>253.70</b>
+											<small>&euro;</small></div>
+											<div class="col-xs-5 raiting-col"><input type="text" class="rating rating-loading" value="5" data-step="1" data-size="xs" title=""></div>
+										</span>
+										</div>
+									</div>
+									<div class="product-buttons-wrap">
+										<div class="buttons">
+											<span class="button to-cart">В корзину ></span>
+											<span class="button favourite">&#x2764;</span>
+											<span class="button favourite details"><img src="img/eye.png" alt="details"></span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="product-wrapper">
+							<a href="" class="product">
+								<div class="product-main">
+									<div class="product-photo">
+										<img src="img/product-4.jpg" alt="">
+									</div>
+								</div>
+									<div class="product-text">
+										<h2 class="product-name">Штыковая дренажная лопата Truper PEP-P 17163</h2>
+										<p></p>
+									</div>
+								<div class="product-details-wrap">						
+									<div class="product-details">
+										<div class="product-price product-price-old">
+											<b>326,90</b>
+											<small>&euro;</small>
+										</div>
+										<div class="row">
+											<div class="col-xs-7"><span class="product-price">
+											<b>253.70</b>
+											<small>&euro;</small></div>
+											<div class="col-xs-5 raiting-col"><input type="text" class="rating rating-loading" value="5" data-step="1" data-size="xs" title=""></div>
+										</span>
+										</div>
+									</div>
+									<div class="product-buttons-wrap">
+										<div class="buttons">
+											<span class="button to-cart">В корзину ></span>
+											<span class="button favourite">&#x2764;</span>
+											<span class="button favourite details"><img src="img/eye.png" alt="details"></span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<ul class="pixel-tabs">
+						<li>
+							<a href="#content-one" id="one-tab" class="active-tab">Отзывы (0)</a>
+						</li>
+						<li>
+							<a href="#content-two" id="two-tab" class="tab">Добавить отзыв</a>
+						</li>
+					</ul>
+					<div class="content-tab">
+						<div id="content-one">
+							<div class="comment">
+								<div class="name">Советский <span class="guest">(Гость)</span></div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt quibusdam nisi, voluptatem doloribus minus molestiae. Adipisci, totam repellendus perspiciatis, magni alias quae distinctio, earum eligendi incidunt esse dolore nihil aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet facere eos sunt, aliquid libero ad, est corporis laboriosam repudiandae ab tenetur enim dolorem, id ratione debitis accusamus consequatur modi. Culpa.</p>
+							</div>
+							<hr>
+							<div class="pull-left cont-page-number">
+								<a href="#"><span class="page-number col-xs-1"><</span></a> 
+								<a href="#"><span class="page-number col-xs-1">1</span></a>
+								<a href="#"><span class="page-number col-xs-1">2</span></a>
+								<a href="#"><span class="page-number col-xs-1">3</span></a>
+								<a href="#"><span class="page-number col-xs-1">4</span></a>
+								<a href="#"><span class="page-number col-xs-1">...</span></a>
+								<a href="#"><span class="page-number col-xs-1">></span></a>
+							</div>
+						</div>
+						<div id="content-two" style="display:none;">
+							<label for="Name">Имя:</label>
+							<input type="text" required name='Name' placeholder="Имя"><br>
+							<label for="textarea">Сообщение:</label>
+							<input type="text" class='textarea' name="Message" placeholder="Ваш комментарий">
+							<input type="submit" class="button submit" value="Отправить">			
+						</div>
+
+
+					</div>
+				</div><!-- content-right -->
+			</div><!-- row-content -->
+	
+		<footer>	
+			<div class="line1"></div>
+			<div class="footer">
+				<div class="col-xs-4 footer-left">
+					<div class="caption"><b>Каталог</b></div>
+						<table class="footer-table-1">
+							<tr>
+						        <td><a href="#" class="links">Акции и скидки</a></td>
+						        <td><a href="#" class="links">Акции и скидки</a></td>
+						    </tr>
+						    <tr>
+						        <td><a href="#" class="links">Оптовый раздел</a></td>
+						        <td><a href="#" class="links">Оптовый раздел</a></td>
+						    </tr>
+						    <tr>
+						        <td><a href="#" class="links">Outlet</a></td>
+						        <td><a href="#" class="links">Outlet</a></td>
+						    </tr>
+						</table>
+				</div>
+				<div class="col-xs-5 footer-center">
+					<div class="caption"><b>Категории</b></div>
+						<table class="footer-table-2">
+							<tr>
+						        <td><a href="#" class="links">О нас</a></td>
+						        <td><a href="#" class="links">Форум</a></td>
+						        <td><a href="#" class="links">Оплата</a></td>
+						    </tr>
+						    <tr>
+						        <td><a href="#" class="links">Контакты</a></td>
+						        <td><a href="#" class="links">Видео</a></td>
+						    </tr>
+						    <tr>
+						        <td><a href="#" class="links">Регистрация</a></td>
+						        <td><a href="#" class="links">Личный кабинет</a></td>
+						    </tr>
+						    <tr>
+						        <td><a href="#" class="links">Архив статей</a></td>
+						        <td><a href="#" class="links">Магазин</a></td>
+						    </tr>
+						    <tr>
+						        <td><a href="#" class="links">Новости</a></td>
+						        <td><a href="#" class="links">Доставка</a></td>
+						    </tr>
+						</table>
+				</div>
+				<div class="col-xs-3 footer-right">
+					<p class="contacts">+34 935374923</p>
+					<p class="contacts">info@rawneed.com</p>
+					<p class="contacts">rawneed</p>
+					<img class="logo-bottom" src="img/logo-bottom.png" alt="">
+
+				</div>
+			</div>
+		</footer>
+		<img class="banner-bottom" src="img/banner-bottom.png" alt="">
+	</div>
+	<script type="text/javascript">
+document.querySelector('#one-tab').onclick = function(){
+  // Табы
+  document.getElementById('one-tab').className = 'active-tab'; 
+  document.getElementById('two-tab').className = 'tab';
+  // Содержание
+  document.getElementById('content-one').style.display = 'block';
+  document.getElementById('content-two').style.display = 'none';
+}
+document.querySelector('#two-tab').onclick = function(){
+   // Табы
+  document.getElementById('one-tab').className = 'tab';
+  document.getElementById('two-tab').className = 'active-tab';
+  // Содержание
+  document.getElementById('content-one').style.display = 'none';
+  document.getElementById('content-two').style.display = 'block'; 
+}</script>
+
+    <script>
+        jQuery(document).ready(function () {
+            $("#input-21f").rating({
+                starCaptions: function (val) {
+                    if (val < 3) {
+                        return val;
+                    } else {
+                        return 'high';
+                    }
+                },
+                starCaptionClasses: function (val) {
+                    if (val < 3) {
+                        return 'label label-danger';
+                    } else {
+                        return 'label label-success';
+                    }
+                },
+                hoverOnClear: false
+            });
+            var $inp = $('#rating-input');
+
+            $inp.rating({
+                min: 0,
+                max: 5,
+                step: 1,
+                size: 'lg',
+                showClear: false
+            });
+
+            $('#btn-rating-input').on('click', function () {
+                $inp.rating('refresh', {
+                    showClear: true,
+                    disabled: !$inp.attr('disabled')
+                });
+            });
+
+
+            $('.btn-danger').on('click', function () {
+                $("#kartik").rating('destroy');
+            });
+
+            $('.btn-success').on('click', function () {
+                $("#kartik").rating('create');
+            });
+
+            $inp.on('rating.change', function () {
+                alert($('#rating-input').val());
+            });
+
+
+            $('.rb-rating').rating({
+                'showCaption': true,
+                'stars': '3',
+                'min': '0',
+                'max': '3',
+                'step': '1',
+                'size': 'xs',
+                'starCaptions': {0: 'status:nix', 1: 'status:wackelt', 2: 'status:geht', 3: 'status:laeuft'}
+            });
+            $("#input-21c").rating({
+                min: 0, max: 8, step: 0.5, size: "xl", stars: "8"
+            });
+        });
+    </script>
+<script>
+	$(document).ready(function() {
+	$('.layout-buttons span').click(function() {
+		var $elem = $(this);
+		var $productList = $('.products');
+		$elem.toggleClass('active');
+		$elem.siblings().toggleClass('active');
+		$productList.toggleClass('table-layout');		
+	});
+});
+</script>	
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
+
+<script>
+window.onload = function(){ 
+
+	function timer(){
+
+		var hour = document.getElementById('hour').innerHTML;
+		var minute = document.getElementById('minute').innerHTML;
+		var second = document.getElementById('second').innerHTML;
+		var end = false;
+		
+		if( second > 0 ) second--;
+		else{
+			second = 59;
+			
+			if( minute > 0 ) minute--;
+			else{
+				second = 59;
+				
+				if( hour > 0 ) hour--;
+				else end = true;
+			}
+		}
+
+		if(end){
+			clearInterval(intervalID);
+			alert("Акция закончена!");
+		}else{
+			document.getElementById('hour').innerHTML = hour;
+			document.getElementById('minute').innerHTML = minute;
+			document.getElementById('second').innerHTML = second;
+		}
+	}
+	window.intervalID = setInterval(timer, 1000);
+}
+</script>
+
+</body>
+</html>

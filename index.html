@@ -1,29 +1,115 @@
 <!doctype html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<title>Портфолио</title>
-    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
-	<link rel="shortcut icon" href="#">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="#">
     <style type="text/css">
-        ul li {margin: 10px;};
+        body {
+            font-size: 1.2em;
+            font-family: "Helvetica Neue", Helvetica, sans-serif;
+            margin: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            color: saddlebrown;
+        }
+
+        a:visited {
+            color: seagreen;
+        }
+        .wrapper {
+            display: flex;
+        }
+
+        ul {
+            list-style-type: none;
+            width: 30%;
+        }
+
+        ul li {
+            margin-bottom: 20px;
+        }
+
+        ul li::before {
+            content: "";
+            margin-right: 2px;
+            font-size: 80%;
+            background-color: rgb(0, 200, 200);
+            color: white;
+            font-weight: bold;
+            padding: 1px 9px;
+            border-radius: 3px;
+        }
+        #description {
+            width: 70%;
+            padding: 10%;
+            text-align: justify;
+        }
     </style>
 </head>
+
 <body>
-       <ul>
-        <li><a href="planta/index.html" title="">Plantachula1</a></li>
-        <li><a href="planta/second.html" title="">Plantachula2</a></li>
-		<li><a href="super/index.html" title="">SuperWork</a></li>
-        <li><a href="pryvat/index.html" title="">PryvatBezpeka</a></li>
-        <li><a href="puzzle/index.html" title="">PuzzleStudio</a></li>
-        <li><a href="galian/index.html" title="">Galian</a></li>
-        <li><a href="diesel/index.html" title="">Diesel</a></li>
-        <li><a href="template/index.html" title="">Template</a></li> 
-        <li></li>       
-    </ul>
+    <div class="wrapper">
+        <ul id="list">
+            <li>
+                <a href="positions/index-animated.html">Positions (2017)</a>
+            </li>
+            <li>
+                <a href="planta/index.html">Plantachula 1 (2017)</a>
+            </li>
+            <li>
+                <a href="planta/second.html">Plantachula 2 (2017)</a>
+            </li>
+            <li>
+                <a href="super/index.html">SuperWork (mobile-friendly)(2017)</a>
+            </li>
+            <li>
+                <a href="template/index.html">Template (2017)</a>
+            </li>
+            <li>
+                <a href="casino1/index.html">Casino (2017)</a>
+            </li>
+            <li>
+                <a href="form/index.html">Form (2017)</a>
+            </li>
+            <li>
+                <a href="https://gallery-562a1.firebaseapp.com">Gallery (mobile-friendly)(2018)</a>
+            </li>
+            <li>
+                <a href="tick-tack-toe/index.html">Game tick-tack-toe(2018)</a>
+            </li>
+        </ul>
+        <div id="description">Description</div>
+    </div>
+    <script>
+        const
+            list = document.querySelectorAll("#list a"),
+            description = document.getElementById("description"),
+            infoData = {
+                positions: "Just horsing around learning to use positions and CSS3 animation.",
+                plantachula: "One of 2 pages made for Plantachula within 24 hours. This was the very first time I used jQuery so don't be too hard on me.:) Though the code is such a mess I decided to keep it the same as a reminder of the progress I've made.",
+                superwork: "The customer was a friend of mine and he asked me to jazz up the ui of his website. Eventually we decided on adding parallax effect, fixing adaptivity bugs and changing the order form.",
+                template: "A website I made on demand of my tutor. Not adaptive. Used meta-tag with viewport width=1280",
+                casino: "One more website I made on demand of my tutor. Not adaptive either.",
+                form: "A plain interactive form. If you fill the gaps and press the button it logs all the data to console.",
+                gallery: "Though it's not finished, yet it's my favorite project. I used Angular4 and Firebase. I needed firebase so as to implement photo preview with realtime database. If you upload photos it gets stored in the storage and the link to it goes to database as the key.",
+                "game": "I made it as a task for jQuery classes I teach. The student couldn't handle it so I helped him out in order to give him the basic structure of it.",
+            };
+        for (const item of list) {
+            item.addEventListener("mouseover", (e) => {
+                let key = e.target.textContent.split(" ")[0].toLowerCase();
+                description.textContent = infoData[key];
+            })
+        }
+    </script>
 </body>
+
 </html>

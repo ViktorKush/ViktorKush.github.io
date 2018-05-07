@@ -1,0 +1,407 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    backface-visibility: hidden;
+}
+
+#overlay {
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    opacity: 0.08;
+}
+
+#scene {
+    padding: 0;
+    margin: 0;
+    width: 115%;
+    height: 120vh;
+    overflow: hidden;
+    top: -5%;
+    left: -5%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;    
+}
+
+.wrapper {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    z-index: 101;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.wrapper img {
+  width: 450px;
+  height: auto;
+}
+
+.layer {
+    width: 110%;
+    height: 120vh;
+    overflow: hidden;
+}
+
+.layer2 {
+    background-image: url(assets/img/some1.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    overflow: visible;
+    z-index: 99999;
+    width: 50%;
+    height: 50%;
+    left: -4%;
+    bottom: 10%;
+}
+
+.layer1 {
+    background-image: url(assets/img/warsaw.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -5%;
+    top: -5%;
+}
+
+@media (max-width:1200px) and (min-width:700px) {
+     .wrapper img {
+        width: 320px;
+        height: auto;
+    } 
+}
+
+@media (max-width:700px) {
+    .layer2 {
+    width: 30%;
+    height: 30%;
+    left: 0%;
+    bottom: 10%;
+}
+    
+    .layer1 {
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 115%;
+        left: -5%;
+        top: -1%;
+    }    
+    
+    .wrapper img {
+        width: 280px;
+        height: auto;
+    }
+
+    .layer2 {
+    width: 50%;
+    height: 50%;
+    left: 0%;
+    bottom: 10%;
+}
+}
+.navbar-header a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+.navbar-nav a {
+    color: white !important;
+    text-decoration: none;
+}
+.wrapper {
+    width: 40%;
+}
+@media (max-width:450px) {
+    .layer2 {
+    width: 35%;
+    height: 35%;
+    left: 10%;
+    bottom: 10%;
+}
+.navbar-header a {
+    font-size: 14px;
+}
+footer.footer p, .footer a, .footer h4 {
+    font-size: 14px;
+}
+.wrapper img {
+        width: 100%;
+        height: auto;
+}
+.panel {
+    display: none;
+}
+}
+@media (min-width:450px) {
+    .panel1 {
+        display: none;
+    }
+}
+.round-center-img {
+    width: 110px;
+    height: auto;
+    border-radius: 150px;
+}
+ul.unordered {
+    list-style-type: none;
+}
+.advantages .col-xs-2 {
+    margin-right: 15px;
+}
+.panel {
+    background-color: transparent;
+    position: relative;
+    bottom: -50px;
+    left: 120px; 
+    border: none;
+}
+.panel .btn {
+    background-color: #E28E79;
+}
+.panel * {
+    text-align: center;
+    width: 250px;
+}
+.panel1 {
+    background-color: transparent;
+    border: none;
+}
+.panel1 .btn {
+    background-color: #E28E79;
+}
+.s-elements-wrapper  button {
+    border-radius: 5000px !important;
+    padding: 10px 55px;
+}
+.s-elements-wrapper  button:hover {
+    background-color: #FFE97D;
+    color: black;
+}
+.address-top li {
+    margin-top:40px;
+    list-style-type: none;
+    margin-right: 15px;
+    font-weight: 900;
+    color: white;
+}
+.form {
+    margin: 0;
+    padding: 0 auto;
+    background-color: #7B9AE2;
+    width: 100%;
+    height: 40px;
+}
+.form div {
+    padding: 0 auto;
+}
+.form .panel-body {
+    padding: 0
+}
+.form .btn {
+    background-color: #E28E79;
+    color: white;
+    /*width: 100%;*/
+}
+.form .btn:hover {
+    border: gold 1px solid;
+}
+.form input {
+    text-align: center;
+}
+@media all and (max-width: 767px) {
+    .form {
+        height: 85px;
+    }
+    .form button {
+        width: 100%;
+    }
+    .navbar-nav li a {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    .navbar-header img {
+    height: 60px;
+    width: auto;
+    }
+}
+.nav{
+    height: 40px;
+    padding: 0;
+}
+.nav>li>a {
+    padding: 10px 10px;
+}
+.form-transparent {
+    background-color: transparent;
+}
+.cta-quote hr {
+    width: 520px;
+}
+@media all and (max-width: 330px) {
+    .form button {
+        font-size: 12px;
+    }   
+    .navbar-phones * {
+        font-size: 10px;
+        height: 15px;
+        text-align: center;
+        vertical-align: center;
+    }
+
+    .navbar-header img {
+        height: 50px;
+        width: auto;
+    }
+}
+.navbar-header, .navbar-phones {
+    position: relative;
+    float: left;
+}
+.navbar-phones {
+    float: right;
+}
+.container-fluid {
+    background: #000000;
+  color:#ffffff;
+    margin: 40px auto 10px;
+    padding: 20px 0px;
+    max-width: 760px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.embed-responsive-4by3 {
+    padding-bottom: 58%;   
+}
+
+
+
+.wrapper h2 {
+    font-size: 48px;
+    /*background-color: rgba(255, 0, 0, 0.1);*/
+    font-weight: 1000;
+    color: white;
+}
+
+.wrapper h3 {
+  margin: 0;
+  color: #00a99d;
+}
+
+.wrapper p {
+  max-width: 30em;
+  margin: 2em auto;
+}
+
+.wrapper h3 {
+  text-align: center;
+  /*overflow: hidden;*/
+  font-size: 25px;
+  color: white;
+  font-weight: 600;
+}
+.wrapper h3 span {
+  display: inline-block;
+  position: relative;
+}
+.wrapper h3 span:before, h3 span:after {
+  content: "";
+  border-bottom: 3px solid white;
+  width: 3em;
+  margin: 0 1em;
+  position: absolute;
+  bottom: .5em;
+}
+.wrapper h3 span:before {
+  right: 100%;
+}
+.wrapper h3 span:after {
+  left: 100%;
+}
+@media (max-width:1050px) and (min-width:900px) {
+    .wrapper h2 {
+        font-size: 40px;
+        font-weight: 1000;
+    }
+
+    .wrapper h3 {
+        font-size: 20px;
+    }
+}
+@media (max-width:899px) and (min-width:550px) {
+    .wrapper h2 {
+        font-size: 35px;
+        font-weight: 1000;
+    }
+
+    .wrapper h3 {
+        font-size: 17px;
+    }
+}
+@media (max-width:549px) and (min-width:450px) {
+    .wrapper h2 {
+        font-size: 30px;
+        font-weight: 1000;
+    }
+
+    .wrapper h3 {
+        font-size: 14px;
+    }
+}
+@media (max-width:449px) and (min-width:350px) {
+    .wrapper h2 {
+        font-size: 23px;
+        font-weight: 1000;
+    }
+
+    .wrapper h3 {
+        font-size: 12px;
+    }
+}
+@media (max-width:349px) and (min-width:306px) {
+    .wrapper h2 {
+        font-size: 20px;
+        font-weight: 1000;
+    }
+
+    .wrapper h3 {
+        font-size: 12px;
+    }
+}
+@media (max-width:305px) and (min-width:200px) {
+    .wrapper h2 {
+        font-size: 17px;
+        font-weight: 1000;
+    }
+
+    .wrapper h3 {
+        font-size: 12px;
+    }
+}
+
+.owl-page {
+  display: none !important;
+}
+input {
+    color: black !important;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+}
+hr.colored {
+    margin: 20px auto;
+}
