@@ -51,7 +51,7 @@
         #description {
             width: 70%;
             padding: 10%;
-            text-align: justify;
+            text-align: left;
         }
     </style>
 </head>
@@ -94,19 +94,24 @@
             list = document.querySelectorAll("#list a"),
             description = document.getElementById("description"),
             infoData = {
-                positions: "Just horsing around learning to use positions and CSS3 animation.",
-                plantachula: "One of 2 pages made for Plantachula within 24 hours. This was the very first time I used jQuery so don't be too hard on me.:) Though the code is such a mess I decided to keep it the same as a reminder of the progress I've made.",
-                superwork: "The customer was a friend of mine and he asked me to jazz up the ui of his website. Eventually we decided on adding parallax effect, fixing adaptivity bugs and changing the order form.",
-                template: "A website I made on demand of my tutor. Not adaptive. Used meta-tag with viewport width=1280",
-                casino: "One more website I made on demand of my tutor. Not adaptive either.",
-                form: "A plain interactive form. If you fill the gaps and press the button it logs all the data to console.",
-                gallery: "Though it's not finished, yet it's my favorite project. I used Angular4 and Firebase. I needed firebase so as to implement photo preview with realtime database. If you upload photos it gets stored in the storage and the link to it goes to database as the key.",
-                "game": "I made it as a task for jQuery classes I teach. The student couldn't handle it so I helped him out in order to give him the basic structure of it.",
+                positions: `Just horsing around learning to use positions and CSS3 animation.`,
+                plantachula: `One of 2 pages made for Plantachula within 24 hours. This was the very first time I used jQuery so don't be too hard on me.:) 
+                <br/>Though the code is such a mess I decided to keep it the same as a reminder of the progress I've made.`,
+                superwork: `The customer was a friend of mine and he asked me to jazz up the ui of his website. Eventually we decided on adding parallax effect, fixing adaptivity bugs and changing the order form.`,
+                template: `A website I made on demand of my tutor. Not adaptive. Used meta-tag with viewport width=1280`,
+                casino: `One more website I made on demand of my tutor. Not adaptive either.`,
+                form: `A plain interactive form. If you fill the gaps and press the button it logs all the data to console.`,
+                gallery: `Though it's not finished yet, this is my favorite project. 
+                <br/>I used Angular4 and Firebase. I needed Firebase so as to implement photo preview with it's realtime database. If you upload photos it gets stored in the storage and the link to it goes to database as the key. 
+                <br/>In order to see all the pages you have to be signed in. In case you want to remain anonymous you can use testing account: login:beautifulpersonalityindeed@gmail.com
+                password:beautifulpersonalityindeed1`,
+                game: `I made it as a task for jQuery classes I teach. The student couldn't handle it so I helped him out in order to give him the basic structure of it.`,
             };
+
         for (const item of list) {
             item.addEventListener("mouseover", (e) => {
                 let key = e.target.textContent.split(" ")[0].toLowerCase();
-                description.textContent = infoData[key];
+                description.innerHTML = infoData[key];
             })
         }
     </script>
